@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@vogsphere.42lyon.fr:vogsphere/intra-uuid-86c914ce-6bfe-486a-bf89-871d91a0b789-6672889-tgodefro
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[user]
+	name = tgodefro
