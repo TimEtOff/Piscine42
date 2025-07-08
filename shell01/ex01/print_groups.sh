@@ -1,2 +1,2 @@
 #!/bin/bash
-id -Gn $FT_USER | tr " " "," | awk '{printf $0}'
+id -Gn $FT_USER | tr " " "," | tr -d "\n"
