@@ -1,4 +1,5 @@
 cd $1
+git add *
 git commit -m "$2"
 mv .git/ .git_unloaded/
 cd ..
