@@ -1,0 +1,4 @@
+#!/bin/bash
+cd $1
+mv .git_unloaded/ .git/
+cd ..
