@@ -1,1 +1,15 @@
+# General
 en.subject.pdf
+
+# Exercises
+./*
+*/*
+
+!ex01/print_groups.sh
+!ex02/find_sh.sh
+!ex03/count_files.sh
+!ex04/MAC.sh.sh
+!ex05/"\?$*'MaRViN'*$?\"
+!ex06/skip.sh
+!ex07/r_dwssap.sh
+!ex08/add_chelou.sh
