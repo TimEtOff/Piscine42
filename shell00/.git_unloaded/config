@@ -3,5 +3,3 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
-[user]
-	name = tgodefro
