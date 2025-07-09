@@ -1,2 +1,1 @@
-i = 0
-res = "$(ls -l)"
+ls -l | sed -n 'p;n'
