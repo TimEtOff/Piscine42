@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 10:32:07 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/10 10:33:37 by tgodefro         ###   ########.fr       */
+/*   Updated: 2025/07/10 10:38:37 by tgodefro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ void	ft_print_numbers(void)
 	}
 }
 
-//int	main(void)
-//{
-//	ft_print_numbers();
-//}
+/*
+int	main(void)
+{
+	ft_print_numbers();
+}*/

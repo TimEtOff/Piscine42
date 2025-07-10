@@ -1,26 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/09 15:09:20 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/10 09:53:08 by tgodefro         ###   ########.fr       */
+/*   Created: 2025/07/10 10:38:21 by tgodefro          #+#    #+#             */
+/*   Updated: 2025/07/10 11:54:27 by tgodefro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
 
-void	ft_putchar(char c)
+#include <unistd.h>
+#include <limits.h>
+
+void	ft_is_negative(int a)
 {
-	write(1, &c, 1);
+	char	res;
+
+	if (a >= 0)
+		res = 'P';
+	else
+		res = 'N';
+	write (1, &res, 1);
 }
 
 /*
 int	main(void)
 {
-	ft_putchar('t');
-    ft_putchar('e');
-    ft_putchar('s');
-    ft_putchar('t');
+	ft_is_negative(7);
+	ft_is_negative(-42);
+	ft_is_negative(INT_MAX);
+	ft_is_negative(INT_MIN);
 }*/
