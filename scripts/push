@@ -1,0 +1,4 @@
+cd ~/Documents/Piscine42/$1
+git push
+cd ..
+git push
