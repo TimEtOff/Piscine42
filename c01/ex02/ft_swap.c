@@ -1,32 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ft.c                                            :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/10 16:36:21 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/10 16:53:22 by tgodefro         ###   ########.fr       */
+/*   Created: 2025/07/10 18:10:00 by tgodefro          #+#    #+#             */
+/*   Updated: 2025/07/10 18:29:02 by tgodefro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 
-void	ft_ft(int *nbr)
+void	ft_swap(int *a, int *b)
 {
-	*nbr = 42;
+	int	temp;
+
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
 
 /*int	main(void)
 {
-	int	test = 69;
-	int	*test_p = &test;
-	printf("test: %d\n", test);
-	printf("test_p: %p\n", test_p);
-	printf("*test_p: %d\n", *test_p);
-	printf("ft_ft\n");
-	ft_ft(test_p);
-	printf("test: %d\n", test);
-	printf("test_p: %p\n", test_p);
-	printf("*test_p: %d\n", *test_p);
+	int	a;
+	int	b;
+	int	*a_p;
+	int	*b_p;
+
+	a = 42;
+	a_p = &a;
+	b = 69;
+	b_p = &b;
+	printf("a: %d\n", *a_p);
+	printf("a_p: %p\n", a_p);
+	printf("b: %d\n", *b_p);
+	printf("b_p: %p\n", b_p);
+	printf("--- ft_swap\n");
+	ft_swap(a_p, b_p);
+	printf("a: %d\n", *a_p);
+	printf("a_p: %p\n", a_p);
+	printf("b: %d\n", *b_p);
+	printf("b_p: %p\n", b_p);
 }*/

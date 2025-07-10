@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tgodefro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 16:53:47 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/10 16:53:49 by tgodefro         ###   ########.fr       */
+/*   Updated: 2025/07/10 18:08:49 by tgodefro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
 
 void	ft_ultimate_ft(int *********nbr)
 {

@@ -5,5 +5,5 @@ echo "---------- Norminette ----------"
 norminette -R CheckForbiddenSourceHeader --filename $file
 echo "---------- Compilation ----------"
 cc -Wall -Wextra -Werror $fileC -o $fileOut
-echo "---------- Execution ----------"
+echo "----------  Execution  ----------"
 ./$fileOut
