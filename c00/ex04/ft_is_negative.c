@@ -24,8 +24,7 @@ void	ft_is_negative(int a)
 	write (1, &res, 1);
 }
 
-/*
-int	main(void)
+/*int	main(void)
 {
 	ft_is_negative(7);
 	ft_is_negative(-42);

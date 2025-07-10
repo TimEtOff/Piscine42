@@ -1,5 +1,5 @@
 #!/bin/bash
-cd $1
+cd ~/Documents/Piscine42/$1
 if [ "$3" = "true" ]
 then
     echo "No commit in sub-repo"
