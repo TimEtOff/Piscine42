@@ -9,10 +9,17 @@
 /*   Updated: 2025/07/09 15:11:21 by tgodefro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
+#include <unistd.h>
 
-
-void    ft_putchar(char c)
+void	ft_putchar(char c)
 {
-        write(1, &c, 1);
+	write(1, &c, 1);
+}
+
+int	main(void)
+{
+	ft_putchar('t');
+    ft_putchar('e');
+    ft_putchar('s');
+    ft_putchar('t');
 }
