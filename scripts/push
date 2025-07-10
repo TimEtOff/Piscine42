@@ -1,4 +1,11 @@
-cd ~/Documents/Piscine42/$1
+echo "------ Pushing in main repo -----"
+cd ~/Documents/Piscine42/
 git push
-cd ..
-git push
+if [ $1 ]
+then
+    echo "------ Pushing in sub repo $1 -----"
+    cd $1
+    git push
+else
+    echo "------ No sub repo specified -----"
+fi
