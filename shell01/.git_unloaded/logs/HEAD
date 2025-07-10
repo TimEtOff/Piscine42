@@ -11,3 +11,4 @@ bdfa654ae339ead696a1b9ab4752267cd811e2d8 91361781494c0d4cd07c1c00621f3f9d9d79a79
 e14eef0dd6fd4d756d41413cb552b44fe69c8582 f6e188ef5407b72617138de87cdaaf4afe0849ee tgodefro <tgodefro@student.42lyon.fr> 1752062535 +0200	commit: Ex07
 f6e188ef5407b72617138de87cdaaf4afe0849ee 308a07f58fd976ec5c8f6edd29af2ff0202d6a23 tgodefro <tgodefro@student.42lyon.fr> 1752064919 +0200	commit: Ex08 (Marche pas)
 308a07f58fd976ec5c8f6edd29af2ff0202d6a23 3276234728d7f5a5b907cd3ee30f88b0e55a0a1f tgodefro <tgodefro@student.42lyon.fr> 1752134107 +0200	commit: Remove tests ex08 (not working tho)
+3276234728d7f5a5b907cd3ee30f88b0e55a0a1f 425015a49fa70e8d020fb839d8018f2181b5ec79 tgodefro <tgodefro@student.42lyon.fr> 1752137950 +0200	commit: Fixed ex07 after evaluation (i guess)
