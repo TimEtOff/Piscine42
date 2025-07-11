@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 10:15:28 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/11 11:54:40 by tgodefro         ###   ########.fr       */
+/*   Updated: 2025/07/11 14:11:47 by tgodefro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,8 +66,8 @@ void	ft_sort_int_tab(int *tab, int size)
 
 int	main(void)
 {
-	int	tab[6] = {4, 6, 8, 7, 1};
-	int	tab2[7] = {9, 4, 2, 3, 6, 8};
+	int	tab[6] = {4, 6, 8, 7, 1, 2};
+	int	tab2[7] = {9, 4, 2, 3, 6, 8, 7};
 
 	print_tab(tab, 6);
 	ft_sort_int_tab(tab, 6);
