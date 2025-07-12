@@ -1,4 +1,4 @@
 #!/bin/bash
-cd ~/Documents/Piscine42/$1
+cd $(dirname $0)
+cd ../$1
 mv .git_unloaded/ .git/
-cd ..

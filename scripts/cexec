@@ -1,5 +1,5 @@
-file=$1
-fileC=$file".c"
+fileC=$1
+file=basename "$fileC" .c
 fileOut=$file".out"
 echo "---------- Norminette ----------"
 norminette -R CheckForbiddenSourceHeader --filename $file

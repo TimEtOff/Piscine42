@@ -1,5 +1,6 @@
 echo "------ Pushing in main repo -----"
-cd ~/Documents/Piscine42/
+cd $(dirname $0)
+cd ../
 git push
 if [ $1 ]
 then
