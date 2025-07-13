@@ -10,4 +10,56 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 
+/*
+	We need to use two distinct values:
+		- X
+		- Y
+	which will be used as indexes
+	In order to make this works, we need to make two loops, where we print-out Xs and Ys lines.
+	Example of an X line:
+		o---o
+	Example of an Y line:
+		|   |
+	For every iterations, we need to track for:
+		- An odd number of Ys, such that:
+			- an odd number of Ys that is superior to 1 would generate a print of one first X and one last X.
+			- Y is always subtracted by two.
+	*/
+void	rush(int x, int y)
+{
+	int	incr_x;
+	int	incr_y;
+
+	incr_x = 0;
+	incr_y = 0;
+	while (incr_y < y)
+	{
+		while (incr_x < x)
+		{
+			if (incr_y == 0) // Si c'est la première ligne
+			{
+				if (incr_x == 0 || incr_x == (x - 1)) // Si c'est un coin
+					write(1, "o", 1);
+				else
+					write(1, "-", 1);
+			}
+			if (incr_y == (y - 1)) // FIXME Cette condition fonctionne jamais
+				write(1, "X", 1);
+			incr_x++;
+		}
+		write(1, "\n", 1);
+		incr_y++;
+	}
+
+}
+
+int	main(void)
+{
+	rush(5, 3);
+	/*rush(5, 1);
+	rush(1, 1);
+	rush(1, 5);
+	rush(4, 4);*/
+}

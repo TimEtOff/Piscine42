@@ -2,7 +2,7 @@ fileC=$1
 file=basename "$fileC" .c
 fileOut=$file".out"
 echo "---------- Norminette ----------"
-norminette -R CheckForbiddenSourceHeader --filename $file
+norminette -R CheckForbiddenSourceHeader --filename $fileC
 echo "---------- Compilation ----------"
 cc -Wall -Wextra -Werror $fileC -o $fileOut
 echo "----------  Execution  ----------"
