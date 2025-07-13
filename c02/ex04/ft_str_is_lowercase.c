@@ -19,10 +19,8 @@ int	ft_str_is_lowercase(char *str)
 	res = 1;
 	while (*str != '\0')
 	{
-		if (!((((int) 'a' <= (int) *str) && ((int) *str <= (int) 'z'))))
-		{
+		if (!(((int) 'a' <= (int) *str) && ((int) *str <= (int) 'z')))
 			res = 0;
-		}
 		str++;
 	}
 	return (res);
@@ -35,4 +33,3 @@ int	ft_str_is_lowercase(char *str)
 	printf("%i\n", ft_str_is_lowercase("This is only 161650 chars"));
 	printf("%i\n", ft_str_is_lowercase("This is not only #$$@$& chars"));
 }*/
-

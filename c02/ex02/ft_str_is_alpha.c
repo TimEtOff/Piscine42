@@ -24,9 +24,7 @@ int	ft_str_is_alpha(char *str)
 				|| (((int) '0' <= (int) *str) && ((int) *str <= (int) '9'))
 			)
 		)
-		{
 			res = 0;
-		}
 		str++;
 	}
 	return (res);
