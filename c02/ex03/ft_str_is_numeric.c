@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tgodefro <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 15:31:43 by tgodefro          #+#    #+#             */
 /*   Updated: 2025/07/13 15:33:04 by tgodefro         ###   ########.fr       */
