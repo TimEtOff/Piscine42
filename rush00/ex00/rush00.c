@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
 void	ft_putchar(char c);
 
 /*
@@ -43,17 +41,17 @@ void	rush(int x, int y)
 			if (incr_y == 0) // Si c'est la première ligne
 			{
 				if (incr_x == 0 || incr_x == (x - 1)) // Si c'est un coin
-					write(1, "o", 1);
+					ft_putchar('o');
 				else
-					write(1, "-", 1);
+					ft_putchar('-');
 			}
 			else
 			{
-				write(1, "X", 1);
+				ft_putchar('X');
 			}
 			incr_x++;
 		}
-		write(1, "\n", 1);
+		ft_putchar('\n');
 		incr_y++;
 	}
 
