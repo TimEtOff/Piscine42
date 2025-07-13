@@ -1,9 +1,17 @@
-fileC=$1
-file=basename "$fileC" .c
+
+if [ $1 ]
+then
+	fileC=$1
+	file=$(basename "$fileC" .c)
+else
+	fileC=*
+	file="a"
+fi
 fileOut=$file".out"
 echo "---------- Norminette ----------"
-norminette -R CheckForbiddenSourceHeader --filename $fileC
+norminette -R CheckForbiddenSourceHeader $fileC
 echo "---------- Compilation ----------"
+rm $fileOut
 cc -Wall -Wextra -Werror $fileC -o $fileOut
 echo "----------  Execution  ----------"
 ./$fileOut
