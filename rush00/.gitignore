@@ -1,0 +1,10 @@
+# General
+en.subject.pdf
+en.groups_subjects.txt
+
+# Exercises
+*/*
+
+!ex00/main.c
+!ex00/ft_putchar.c
+!ex00/rush00.c
