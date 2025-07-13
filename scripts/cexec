@@ -8,10 +8,11 @@ else
 	file="a"
 fi
 fileOut=$file".out"
+
+rm $fileOut
 echo "---------- Norminette ----------"
 norminette -R CheckForbiddenSourceHeader $fileC
 echo "---------- Compilation ----------"
-rm $fileOut
 cc -Wall -Wextra -Werror $fileC -o $fileOut
 echo "----------  Execution  ----------"
 ./$fileOut

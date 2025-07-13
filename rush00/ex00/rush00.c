@@ -6,53 +6,65 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 09:10:51 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/13 13:28:12 by tgodefro         ###   ########.fr       */
+/*   Updated: 2025/07/13 14:01:08 by dbeal            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
 
-/*
-	We need to use two distinct values:
-		- X
-		- Y
-	which will be used as indexes
-	In order to make this works, we need to make two loops, where we print-out Xs and Ys lines.
-	Example of an X line:
-		o---o
-	Example of an Y line:
-		|   |
-	For every iterations, we need to track for:
-		- An odd number of Ys, such that:
-			- an odd number of Ys that is superior to 1 would generate a print of one first X and one last X.
-			- Y is always subtracted by two.
-	*/
+void	ft_line_top(int x_max, int y_max, int y_actual)
+{
+	int	increment;
+	int	upper_left;
+	int	upper_right;
+	int	bottom_left;
+	int	bottom_right;
+
+	increment = 0;
+	while (increment < x_max)
+	{
+		{
+			upper_left = ((increment == 0) && (y_actual == 0));
+			upper_right = ((increment == (x_max - 1)) && (y_actual == 0));
+			bottom_left = ((increment == 0) && (y_actual == (y_max - 1)));
+			bottom_right = (increment == (x_max - 1));
+			bottom_right = bottom_right && (y_actual == (y_max - 1));
+		}
+		if (upper_left || upper_right || bottom_left || bottom_right)
+			ft_putchar('o');
+		else
+			ft_putchar('-');
+		increment++;
+	}
+}
+
+void	ft_line(int x)
+{
+	int	increment;
+
+	increment = 0;
+	while (increment < x)
+	{
+		if ((increment == 0) || (increment == (x - 1)))
+			ft_putchar('|');
+		else
+			ft_putchar(' ');
+		increment++;
+	}
+}
+
 void	rush(int x, int y)
 {
-	int	incr_x;
 	int	incr_y;
 
-	incr_x = 0;
 	incr_y = 0;
 	while (incr_y < y)
 	{
-		while (incr_x < x)
-		{
-			if (incr_y == 0) // Si c'est la première ligne
-			{
-				if (incr_x == 0 || incr_x == (x - 1)) // Si c'est un coin
-					ft_putchar('o');
-				else
-					ft_putchar('-');
-			}
-			else
-			{
-				ft_putchar('X');
-			}
-			incr_x++;
-		}
+		if (incr_y == 0 || incr_y == (y - 1))
+			ft_line_top(x, y, incr_y);
+		else
+			ft_line(x);
 		ft_putchar('\n');
 		incr_y++;
 	}
-
 }
