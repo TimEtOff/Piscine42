@@ -1,30 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/13 09:24:34 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/13 15:07:42 by tgodefro         ###   ########.fr       */
+/*   Created: 2025/07/13 15:07:55 by tgodefro          #+#    #+#             */
+/*   Updated: 2025/07/13 15:12:24 by tgodefro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 
-/*
-From `man strcpy`:
-> The strcpy() function copies the string pointed to by src,
-> including the terminating null byte ('\0'), to the buffer pointed to by dest.
-> The strings may not overlap, and the destination string dest must be large
-> enough to receive the copy.
-*/
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
-	while (src[i] != '\0')
+	while (i != n)
 	{
 		dest[i] = src[i];
 		i++;
@@ -40,7 +33,7 @@ char	*ft_strcpy(char *dest, char *src)
 
 	printf("src:	%s\n", src);
 	printf("dest:	%s\n", dest);
-	printf("ft_strcpy: %s\n", ft_strcpy(dest, src));
+	printf("ft_strcpy: %s\n", ft_strncpy(dest, src, 14));
 	printf("src:	%s\n", src);
 	printf("dest:	%s\n", dest);
 }*/
