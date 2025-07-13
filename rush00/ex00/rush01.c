@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rush00.c                                           :+:      :+:    :+:   */
+/*   rush01.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/13 09:10:51 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/13 14:34:12 by tgodefro         ###   ########.fr       */
+/*   Created: 2025/07/13 16:04:07 by tgodefro          #+#    #+#             */
+/*   Updated: 2025/07/13 16:27:13 by tgodefro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,14 @@ void	ft_line_top(int x_max, int y_max, int y_current)
 		bottom_left = ((increment == 0) && (y_current == (y_max - 1)));
 		bottom_right = (increment == (x_max - 1));
 		bottom_right = bottom_right && (y_current == (y_max - 1));
-		if (upper_left || upper_right || bottom_left || bottom_right)
-			ft_putchar('o');
+		if (upper_left)
+			ft_putchar('/');
+		else if (upper_right || bottom_left)
+			ft_putchar('\\');
+		else if (bottom_right)
+			ft_putchar('/');
 		else
-			ft_putchar('-');
+			ft_putchar('*');
 		increment++;
 	}
 }
@@ -44,7 +48,7 @@ void	ft_line(int x)
 	while (increment < x)
 	{
 		if ((increment == 0) || (increment == (x - 1)))
-			ft_putchar('|');
+			ft_putchar('*');
 		else
 			ft_putchar(' ');
 		increment++;
