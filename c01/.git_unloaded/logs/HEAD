@@ -9,3 +9,4 @@ a78c2e70ff35b9ee8cee2b971e428e5da2475ece 47262541fb62d52733dcf8c4f17b7a54bd8d11a
 cec30bbb2ceabe8a5a97dc76e4f1c243a3505d34 860e50299da7026994ee34c48e26e107228a372e tgodefro <tgodefro@student.42lyon.fr> 1752221690 +0200	commit: Ex07 fix
 860e50299da7026994ee34c48e26e107228a372e f3cf073d844986a5d07d39d6314395be6739584a tgodefro <tgodefro@student.42lyon.fr> 1752227710 +0200	commit: Ex08
 f3cf073d844986a5d07d39d6314395be6739584a ea697e223cbbff1f01fc6c0d7946c0649b708899 tgodefro <tgodefro@student.42lyon.fr> 1752235974 +0200	commit: Tests fix ex08 (changes nothing outside comments)
+ea697e223cbbff1f01fc6c0d7946c0649b708899 4c524fa8eb52a967340807155ddbeb21cd169554 tgodefro <tgodefro@student.42lyon.fr> 1752391634 +0200	commit: Subject wasn't there

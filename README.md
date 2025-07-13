@@ -6,7 +6,7 @@
 
 | | Grade | Moulinette | Details | Commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
-| ***First try:*** | [<img src="./pngs/10.png" alt="fail: 10/100" width="150">](./pngs/10.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: KO &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: KO &#8739; ex07: OK &#8739; &#13;ex08: Nothing turned in &#8739; &#13;ex09: Nothing turned in</code></pre> | <ul><li>**ex02:** Forgot physical links between 3 and 5 + Wrong timestamp on 6 </li><li>**ex06:** Wrong command</li></ul> | [&lt;b8232d3&gt;](https://github.com/TimEtOff/Piscine42/tree/b8232d3/shell00) |
+| ***First try*** | [<img src="./pngs/10.png" alt="fail: 10/100" width="150">](./pngs/10.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: KO &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: KO &#8739; ex07: OK &#8739; &#13;ex08: Nothing turned in &#8739; &#13;ex09: Nothing turned in</code></pre> | <ul><li>**ex02:** Forgot physical links between 3 and 5 + Wrong timestamp on 6 </li><li>**ex06:** Wrong command</li></ul> | [&lt;b8232d3&gt;](https://github.com/TimEtOff/Piscine42/tree/b8232d3/shell00) |
 | ***Retry 1*** | [<img src="./pngs/100.png" alt="success: 100/100" width="150">](./pngs/100.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: OK &#8739; ex07: OK &#8739; &#13;ex08: OK &#8739; ex09: KO</code></pre> | <ul><li>**ex09:** Should display `42 file` instead of `42 File`, fixed in [&lt;main&gt;](https://github.com/TimEtOff/Piscine42/tree/main/shell00), not tested.</li></ul> | [&lt;b48c470&gt;](https://github.com/TimEtOff/Piscine42/tree/b48c470/shell00) |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/shell00/en.subject.pdf)
@@ -19,7 +19,7 @@
 
 | | Grade | Moulinette | Details | Commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
-| ***First try:*** | [<img src="./pngs/70.png" alt="success: 70/100" width="150">](./pngs/70.png) | <pre><code>ex01: OK &#8739; ex02: OK &#8739; &#13;ex03: OK &#8739; ex04: OK &#8739; &#13;ex05: OK &#8739; ex06: OK &#8739; &#13;ex07: KO &#8739; ex08: KO</code></pre> | <ul><li>**ex07:** Worked in my tests but didn't with in evaluations. `sed` expression should be in quotes and not `{}`, fixed in [&lt;main&gt;](https://github.com/TimEtOff/Piscine42/tree/main/shell00), not tested. </li><li>**ex08:** Tried but did not finish.</li></ul> | [&lt;5e9358a&gt;](https://github.com/TimEtOff/Piscine42/tree/5e9358a/shell01) |
+| ***First try*** | [<img src="./pngs/70.png" alt="success: 70/100" width="150">](./pngs/70.png) | <pre><code>ex01: OK &#8739; ex02: OK &#8739; &#13;ex03: OK &#8739; ex04: OK &#8739; &#13;ex05: OK &#8739; ex06: OK &#8739; &#13;ex07: KO &#8739; ex08: KO</code></pre> | <ul><li>**ex07:** Worked in my tests but didn't with in evaluations. `sed` expression should be in quotes and not `{}`, fixed in [&lt;main&gt;](https://github.com/TimEtOff/Piscine42/tree/main/shell00), not tested. </li><li>**ex08:** Tried but did not finish.</li></ul> | [&lt;5e9358a&gt;](https://github.com/TimEtOff/Piscine42/tree/5e9358a/shell01) |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/shell01/en.subject.pdf)
 
@@ -31,9 +31,11 @@
 
 | | Grade | Moulinette | Details | Commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
-| ***First try:*** | Not validated yet. | <pre><code></code></pre> | <ul><li> </li></ul> |  |
+| ***First try*** | Not validated yet. | <pre><code></code></pre> | <ul><li> </li></ul> |  |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c00/en.subject.pdf)
+
+[Project description here]
 
 ---
 
@@ -46,6 +48,18 @@
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c01/en.subject.pdf)
 
 [Project description here]
+
+### C 02
+
+| | Grade | Moulinette | Details | Commit |
+| ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
+| ***First try*** | Not validated yet. | <pre><code></code></pre> | <ul><li> </li></ul> |  |
+
+[See subject](https://github.com/TimEtOff/Piscine42/blob/main/c02/en.subject.pdf)
+
+[Project description here]
+
+---
 
 ## Exams
 
