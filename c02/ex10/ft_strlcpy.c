@@ -6,11 +6,11 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 11:31:04 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/14 11:49:37 by tgodefro         ###   ########.fr       */
+/*   Updated: 2025/07/14 13:48:23 by tgodefro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+#include <stdio.h>
 
 /*
 	Imported from `c01/ex06/ft_strlen`
@@ -28,6 +28,16 @@ int	ft_strlen(char *str)
 	return (nbr);
 }
 
+char	*ft_decrement_str(char *str, int len)
+{
+	while (len > 0)
+	{
+		str--;
+		len--;
+	}
+	return (str);
+}
+
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
 	unsigned int	i;
@@ -42,19 +52,18 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 		src++;
 		i++;
 	}
-	src--;
-	*dest = '\n';
+	*dest = '\0';
 	return (res);
 }
 
-/*int	main(void)
+int	main(void)
 {
 	char	src[] = "This is a test";
 	char	dest[] = "";
 
 	printf("src:	%s\n", src);
 	printf("dest:	%s\n", dest);
-	printf("ft_strcpy: %i\n", ft_strlcpy(dest, src, 20));
+	printf("ft_strcpy: %i\n", ft_strlcpy(dest, src, 10));
 	printf("src:	%s\n", src);
 	printf("dest:	%s\n", dest);
-}*/
+}
