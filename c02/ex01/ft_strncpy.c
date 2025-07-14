@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 15:07:55 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/13 15:12:24 by tgodefro         ###   ########.fr       */
+/*   Updated: 2025/07/14 17:43:41 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,6 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	char	dest[] = "";
 
 	printf("src:	%s\n", src);
-	printf("dest:	%s\n", dest);
 	printf("ft_strcpy: %s\n", ft_strncpy(dest, src, 14));
-	printf("src:	%s\n", src);
 	printf("dest:	%s\n", dest);
 }*/
