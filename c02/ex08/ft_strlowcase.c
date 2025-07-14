@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 10:57:09 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/14 10:59:33 by tgodefro         ###   ########.fr       */
+/*   Updated: 2025/07/14 11:03:03 by tgodefro         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,7 @@ char	*ft_strlowcase(char *str)
 	while (*str != '\0')
 	{
 		if (((int) 'A' <= (int) *str) && ((int) *str <= (int) 'Z'))
-		{
 			*str = (char)(((int) *str) + diff);
-		}
 		str++;
 		i++;
 	}
