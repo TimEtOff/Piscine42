@@ -31,7 +31,7 @@
 
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
-| ***First try*** | Not validated yet. | <pre><code></code></pre> | <ul><li> </li></ul> |  |
+| ***First try*** | [<img src="./pngs/67.png" alt="success: 67/100" width="150">](./pngs/67.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: Does not compile &#8739; ex07: KO &#8739; &#13;ex08: Does not compile</code></pre> | <ul><li>**ex06:** The include for `write` was commented</li><li>**ex07:** Forgot for negative numbers</li><li>**ex08:** Abandonned</ul> | [&lt;5d84fe9&gt;](https://github.com/TimEtOff/Piscine42/tree/5d84fe9/c00) |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c00/en.subject.pdf)
 
@@ -43,11 +43,13 @@
 
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
-| ***First try:*** | [<img src="./pngs/100.png" alt="success: 100/100" width="150">](./pngs/100.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: OK &#8739; ex07: OK &#8739; &#13;ex08: OK</code></pre> | Perfect <br>*Notes: tests in ex08 are wrong but are working, fixed in [&lt;main&gt;](https://github.com/TimEtOff/Piscine42/tree/main/c01)* | [&lt;7d80b5a&gt;](https://github.com/TimEtOff/Piscine42/tree/7d80b5a/c01) |
+| ***First try*** | [<img src="./pngs/100.png" alt="success: 100/100" width="150">](./pngs/100.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: OK &#8739; ex07: OK &#8739; &#13;ex08: OK</code></pre> | Perfect <br>*Notes: tests in ex08 are wrong but are working, fixed in [&lt;main&gt;](https://github.com/TimEtOff/Piscine42/tree/main/c01)* | [&lt;7d80b5a&gt;](https://github.com/TimEtOff/Piscine42/tree/7d80b5a/c01) |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c01/en.subject.pdf)
 
 [Project description here]
+
+---
 
 ### C 02
 
@@ -56,6 +58,18 @@
 | ***First try*** | Not validated yet. | <pre><code></code></pre> | <ul><li> </li></ul> |  |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c02/en.subject.pdf)
+
+[Project description here]
+
+---
+
+### C 03
+
+| | Grade | Moulinette | Notes | Submit commit |
+| ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
+| ***First try*** | Not validated yet. | <pre><code></code></pre> | <ul><li> </li></ul> |  |
+
+[See subject](https://github.com/TimEtOff/Piscine42/blob/main/c03/en.subject.pdf)
 
 [Project description here]
 
