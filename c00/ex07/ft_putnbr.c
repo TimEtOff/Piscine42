@@ -6,13 +6,13 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 11:58:44 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/11 11:58:47 by tgodefro         ###   ########.fr       */
+/*   Updated: 2025/07/14 15:41:52 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putnbr(int nb)
+void	ft_putnbr(int nb)
 {
 
 }
