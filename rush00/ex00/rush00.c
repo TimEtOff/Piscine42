@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 09:10:51 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/13 14:34:12 by tgodefro         ###   ########.fr       */
+/*   Updated: 2025/07/13 19:10:02 by dbeal            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,14 +55,17 @@ void	rush(int x, int y)
 {
 	int	incr_y;
 
-	incr_y = 0;
-	while (incr_y < y)
+	if (!((x < 0) || (y < 0)))
 	{
-		if (incr_y == 0 || incr_y == (y - 1))
-			ft_line_top(x, y, incr_y);
-		else
-			ft_line(x);
-		ft_putchar('\n');
-		incr_y++;
+		incr_y = 0;
+		while (incr_y < y)
+		{
+			if (incr_y == 0 || incr_y == (y - 1))
+				ft_line_top(x, y, incr_y);
+			else
+				ft_line(x);
+			ft_putchar('\n');
+			incr_y++;
+		}
 	}
 }

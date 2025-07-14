@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 12:58:27 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/13 17:03:05 by dbeal            ###   ########.fr       */
+/*   Updated: 2025/07/13 18:43:15 by dbeal            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ void	rush(int x, int y);
 
 int	main(void)
 {
-	rush(5, 3);
+	rush(-5, 3);
 	rush(5, 1);
 	rush(1, 1);
 	rush(1, 5);
