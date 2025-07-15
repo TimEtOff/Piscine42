@@ -6,12 +6,12 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 09:24:34 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/15 10:40:56 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/15 13:16:25 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
+/*#include <stdio.h>
+#include <string.h>*/
 
 /*
 From `man strcpy`:
@@ -34,7 +34,7 @@ char	*ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	src[] = "This is a test";
 	char	dest[] = "";
@@ -52,4 +52,4 @@ int	main(void)
 	printf("strcpy:		%s\n", strcpy(dest2, src2));
 	printf("src2:		%s\n", src2);
 	printf("dest2:		%s\n", dest2);
-}
+}*/
