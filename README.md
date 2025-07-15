@@ -31,7 +31,7 @@
 
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
-| ***First try*** | [<img src="./pngs/67.png" alt="success: 67/100" width="150">](./pngs/67.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: Does not compile &#8739; ex07: KO &#8739; &#13;ex08: Does not compile</code></pre> | <ul><li>**ex06:** The include for `write` was commented</li><li>**ex07:** Forgot for negative numbers</li><li>**ex08:** Abandonned</ul> | [&lt;5d84fe9&gt;](https://github.com/TimEtOff/Piscine42/tree/5d84fe9/c00) |
+| ***First try*** | [<img src="./pngs/67.png" alt="success: 67/100" width="150">](./pngs/67.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: Does not compile &#8739; ex07: KO &#8739; &#13;ex08: Does not compile</code></pre> | <ul><li>**ex06:** The include for `write` was commented</li><li>**ex07:** Forgot for negative numbers</li><li>**ex08:** Abandonned</ul><br>*Ex06 and 07 fixed in [&lt;main&gt;](https://github.com/TimEtOff/Piscine42/tree/main/c00) | [&lt;5d84fe9&gt;](https://github.com/TimEtOff/Piscine42/tree/5d84fe9/c00), not tested* |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c00/en.subject.pdf)
 
