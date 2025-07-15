@@ -6,11 +6,11 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 16:01:53 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/14 16:11:18 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/15 11:04:54 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <unistd.h>
+#include <unistd.h>
 
 void	fr_print_num(int num)
 {
