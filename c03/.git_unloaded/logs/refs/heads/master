@@ -6,3 +6,4 @@ a10c1bddc0875c2ef17b3fb1e884c211f3295fbb 742b7a316f65c0a9c3d17b9c230d39f37e318f5
 b31bd9f03cdd2f50950d6ae1fa015e40c9861ddf 7aa3d26fab0b18e7118523ce3c659f2ddc420dc7 tgodefro <tgodefro@student.42lyon.fr> 1752581352 +0200	commit: Ex04 (to split)
 7aa3d26fab0b18e7118523ce3c659f2ddc420dc7 c052742efea18281f197cdc282e1cb192dca4c39 tgodefro <tgodefro@student.42lyon.fr> 1752585888 +0200	commit: Ex04
 c052742efea18281f197cdc282e1cb192dca4c39 b6f7bf9d627fa8e7a3d20d4faee4169e6791cbc3 tgodefro <tgodefro@student.42lyon.fr> 1752587777 +0200	commit: Ex05
+b6f7bf9d627fa8e7a3d20d4faee4169e6791cbc3 c5af7111d43ddf08212a1f4eb80d149d56fc50fe tgodefro <tgodefro@student.42lyon.fr> 1752590492 +0200	commit: Fixed strlcat in ex05
