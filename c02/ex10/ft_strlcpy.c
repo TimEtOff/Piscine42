@@ -6,18 +6,19 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 11:31:04 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/14 17:41:50 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/15 16:04:48 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+/*#include <stdio.h>
+#include <string.h>*/
 
 /*
-	Imported from `c01/ex06/ft_strlen`
+	Edited version from `c01/ex06/ft_strlen.c`
 */
-int	ft_strlen(char *str)
+unsigned int	ft_strlen(char *str)
 {
-	int	nbr;
+	unsigned int	nbr;
 
 	nbr = 0;
 	while (*str != '\0')
@@ -28,42 +29,32 @@ int	ft_strlen(char *str)
 	return (nbr);
 }
 
-char	*ft_decrement_str(char *str, int len)
-{
-	while (len > 0)
-	{
-		str--;
-		len--;
-	}
-	return (str);
-}
-
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
 	unsigned int	i;
-	int				res;
+	unsigned int	src_len;
 
+	src_len = ft_strlen(src);
+	if (src_len < size)
+		return (src_len);
 	i = 0;
-	res = ft_strlen(src);
 	while (i < (size - 1))
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		dest[i] = src[i];
 		i++;
 	}
-	*dest = '\0';
-	return (res);
+	dest[i] = '\n';
+	return (src_len);
 }
 
 /*int	main(void)
 {
 	char	src[] = "This is a test";
-	char	dest[] = "";
+	char	dest[] = "        ";
 
-	printf("src:	%s\n", src);
-	printf("dest:	%s\n", dest);
-	printf("ft_strcpy: %i\n", ft_strlcpy(dest, src, 10));
-	printf("src:	%s\n", src);
-	printf("dest:	%s\n", dest);
+	printf("src:		%s\n", src);
+	printf("dest:		%s\n", dest);
+	printf("ft_strlcpy:	%i\n", ft_strlcpy(dest, src, 8));
+	printf("src:		%s\n", src);
+	printf("dest:		%s\n", dest);
 }*/
