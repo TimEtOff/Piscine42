@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 11:13:36 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/15 13:46:19 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/15 13:53:00 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,4 +49,5 @@ char	*ft_strcat(char *dest, char *src)
 	printf("strcpy:		%s\n", strcat(dest2, src2));
 	printf("src2:		%s\n", src2);
 	printf("dest2:		%s\n", dest2);
+	return (0);
 }*/

@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:47:50 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/15 10:18:00 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/15 13:53:20 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,4 +59,5 @@ int	ft_strcmp(char *s1, char *s2)
 	printf("%i\n", strcmp("noooon", "noo"));
 	printf("%i\n", strcmp("Test", "Test"));
 	printf("%i\n", strcmp(" ", ""));
+	return (0);
 }*/
