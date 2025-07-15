@@ -6,35 +6,26 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 16:05:31 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/15 16:15:19 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/15 17:15:43 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_int_to_hex(int nb)
-{
+#include <unistd.h>
 
+void	ft_put_hex_from_int(int nb, int size)
+{
+	char	*hex_nbrs;
+
+	hex_nbrs = "0123456789abcdef";
+	if (nb >= 16 || size > 1)
+		ft_put_hex_from_int(nb / 16, size - 1);
+	write(1, &hex_nbrs[nb % 16], 1);
 }
 
 /*
-	Imported from `c01/ex06`
+	Edited from `ex06/ft_str_is_printable`
 */
-int	ft_strlen(char *str)
-{
-	int	nbr;
-
-	nbr = 0;
-	while (*str != '\0')
-	{
-		nbr++;
-		str++;
-	}
-	return (nbr);
-}
-
-/*
-	Edited from `ex06`
-*/
-int	ft_str_is_printable(char chr)
+int	ft_char_is_printable(char chr)
 {
 	int	res;
 
@@ -48,8 +39,22 @@ void	ft_putstr_non_printable(char *str)
 {
 	while (*str != '\0')
 	{
-		if ()
-		write(1, str, 1);
+		if (ft_char_is_printable(*str))
+			write(1, str, 1);
+		else
+		{
+			write(1, "\\", 1);
+			ft_put_hex_from_int(*str, 2);
+		}
 		str++;
 	}
 }
+
+/*int	main(void)
+{
+	char	*str;
+
+	str = "Hello\nHow are you?";
+	ft_putstr_non_printable(str);
+	return (0);
+}*/
