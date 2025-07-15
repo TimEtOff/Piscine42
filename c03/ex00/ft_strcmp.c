@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:47:50 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/15 13:53:20 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/15 15:24:19 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ int	ft_strcmp(char *s1, char *s2)
 		s1++;
 		s2++;
 	}
-
 	return (ft_down_to_one(res));
 }
 
