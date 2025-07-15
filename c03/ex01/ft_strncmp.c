@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/14 17:47:50 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/15 10:18:00 by tgodefro         ###   ########lyon.fr   */
+/*   Created: 2025/07/15 10:28:19 by tgodefro          #+#    #+#             */
+/*   Updated: 2025/07/15 10:35:51 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,19 +26,20 @@ int	ft_down_to_one(int nb)
 	return (nb);
 }
 
-int	ft_strcmp(char *s1, char *s2)
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	int	res;
+	int				res;
+	unsigned int	i;
 
 	res = 0;
-	while (res == 0 || (*s1 == '\0' && *s2 == '\0'))
+	i = 0;
+	while (i < n)
 	{
-		if (*s1 != *s2)
+		if (*s1 != *s2 && res == 0)
 			res = (int) *s1 - (int) *s2;
-		else if (*s1 == '\0' || *s2 == '\0')
-			break ;
 		s1++;
 		s2++;
+		i++;
 	}
 
 	return (ft_down_to_one(res));
@@ -46,17 +47,17 @@ int	ft_strcmp(char *s1, char *s2)
 
 /*int	main(void)
 {
-	printf("%i\n", ft_strcmp("Test", "Tast"));
-	printf("%i\n", ft_strcmp("oui", "nope"));
-	printf("%i\n", ft_strcmp("oui", "ouiii"));
-	printf("%i\n", ft_strcmp("noooon", "noo"));
-	printf("%i\n", ft_strcmp("Test", "Test"));
-	printf("%i\n", ft_strcmp(" ", ""));
+	printf("%i\n", ft_strncmp("Tast", "Test", 4));
+	printf("%i\n", ft_strncmp("oui", "nope", 8));
+	printf("%i\n", ft_strncmp("oui", "ouiii", 3));
+	printf("%i\n", ft_strncmp("noooon", "noo", 5));
+	printf("%i\n", ft_strncmp("Test", "Test", 5));
+	printf("%i\n", ft_strncmp(" ", "", 0));
 	printf("\n");
-	printf("%i\n", strcmp("Test", "Tast"));
-	printf("%i\n", strcmp("oui", "nope"));
-	printf("%i\n", strcmp("oui", "ouiii"));
-	printf("%i\n", strcmp("noooon", "noo"));
-	printf("%i\n", strcmp("Test", "Test"));
-	printf("%i\n", strcmp(" ", ""));
+	printf("%i\n", strncmp("Tast", "Test", 4));
+	printf("%i\n", strncmp("oui", "nope", 8));
+	printf("%i\n", strncmp("oui", "ouiii", 3));
+	printf("%i\n", strncmp("noooon", "noo", 5));
+	printf("%i\n", strncmp("Test", "Test", 5));
+	printf("%i\n", strncmp(" ", "", 0));
 }*/
