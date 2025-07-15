@@ -15,3 +15,4 @@ b14aa7395753b8f3869cb8970004495039ea9663 551ee30cdcaae4f7ed9c480603c1923cd07cde9
 551ee30cdcaae4f7ed9c480603c1923cd07cde92 370b4e073ab0353bbc3014679d6af178c5bbe922 tgodefro <tgodefro@student.42lyon.fr> 1752569844 +0200	commit: Fixed ex00 and 01
 370b4e073ab0353bbc3014679d6af178c5bbe922 583a68653983cc5fd583fa37174b2b71bdb2c051 tgodefro <tgodefro@student.42lyon.fr> 1752578263 +0200	commit: Forgot commenting main
 583a68653983cc5fd583fa37174b2b71bdb2c051 a39e21fb77b4d6346d981f1196dd8ce31b4f3dbf tgodefro <tgodefro@student.42lyon.fr> 1752588298 +0200	commit: Redid ex10
+a39e21fb77b4d6346d981f1196dd8ce31b4f3dbf a1d750479a9af4dbc1c57febf921e729c8819bec tgodefro <tgodefro@student.42lyon.fr> 1752590653 +0200	commit: Set tests with bsd lib for strlcpy in ex10
