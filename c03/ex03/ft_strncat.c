@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/15 11:13:36 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/15 13:46:19 by tgodefro         ###   ########lyon.fr   */
+/*   Created: 2025/07/15 13:43:55 by tgodefro          #+#    #+#             */
+/*   Updated: 2025/07/15 13:47:48 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*#include <stdio.h>
 #include <string.h>*/
 
-char	*ft_strcat(char *dest, char *src)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	int	dest_index;
-	int	src_index;
+	unsigned int	dest_index;
+	unsigned int	src_index;
 
 	dest_index = 0;
 	while (dest[dest_index] != '\0')
 		dest_index++;
 	src_index = 0;
-	while (src[src_index] != '\0')
+	while (src_index < nb)
 	{
 		dest[dest_index + src_index] = src[src_index];
 		src_index++;
 	}
-	dest[dest_index + src_index] = src[src_index];
+	dest[dest_index + src_index] = '\0';
 	return (dest);
 }
 
@@ -40,13 +40,13 @@ char	*ft_strcat(char *dest, char *src)
 
 	printf("src:		%s\n", src);
 	printf("dest:		%s\n", dest);
-	printf("ft_strcpy:	%s\n", ft_strcat(dest, src));
+	printf("ft_strcpy:	%s\n", ft_strncat(dest, src, 6));
 	printf("src:		%s\n", src);
 	printf("dest:		%s\n", dest);
 	printf("\n");
 	printf("src2:		%s\n", src2);
 	printf("dest2:		%s\n", dest2);
-	printf("strcpy:		%s\n", strcat(dest2, src2));
+	printf("strcpy:		%s\n", strncat(dest2, src2, 6));
 	printf("src2:		%s\n", src2);
 	printf("dest2:		%s\n", dest2);
 }*/
