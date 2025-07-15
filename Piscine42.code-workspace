@@ -3,5 +3,11 @@
         {
             "path": "."
         }
-    ]
+	],
+	"settings": {
+		"files.associations": {
+			"stdio.h": "c",
+			"string.h": "c"
+		}
+	}
 }
