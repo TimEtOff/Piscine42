@@ -1,53 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/15 11:13:36 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/15 15:45:27 by tgodefro         ###   ########lyon.fr   */
+/*   Created: 2025/07/15 15:25:58 by tgodefro          #+#    #+#             */
+/*   Updated: 2025/07/15 15:55:51 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*#include <stdio.h>
-#include <string.h>*/
+//#include <stdio.h>
 
-char	*ft_strcat(char *dest, char *src)
+unsigned int	ft_strlcat(char *dest, char *src, unsigned int nb)
 {
-	int	dest_index;
-	int	src_index;
+	unsigned int	dest_index;
+	unsigned int	src_index;
 
 	dest_index = 0;
 	while (dest[dest_index] != '\0')
 		dest_index++;
 	src_index = 0;
-	while (src[src_index] != '\0')
+	while (src_index < nb)
 	{
 		dest[dest_index + src_index] = src[src_index];
 		src_index++;
 	}
-	dest[dest_index + src_index] = src[src_index];
-	return (dest);
+	dest[dest_index + src_index] = '\0';
+	return (dest_index + src_index);
 }
 
 /*int	main(void)
 {
 	char	src[] = "This is a test";
 	char	dest[] = "Already here ";
-	char	src2[] = "This is a test";
-	char	dest2[] = "Already here ";
 
 	printf("src:		%s\n", src);
 	printf("dest:		%s\n", dest);
-	printf("ft_strcat:	%s\n", ft_strcat(dest, src));
+	printf("ft_strlcat:	%i\n", ft_strlcat(dest, src, 6));
 	printf("src:		%s\n", src);
 	printf("dest:		%s\n", dest);
-	printf("\n");
-	printf("src2:		%s\n", src2);
-	printf("dest2:		%s\n", dest2);
-	printf("strcat:		%s\n", strcat(dest2, src2));
-	printf("src2:		%s\n", src2);
-	printf("dest2:		%s\n", dest2);
 	return (0);
 }*/
