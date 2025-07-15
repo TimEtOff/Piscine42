@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 13:51:38 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/15 15:23:40 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/15 17:20:28 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,12 +59,12 @@ char	*ft_strstr(char *str, char *to_find)
 
 /*int	main(void)
 {
-	printf("%s\n", ft_strstr("J'adore42 c'est super", "42"));
-	printf("%s\n", strstr("J'adore42 c'est super", "42"));
-	printf("%s\n", ft_strstr("J'adore42 c'est super", "J'adore"));
-	printf("%s\n", strstr("J'adore42 c'est super", "J'adore"));
-	printf("%s\n", ft_strstr("J'adore42 c'est super", "er"));
-	printf("%s\n", strstr("J'adore42 c'est super", "er"));
+	printf("%s\n", ft_strstr("I love 42 It's awesome", "42"));
+	printf("%s\n", strstr("I love 42 It's awesome", "42"));
+	printf("%s\n", ft_strstr("I love 42 It's awesome", "I love"));
+	printf("%s\n", strstr("I love 42 It's awesome", "I love"));
+	printf("%s\n", ft_strstr("I love 42 It's awesome", "ome"));
+	printf("%s\n", strstr("I love 42 It's awesome", "ome"));
 	printf("%s\n", ft_strstr("", "42"));
 	printf("%s\n", strstr("", "42"));
 	return (0);

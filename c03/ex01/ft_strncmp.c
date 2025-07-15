@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 10:28:19 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/15 15:24:24 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/15 17:18:41 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,16 +47,16 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 /*int	main(void)
 {
 	printf("%i\n", ft_strncmp("Tast", "Test", 4));
-	printf("%i\n", ft_strncmp("oui", "nope", 8));
-	printf("%i\n", ft_strncmp("oui", "ouiii", 3));
-	printf("%i\n", ft_strncmp("noooon", "noo", 5));
+	printf("%i\n", ft_strncmp("yes", "nope", 8));
+	printf("%i\n", ft_strncmp("yee", "yeeeah", 3));
+	printf("%i\n", ft_strncmp("noooo", "noo", 5));
 	printf("%i\n", ft_strncmp("Test", "Test", 5));
 	printf("%i\n", ft_strncmp(" ", "", 0));
 	printf("\n");
 	printf("%i\n", strncmp("Tast", "Test", 4));
-	printf("%i\n", strncmp("oui", "nope", 8));
-	printf("%i\n", strncmp("oui", "ouiii", 3));
-	printf("%i\n", strncmp("noooon", "noo", 5));
+	printf("%i\n", strncmp("yes", "nope", 8));
+	printf("%i\n", strncmp("yee", "yeeeah", 3));
+	printf("%i\n", strncmp("noooo", "noo", 5));
 	printf("%i\n", strncmp("Test", "Test", 5));
 	printf("%i\n", strncmp(" ", "", 0));
 	return (0);
