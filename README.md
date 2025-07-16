@@ -11,7 +11,7 @@
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/shell00/en.subject.pdf)
 
-[Project description here]
+Basic shell commands to understand how the computer and files work, and learning to navigate them only via terminal.
 
 ---
 
@@ -23,7 +23,7 @@
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/shell01/en.subject.pdf)
 
-[Project description here]
+Harder shell commands and scripts that can be quite complex.
 
 ---
 
@@ -35,7 +35,7 @@
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c00/en.subject.pdf)
 
-[Project description here]
+To learn the basics of C languague, mainly with the `write` function *(`unistd.h`)*, `char`s and `int`s.
 
 ---
 
@@ -47,7 +47,7 @@
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c01/en.subject.pdf)
 
-[Project description here]
+The first time we use pointers and learn about them.
 
 ---
 
@@ -55,11 +55,11 @@
 
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
-| ***First try*** | [<img src="./pngs/5.png" alt="fail: 5/100" width="150">](./pngs/5.png) | <pre><code>ex00: OK &#8739; ex01: KO &#8739; &#13;ex02: KO &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: OK &#8739; ex07: OK &#8739; &#13;ex08: OK &#8739; ex09: KO &#8739; &#13;ex10: KO &#8739; ex11: KO &#8739; &#13;ex12: KO</code></pre> | <ul><li>**ex01:** Apparently should fill empty characters with null-terminators `\0`</li><li>**ex02:** No idea</li><li>**ex09:** Misread the subject, other letters should all be lowercase</li><li>**ex10:** Probably same as *ex01*</li><li>**ex11:** No idea, probably access by pointers</li><li>**ex12:** No idea</li></ul> | [&lt;7b869bb&gt;](https://github.com/TimEtOff/Piscine42/tree/7b869bb/c02) |
+| ***First try*** | [<img src="./pngs/5.png" alt="fail: 5/100" width="150">](./pngs/5.png) | <pre><code>ex00: OK &#8739; ex01: KO &#8739; &#13;ex02: KO &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: OK &#8739; ex07: OK &#8739; &#13;ex08: OK &#8739; ex09: KO &#8739; &#13;ex10: KO &#8739; ex11: KO &#8739; &#13;ex12: KO</code></pre> | <ul><li>**ex01:** [SegFault] Apparently should fill empty characters with null-terminators `\0`</li><li>**ex02:** Read the subject as "alphanumeric" but was actually only alpha/li><li>**ex09:** Misread the subject, other letters should all be lowercase</li><li>**ex10:** Probably same as *ex01*</li><li>**ex11:** No idea, probably access by pointers</li><li>**ex12:** No idea</li></ul>*Notes: ex01,02,09 should be fixed in [&lt;main&gt;](https://github.com/TimEtOff/Piscine42/tree/main/c02), not tested.* | [&lt;7b869bb&gt;](https://github.com/TimEtOff/Piscine42/tree/7b869bb/c02) |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c02/en.subject.pdf)
 
-[Project description here]
+Basic string manipulation with copy or detection of certain types of characters. Lot of copy-paste. Understanding the functions that we need to copy is hard at first, and you should really pay attention to everything in the subject and the `man`.
 
 ---
 
@@ -67,11 +67,11 @@
 
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
-| ***First try*** | Not validated yet. | <pre><code></code></pre> | <ul><li> </li></ul> | [&lt;20565f8&gt;](https://github.com/TimEtOff/Piscine42/tree/20565f8/c03) |
+| ***First try*** | [<img src="./pngs/10.png" alt="fail: 10/100" width="150">](./pngs/10.png) | <pre><code>ex00: OK &#8739; ex01: KO &#8739; &#13;ex02: OK &#8739; ex03: KO &#8739; &#13;ex04: KO &#8739; ex05: KO</code></pre> | <ul><li>**ex01:** [SegFault] Probably pointers</li><li>**ex03:** Null-terminators *(see c02 first try)* or pointers</li><li>**ex04:** Idk, probably pointers</li><li>**ex05:** Didn't really understand `strlcat`</li></ul> | [&lt;20565f8&gt;](https://github.com/TimEtOff/Piscine42/tree/20565f8/c03) |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c03/en.subject.pdf)
 
-[Project description here]
+More advanced string manipulation but many times the same function with only some slight variations.
 
 ---
 
