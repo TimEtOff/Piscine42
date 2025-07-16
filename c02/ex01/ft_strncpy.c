@@ -6,12 +6,9 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 15:07:55 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/15 13:16:10 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/16 14:50:16 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*#include <stdio.h>
-#include <string.h>*/
 
 /*
 	Edited version from `c01/ex06/ft_strlen.c`
@@ -32,24 +29,34 @@ unsigned int	ft_strlen(char *str)
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int	i;
+	int				ended;
 
 	if (ft_strlen(dest) < n)
 		return (dest);
 	i = 0;
+	ended = 0;
 	while (i < (n - 1))
 	{
-		dest[i] = src[i];
+		if (src[i] == '\0')
+			ended = 1;
+		if (!ended)
+			dest[i] = src[i];
+		else
+			dest[i] = '\0';
 		i++;
 	}
 	return (dest);
 }
+/*
+#include <stdio.h>
+#include <string.h>
 
-/*int	main(void)
+int	main(void)
 {
 	char	src[] = "This is a test";
-	char	dest[] = "        ";
+	char	dest[] = "                   ";
 	char	src2[] = "This is a test";
-	char	dest2[] = "        ";
+	char	dest2[] = "                   ";
 
 	printf("src:		%s\n", src);
 	printf("dest:		%s\n", dest);

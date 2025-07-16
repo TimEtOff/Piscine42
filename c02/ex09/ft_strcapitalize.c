@@ -6,11 +6,9 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 11:00:31 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/14 11:24:13 by tgodefro         ###   ########.fr       */
+/*   Updated: 2025/07/16 15:05:16 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-
-//#include <stdio.h>
 
 /*
 	Modified version of `ex04/ft_str_is_lowercase`
@@ -26,9 +24,34 @@ int	ft_char_is_lowercase(char c)
 }
 
 /*
+	Imported from `ex08/ft_strlowcase.c`
+*/
+char	*ft_strlowcase(char *str)
+{
+	int	i;
+	int	diff;
+
+	i = 0;
+	diff = (int) 'a' - (int) 'A';
+	while (*str != '\0')
+	{
+		if (((int) 'A' <= (int) *str) && ((int) *str <= (int) 'Z'))
+			*str = (char)(((int) *str) + diff);
+		str++;
+		i++;
+	}
+	while (i > 0)
+	{
+		str--;
+		i--;
+	}
+	return (str);
+}
+
+/*
 	Modified version of `ex02/ft_str_is_alpha`
 */
-int	ft_char_is_alpha(char c)
+int	ft_char_is_alphanum(char c)
 {
 	int	res;
 
@@ -61,15 +84,16 @@ char	*ft_strcapitalize(char *str)
 	i = 0;
 	diff = (int) 'a' - (int) 'A';
 	capitalize_next = 1;
+	ft_strlowcase(str);
 	while (*str != '\0')
 	{
-		if (capitalize_next && ft_char_is_alpha(*str))
+		if (capitalize_next && ft_char_is_alphanum(*str))
 		{
 			if (ft_char_is_lowercase(*str))
 				*str = (char)(((int) *str) - diff);
 			capitalize_next = 0;
 		}
-		else if (!(ft_char_is_alpha(*str)))
+		else if (!(ft_char_is_alphanum(*str)))
 			capitalize_next = 1;
 		str++;
 		i++;
@@ -77,10 +101,12 @@ char	*ft_strcapitalize(char *str)
 	return (ft_decrement_str(str, i));
 }
 
-/*int	main(void)
+/*#include <stdio.h>
+
+int	main(void)
 {
 	char	str[] = "This is a+test";
-	char	str2[] = "and Another";
+	char	str2[] = "and AnotHer";
 
 	printf("%s\n", str);
 	printf("%s\n", ft_strcapitalize(str));
