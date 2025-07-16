@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 15:14:00 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/16 15:00:47 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/16 17:44:46 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,5 @@ int	main(void)
 	printf("%i\n", ft_str_is_alpha("This is only 161650 chars"));
 	printf("%i\n", ft_str_is_alpha("Tdfh951fzhzd"));
 	printf("%i\n", ft_str_is_alpha("This is not only #$$@$& chars"));
+	printf("%i\n", ft_str_is_alpha("AZaz"));
 }*/

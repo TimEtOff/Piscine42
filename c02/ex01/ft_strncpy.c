@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 15:07:55 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/16 14:50:16 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/16 17:38:17 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 		return (dest);
 	i = 0;
 	ended = 0;
-	while (i < (n - 1))
+	while (i < n)
 	{
 		if (src[i] == '\0')
 			ended = 1;
