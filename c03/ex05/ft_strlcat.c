@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 15:25:58 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/17 15:21:12 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/17 15:22:48 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <bsd/string.h>
 
 // Needs to compile with `-lbsd` flag
@@ -77,4 +77,4 @@ int	main(void)
 	printf("src2:		%s\n", src2);
 	printf("dest2:		%s\n", dest2);
 	return (0);
-}
+}*/
