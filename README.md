@@ -2,7 +2,11 @@
 
 ## Projects
 
+<details open><summary>
+  
 ### Shell 00
+
+</summary>
 
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
@@ -13,9 +17,15 @@
 
 Basic shell commands to understand how the computer and files work, and learning to navigate them only via terminal.
 
+</details>
+
 ---
 
+<details open><summary>
+  
 ### Shell 01
+
+</summary>
 
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
@@ -25,9 +35,15 @@ Basic shell commands to understand how the computer and files work, and learning
 
 Harder shell commands and scripts that can be quite complex.
 
+</details>
+
 ---
 
+<details open><summary>
+  
 ### C 00
+
+</summary>
 
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
@@ -37,9 +53,15 @@ Harder shell commands and scripts that can be quite complex.
 
 To learn the basics of C languague, mainly with the `write` function *(`unistd.h`)*, `char`s and `int`s.
 
+</details>
+
 ---
 
+<details open><summary>
+  
 ### C 01
+
+</summary>
 
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
@@ -49,9 +71,15 @@ To learn the basics of C languague, mainly with the `write` function *(`unistd.h
 
 The first time we use pointers and learn about them.
 
+</details>
+
 ---
 
+<details open><summary>
+  
 ### C 02
+
+</summary>
 
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
@@ -62,9 +90,15 @@ The first time we use pointers and learn about them.
 
 Basic string manipulation with copy or detection of certain types of characters. Lot of copy-paste. Understanding the functions that we need to copy is hard at first, and you should really pay attention to everything in the subject and the `man`.
 
+</details>
+
 ---
 
+<details open><summary>
+  
 ### C 03
+
+</summary>
 
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
@@ -74,6 +108,8 @@ Basic string manipulation with copy or detection of certain types of characters.
 
 More advanced string manipulation but many times the same function with only some slight variations.
 
+</details>
+
 ---
 
 ## Exams
@@ -82,19 +118,31 @@ Exams are, as you can guess, exams. They take place for 4 hours, the Fridays fro
 During the exam, you are alone on the computer, you cannot use the internet, your previous projects nor speak with the others. You can have a blank paper and a pen to take notes. <br><br>
 Even though you can use whatever text editor/IDE you want on the projects, in exam, you can only use the Terminal, Vim, Emacs & Nano, so be sure to remember everything you think will be useful, or at least know where to search.
 
+<details open><summary>
+  
 ### Exam 00
+
+</summary>
 
 First exam at the end of the first week. Should be relatively easy and revolves mainly around the `write` function in C and the notions in [C00](#c-00) and [C01](#c-01). <br>
 As I not enough prepared, I completely froze on the first exercise, it was really easy, just print a character with the `write` function, but I didn't know the name of the library to include (`unistd.h`), and after two hours of tries and labor, I finally abandonned, that resulted in this grade (yes it's considered as a success anyway for whatever reason): <br>
 | [<img src="./pngs/0_s.png" alt="success: 0/100" width="150">](./pngs/0_s.png) |
 | --- |
 
+</details>
+
+---
+
 ## Rushs
 
 Rushs are projects in randomly generated groups, where you need to work in cooperation to complete your subject. <br><br>
 There will be only one correction, not by other pisciners but by members of the staff, and every member of the group should know how to explain the program clearly, as it will be graded "in particular on the group's least solid explanations".
 
+<details open><summary>
+  
 ### Rush 00
+
+</summary>
 
 | Grade | Notes | Submit commit |
 | ---------------- | ------------------ | ----------- |
@@ -108,3 +156,7 @@ There will be only one correction, not by other pisciners but by members of the 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/rush00/en.subject.pdf)
 
 [Project description here]
+
+</details>
+
+---
