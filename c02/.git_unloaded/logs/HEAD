@@ -21,3 +21,4 @@ ef6d7310b8804117d68f2e9bf96bdb9f0f7a53ad a534e06b780443d08306e2ca16aa1f5d75e8ee0
 a534e06b780443d08306e2ca16aa1f5d75e8ee0a c39d408d8edc31f311504d364f54c4256e8d4b46 tgodefro <tgodefro@student.42lyon.fr> 1752657266 +0200	commit: Finished ex12 (ft_print_memory)
 c39d408d8edc31f311504d364f54c4256e8d4b46 cc01613a39dc24202dc4c69ad9d31c1523aa7253 tgodefro <tgodefro@student.42lyon.fr> 1752678212 +0200	commit: Fixed ex01,02,09 (Maybe)
 cc01613a39dc24202dc4c69ad9d31c1523aa7253 60004561d610ecc0ab5072515eb21c8120436c1e tgodefro <tgodefro@student.42lyon.fr> 1752682658 +0200	commit: Fixed all KOed exercises
+60004561d610ecc0ab5072515eb21c8120436c1e 7a6b80a2f6a2e92782fd815b81f9397ec458bc86 tgodefro <tgodefro@student.42lyon.fr> 1752760807 +0200	commit: Fixed ex12 print_memory (didn't display address with string as parameter)

@@ -1,1 +1,1 @@
-Fixed all KOed exercises
+Fixed ex12 print_memory (didn't display address with string as parameter)

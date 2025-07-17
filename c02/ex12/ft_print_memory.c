@@ -93,7 +93,7 @@ void	*ft_print_memory(void *addr, unsigned int size)
 		return (addr);
 	while (line <= (size / 16))
 	{
-		ft_put_hex_from_int((long) &str[(16 * line)], 16);
+		ft_put_hex_from_int((long) &addr + (16 * line), 16);
 		ft_putstr(": ");
 		ft_print_line(str, line, left);
 		left -= 16;
@@ -108,7 +108,7 @@ void	*ft_print_memory(void *addr, unsigned int size)
 	int		test[] = {1, 2, 8, 6, 7, 3, 4, 2, 8, 0, 3};
 
 	str = "This is a test string for displaying¡¿ the memory area";
-	ft_print_memory(str, 56);
+	ft_print_memory(str, 250);
 	ft_putstr("\n");
 	str = "abcdefghijklmnopqrstuvwxyz0123456789";
 	ft_print_memory(str, 37);
