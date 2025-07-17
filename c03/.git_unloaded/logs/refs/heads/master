@@ -9,3 +9,4 @@ c052742efea18281f197cdc282e1cb192dca4c39 b6f7bf9d627fa8e7a3d20d4faee4169e6791cbc
 b6f7bf9d627fa8e7a3d20d4faee4169e6791cbc3 c5af7111d43ddf08212a1f4eb80d149d56fc50fe tgodefro <tgodefro@student.42lyon.fr> 1752590492 +0200	commit: Fixed strlcat in ex05
 c5af7111d43ddf08212a1f4eb80d149d56fc50fe fa5fb6eb7b5d399f46fb67458d1afef17d958fe6 tgodefro <tgodefro@student.42lyon.fr> 1752592985 +0200	commit: Edited tests on all
 fa5fb6eb7b5d399f46fb67458d1afef17d958fe6 76cddd4cd8af9eb3eb4ee1aae8effe761ac9251f tgodefro <tgodefro@student.42lyon.fr> 1752752775 +0200	commit: Should have fixed ex01
+76cddd4cd8af9eb3eb4ee1aae8effe761ac9251f fdf66bf20769a3c827b3b92283a774832318b4f6 tgodefro <tgodefro@student.42lyon.fr> 1752753397 +0200	commit: Should have fixed ex03
