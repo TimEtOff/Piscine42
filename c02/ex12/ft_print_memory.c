@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 18:19:40 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/16 18:14:47 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/18 14:41:30 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,9 +62,9 @@ void	ft_print_line(char *str, int line, int size)
 	{
 		if (index < size)
 		{
-			print_chars[index] = (unsigned char) str[(16 * line + index)];
+			print_chars[index] = str[(16 * line + index)];
 			ft_put_hex_from_int((long)(unsigned char) print_chars[index], 2);
-			if (!ft_char_is_printable((unsigned char) print_chars[index]))
+			if (!ft_char_is_printable(print_chars[index]))
 				print_chars[index] = '.';
 		}
 		else
@@ -107,11 +107,11 @@ void	*ft_print_memory(void *addr, unsigned int size)
 	char	*str;
 	int		test[] = {1, 2, 8, 6, 7, 3, 4, 2, 8, 0, 3};
 
-	str = "This is a test string for displaying¡¿ the memory area";
+	str = "This is a test string for 	displaying¡¿ the memory area\377\377\377\377";
 	ft_print_memory(str, 250);
 	ft_putstr("\n");
 	str = "abcdefghijklmnopqrstuvwxyz0123456789";
 	ft_print_memory(str, 37);
 	ft_putstr("\n");
-	ft_print_memory(test, 92);
+	ft_print_memory(test, 5);
 }*/
