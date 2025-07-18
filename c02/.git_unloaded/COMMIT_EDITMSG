@@ -1,1 +1,1 @@
-Fixed ex12 print_memory (didn't display address with string as parameter)
+Ex01 (strncpy) should work
