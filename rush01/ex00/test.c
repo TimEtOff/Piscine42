@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   test.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cobussie <cobussie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 09:49:17 by cobussie          #+#    #+#             */
-/*   Updated: 2025/07/19 11:37:48 by cobussie         ###   ########.fr       */
+/*   Updated: 2025/07/19 14:14:38 by cobussie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #define SIZE 4
 #include <unistd.h>
+void ft_putchar(char c);
+
+void draw_grid(int grid[SIZE+2][SIZE+2]);
 
 int is_possible()
 {
@@ -37,30 +40,9 @@ void recursive_check(int grid[SIZE][SIZE], int size,int current_x,int current_y,
 	*/
 
 
-void draw_grid(int grid[SIZE+1][SIZE+1])
-{
-	int i;
-	int j;
-	i=1;
-	j=1;
-	char temp;
-	while (i<=SIZE)
-	{
-		while(j<=SIZE)
-		{
-			temp = grid[i][j] + '0';
-			write(1,&temp,1);
-			write(1," ",1);
-			j++;
-		}
-		j=1;
-		write(1,"\n",1);
-		i++;
-	}
-}
 int main()
 {
-	int grid[SIZE+1][SIZE+1];
+	int grid[SIZE+2][SIZE+2];
 	int current_x;
 	int current_y;
 	current_x = 1;
