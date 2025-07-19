@@ -126,7 +126,24 @@ Even though you can use whatever text editor/IDE you want on the projects, in ex
 
 First exam at the end of the first week. Should be relatively easy and revolves mainly around the `write` function in C and the notions in [C00](#c-00) and [C01](#c-01). <br>
 As I not enough prepared, I completely froze on the first exercise, it was really easy, just print a character with the `write` function, but I didn't know the name of the library to include (`unistd.h`), and after two hours of tries and labor, I finally abandonned, that resulted in this grade (yes it's considered as a success anyway for whatever reason): <br>
+***Projects notions:*** *shell00, c00-01/02?* <br>
 | [<img src="./pngs/0_s.png" alt="success: 0/100" width="150">](./pngs/0_s.png) |
+| --- |
+
+</details>
+
+---
+
+<details open><summary>
+
+### Exam 01
+
+</summary>
+
+Mainly about string manipulation, still the `write` function and arguments in the main function (`argc, argv`).<br>
+Was pretty easy even tough not everyone went to c06 at the time, so plenty of people din't know how to handle arguments. <br>
+***Projects notions:*** *exam00, c02-c06* <br>
+| [<img src="./pngs/100.png" alt="success: 100/100" width="150">](./pngs/100.png) |
 | --- |
 
 </details>
