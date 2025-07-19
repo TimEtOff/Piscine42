@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 15:24:35 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/19 15:41:13 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/19 15:46:55 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 int		get_size(void);
 void	ft_putchar(char c);
 
-int	**g_grid;
+static int	**g_grid;
 
 void	set_val(int i, int j, int val)
 {

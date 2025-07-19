@@ -1,1 +1,1 @@
-Added main.c + grid.c
+Edited main.c (made g_grid static)
