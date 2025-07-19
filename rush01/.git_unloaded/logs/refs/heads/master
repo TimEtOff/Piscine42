@@ -6,3 +6,5 @@ b139c6ae7a295b4ef2692e4979571e92c47e1fe7 9c8835315376c5cd452386e6a1865fc913c7507
 adffb426fc61c9a0fd7611ad7e500ad2c41af7e0 b3309939e146f362517a661112e3733121dfe15c tgodefro <tgodefro@student.42lyon.fr> 1752932648 +0200	commit: Added main.c + grid.c
 b3309939e146f362517a661112e3733121dfe15c a582666f6fb9576901beeae3dc3b1078eab9b251 tgodefro <tgodefro@student.42lyon.fr> 1752932880 +0200	commit: Edited main.c (made g_grid static)
 a582666f6fb9576901beeae3dc3b1078eab9b251 a2d61ef3ffff535d5516e5862ede6cb323acb676 tgodefro <tgodefro@student.42lyon.fr> 1752933811 +0200	commit: Edited main.c & grid.c (Made the grid rely on SIZE const)
+a2d61ef3ffff535d5516e5862ede6cb323acb676 6c2181fd446886312ba012773b748408331214ef tgodefro <tgodefro@student.42lyon.fr> 1752936570 +0200	pull: Fast-forward
+6c2181fd446886312ba012773b748408331214ef 864b19ef8d1fc4b1b32caaf6463934797d174968 tgodefro <tgodefro@student.42lyon.fr> 1752936854 +0200	commit: Edited main.c & grid.c (Handle input errors) + Renamed ft_putchar.c to utils.c

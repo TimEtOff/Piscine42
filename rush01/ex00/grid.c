@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 15:24:35 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/19 15:54:02 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/19 16:26:21 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,17 +28,22 @@ int	get_val(int i, int j)
 	return (g_grid[i][j]);
 }
 
-void	init_grid(void)
+int	init_grid(void)
 {
 	int	i;
 
 	i = 0;
 	g_grid = malloc(sizeof(int *[get_size() + 2]));
+	if (g_grid == NULL)
+		return (EXIT_FAILURE);
 	while (i < get_size() + 2)
 	{
 		g_grid[i] = malloc(sizeof(int [get_size() + 2]));
+		if (g_grid == NULL)
+			return (EXIT_FAILURE);
 		i++;
 	}
+	return (0);
 }
 
 void	free_grid(void)

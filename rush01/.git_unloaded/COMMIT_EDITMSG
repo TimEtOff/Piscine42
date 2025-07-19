@@ -1,1 +1,1 @@
-Edited main.c & grid.c (Made the grid rely on SIZE const)
+Edited main.c & grid.c (Handle input errors) + Renamed ft_putchar.c to utils.c
