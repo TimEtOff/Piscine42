@@ -1,0 +1,7 @@
+# General
+en.subject.pdf
+
+# Exercises
+*/*
+
+!ex00/*.c
