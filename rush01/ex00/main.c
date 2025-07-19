@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 11:50:28 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/19 15:40:06 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/19 16:01:10 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,24 @@ int	get_size(void)
 	return (SIZE);
 }
 
+int	ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
+}
+
 int	put_in_grid(char *input, int index, int i, int j)
 {
 	int	max;
 
-	max = index + 8;
+	max = index + (SIZE * 2);
 	while (index < max)
 	{
-		if (('0' <= input[index]) && (input[index] <= '9'))
+		if (('1' <= input[index]) && (input[index] <= SIZE + '0'))
 			set_val(i, j, input[index] - '0');
 		if (!(j == 0 || j == SIZE + 1))
 			j++;
@@ -52,10 +62,15 @@ int	init_input(char *input)
 
 	res = 0;
 	index = 0;
-	index = put_in_grid(input, index, 0, 1);
-	index = put_in_grid(input, index, SIZE + 1, 1);
-	index = put_in_grid(input, index, 1, 0);
-	index = put_in_grid(input, index, 1, SIZE + 1);
+	if (ft_strlen(input) == (SIZE * SIZE * 2 - 1))
+	{
+		index = put_in_grid(input, index, 0, 1);
+		index = put_in_grid(input, index, SIZE + 1, 1);
+		index = put_in_grid(input, index, 1, 0);
+		index = put_in_grid(input, index, 1, SIZE + 1);
+	}
+	else
+		res = 1;
 	return (res);
 }
 

@@ -1,1 +1,1 @@
-Edited main.c (made g_grid static)
+Edited main.c & grid.c (Made the grid rely on SIZE const)
