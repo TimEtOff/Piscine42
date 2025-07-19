@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 11:50:28 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/19 16:52:51 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/19 17:37:57 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,12 @@ int	put_in_grid(char *input, int index, int i, int j)
 {
 	int	max;
 
-	max = index + (SIZE * 2);
+	max = index + (get_size() * 2);
 	while (index < max)
 	{
-		if (('1' <= input[index]) && (input[index] <= SIZE + '0'))
+		if (('1' <= input[index]) && (input[index] <= get_size() + '0'))
 			set_val(i, j, input[index] - '0');
-		if (!(j == 0 || j == SIZE + 1))
+		if (!(j == 0 || j == get_size() + 1))
 			j++;
 		else
 			i++;
@@ -47,28 +47,28 @@ int	put_in_grid(char *input, int index, int i, int j)
 	return (index);
 }
 
-int	check_input(char *input)
+int	input_errors(char *input)
 {
 	int	res;
 	int	i;
 
-	res = 1;
+	res = 0;
 	i = 0;
-	if (ft_strlen(input) != (SIZE * SIZE * 2 - 1))
-		res = 0;
+	if (ft_strlen(input) != (get_size() * get_size() * 2 - 1))
+		res += 1;
 	else
 	{
 		while (input[i] != '\0')
 		{
 			if (i % 2 == 0)
 			{
-				if (!(('1' <= input[i]) && (input[i] <= SIZE + '0')))
+				if (!(('1' <= input[i]) && (input[i] <= get_size() + '0')))
 				{
-					res = 0;
+					res += 1;
 				}
 			}
 			else if (input[i] != ' ')
-				res = 0;
+				res += 1;
 			i++;
 		}
 	}
@@ -82,15 +82,14 @@ int	init_input(char *input)
 
 	res = 0;
 	index = 0;
-	if (check_input(input))
+	res += input_errors(input);
+	if (res == 0)
 	{
 		index = put_in_grid(input, index, 0, 1);
-		index = put_in_grid(input, index, SIZE + 1, 1);
+		index = put_in_grid(input, index, get_size() + 1, 1);
 		index = put_in_grid(input, index, 1, 0);
-		index = put_in_grid(input, index, 1, SIZE + 1);
+		index = put_in_grid(input, index, 1, get_size() + 1);
 	}
-	else
-		res = 1;
 	return (res);
 }
 
@@ -102,10 +101,11 @@ int	main(int argc, char **argv)
 	res = init_grid();
 	if (argc == 2)
 	{
-		if (init_input(argv[1]))
-			res = 1;
-		else
+		res += init_input(argv[1]);
+		if (res == 0)
+		{
 			draw_grid();
+		}
 	}
 	else
 		res = 1;

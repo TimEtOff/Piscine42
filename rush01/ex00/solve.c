@@ -1,8 +1,42 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   solve.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cobussie <cobussie@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/07/19 17:04:51 by cobussie          #+#    #+#             */
+/*   Updated: 2025/07/19 17:04:52 by cobussie         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 
 #include <unistd.h>
 
 
+int is_valid(int row, int col, int val)
+{
+	int i;
 
+	i = 0;
+	while ( i <= get_size())
+	{
+		if (i != col)
+		{
+			if (get_val(row,i) == val)
+				return 0;
+		}
+		if (i != row)
+			if (get_val(i,col) == val)
+				return 0;
+	}
+	
+
+
+
+
+	return 1;
+}
 
 int check(int row,int col)
 {
