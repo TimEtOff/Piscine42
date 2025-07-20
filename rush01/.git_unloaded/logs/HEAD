@@ -12,3 +12,6 @@ a2d61ef3ffff535d5516e5862ede6cb323acb676 6c2181fd446886312ba012773b748408331214e
 465b503b36d559ad13fd6445d71dd947303dca40 1f74c95d9ff1e68c7406a81e54593151ac725e38 tgodefro <tgodefro@student.42lyon.fr> 1752939832 +0200	commit: Edited main.c (Changed error handling)
 1f74c95d9ff1e68c7406a81e54593151ac725e38 42f9b875ea12144a3231796a4682455915199592 tgodefro <tgodefro@student.42lyon.fr> 1752999025 +0200	pull: Fast-forward
 42f9b875ea12144a3231796a4682455915199592 8782e589c9e377dce2d56d1ede052b9748fb49ff tgodefro <tgodefro@student.42lyon.fr> 1753001376 +0200	commit: Edited main.c, grid.c and utils.c (added ft_putnbr + changed error handling on check())
+8782e589c9e377dce2d56d1ede052b9748fb49ff 3208c632f5bc6302debe7a6725767c55eeebf424 tgodefro <tgodefro@student.42lyon.fr> 1753001839 +0200	pull: Fast-forward
+3208c632f5bc6302debe7a6725767c55eeebf424 6e739ce1b9daf1cb12490f29903e76428eada6e3 tgodefro <tgodefro@student.42lyon.fr> 1753015348 +0200	pull: Fast-forward
+6e739ce1b9daf1cb12490f29903e76428eada6e3 cef53cb7450de3680337dbad67fa0fc50bbdf7a3 tgodefro <tgodefro@student.42lyon.fr> 1753019623 +0200	commit: Test meth2 + changed valid checks

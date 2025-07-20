@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 11:50:28 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/20 10:14:55 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/20 15:52:53 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ int		get_val(int i, int j);
 int		occ_char_in_str(char *str, char c);
 int		ft_strlen(char *str);
 int		check(int row, int col);
+int		init_grid_values(void);
+int		resolve(void);
 
 int	get_size(void)
 {
@@ -104,6 +106,8 @@ int	main(int argc, char **argv)
 	{
 		res += init_input(argv[1]);
 		res += !check(1, 1);
+		//res += init_grid_values(); // For meth2
+		//res += resolve();
 		if (res == 0)
 			draw_grid();
 	}

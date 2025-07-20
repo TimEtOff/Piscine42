@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 15:24:35 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/20 10:40:56 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/20 12:00:22 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ void	draw_grid(void)
 			j++;
 		}
 		ft_putchar('\n');
-		j = 1;
+		j = 0;
 		i++;
 	}
 }

@@ -3,125 +3,117 @@
 /*                                                        :::      ::::::::   */
 /*   check_valid.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tgonthie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/20 04:43:03 by tgonthie          #+#    #+#             */
-/*   Updated: 2025/07/20 07:33:17 by tgonthie         ###   ########.fr       */
+/*   Updated: 2025/07/20 15:52:23 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	get_size(void);
 int	get_val(int i, int j);
+int	row_legal(int row);
+int	col_legal(int col);
 
 void	test(int *current_val, int *current_max, int *count, int *count_0)
 {
-	if (current_val > current_max)
+	if (*current_val > *current_max)
 	{
-		current_max = current_val;
-		count++;
+		*current_max = *current_val;
+		(*count)++;
 	}
-	else if (current_val == 0)
-		count_0++;
+	else if (*current_val == 0)
+		(*count_0)++;
 }
 
-int	row_valid_from_left(int row)
+int	row_valid_from_left(int i)
 {
-	int	i;
-	int	current_max;
-	int	current_val;
+	int	wanted;
 	int	count;
-	int	count_0;
+	int	last;
+	int	j;
 
-	i = 1;
+	wanted = get_val(i, 0);
+	last = 0;
 	count = 0;
-	count_0 = 0;
-	current_max = 0;
-	current_val = 0;
-	while (i <= get_size())
+	j = 1;
+	while (get_val(i, j) <= get_size())
 	{
-		current_val = get_val(row, i);
-		test(&current_val, &current_max, &count, &count_0);
+		if (last < get_val(i, j))
+		{
+			last = get_val(i, j);
+			count++;
+		}
+		j++;
+	}
+	return (count == wanted && row_legal(i));
+}
+
+int	row_valid_from_right(int i)
+{
+	int	wanted;
+	int	count;
+	int	last;
+	int	j;
+
+	wanted = get_val(i, get_size() + 1);
+	last = 0;
+	count = 0;
+	j = get_size();
+	while (get_val(i, j) <= get_size())
+	{
+		if (get_val(i, j) > last)
+		{
+			last = get_val(i, j);
+			count++;
+		}
+		j--;
+	}
+	return ((count == wanted) && row_legal(i));
+}
+
+int	col_valid_from_top(int j)
+{
+	int	wanted;
+	int	count;
+	int	last;
+	int	i;
+
+	wanted = get_val(j, 0);
+	last = 0;
+	count = 0;
+	i = 1;
+	while (get_val(i, j) <= get_size())
+	{
+		if (get_val(i, j) > last)
+		{
+			last = get_val(i, j);
+			count++;
+		}
 		i++;
 	}
-	if (get_val(row, 0) - count_0 != count)
-		return (0);
-	return (1);
+	return ((count == wanted) && col_legal(j));
 }
 
-/*
-	int row_from_left;
-	int row_from_right;
-	row_from_left = get_val(row,0);
-	row_from_right = get_val(row,get_size()+1);
-	*/
-int	row_valid_from_right(int row)
+int	col_valid_from_bot(int j)
 {
-	int	i;
-	int	current_max;
-	int	current_val;
+	int	wanted;
 	int	count;
-	int	count_0;
+	int	last;
+	int	i;
 
-	i = get_size();
+	wanted = get_val(j, get_size() + 1);
+	last = 0;
 	count = 0;
-	count_0 = 0;
-	current_max = 0;
-	current_val = 0;
-	while (i >= 1)
+	i = get_size();
+	while (get_val(i, j) <= get_size())
 	{
-		current_val = get_val(row, i);
-		test(&current_val, &current_max, &count, &count_0);
+		if (get_val(i, j) > last)
+		{
+			last = get_val(i, j);
+			count++;
+		}
 		i--;
 	}
-	if (get_val(row, get_size() + 1) - count_0 != count)
-		return (0);
-	return (1);
-}
-
-int	col_valid_from_top(int col)
-{
-	int	i;
-	int	current_max;
-	int	current_val;
-	int	count;
-	int	count_0;
-
-	i = 1;
-	count = 0;
-	count_0 = 0;
-	current_max = 0;
-	current_val = 0;
-	while (i <= get_size())
-	{
-		current_val = get_val(i, col);
-		test(&current_val, &current_max, &count, &count_0);
-		i++;
-	}
-	if (get_val(0, col) - count_0 != count)
-		return (0);
-	return (1);
-}
-
-int	col_valid_from_bot(int col)
-{
-	int	i;
-	int	current_max;
-	int	current_val;
-	int	count;
-	int	count_0;
-
-	i = get_size();
-	count = 0;
-	count_0 = 0;
-	current_max = 0;
-	current_val = 0;
-	while (i >= 1)
-	{
-		current_val = get_val(i, col);
-		test(&current_val, &current_max, &count, &count_0);
-		i--;
-	}
-	if (get_val(get_size() + 1, col) - count_0 != count)
-		return (0);
-	return (1);
+	return ((count == wanted) && col_legal(j));
 }
