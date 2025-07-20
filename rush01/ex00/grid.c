@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 15:24:35 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/19 16:26:21 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/20 10:40:56 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 int		get_size(void);
 void	ft_putchar(char c);
+void	ft_putnbr(int nb);
 
 static int	**g_grid;
 
@@ -64,14 +65,14 @@ void	draw_grid(void)
 	int	i;
 	int	j;
 
-	i = 1;
-	j = 1;
-	while (i <= get_size())
+	i = 0;
+	j = 0;
+	while (i <= get_size() + 1)
 	{
-		while (j <= get_size())
+		while (j <= get_size() + 1)
 		{
-			ft_putchar(g_grid[i][j] + '0');
-			if (j != get_size())
+			ft_putnbr(get_val(i, j));
+			if (j != get_size() + 1)
 				ft_putchar(' ');
 			j++;
 		}

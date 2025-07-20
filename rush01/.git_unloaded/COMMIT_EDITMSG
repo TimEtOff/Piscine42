@@ -1,1 +1,1 @@
-Edited main.c (Changed error handling)
+Edited main.c, grid.c and utils.c (added ft_putnbr + changed error handling on check())

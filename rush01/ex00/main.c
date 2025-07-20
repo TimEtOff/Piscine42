@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cobussie <cobussie@student.42.fr>          +#+  +:+       +#+        */
+/*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 11:50:28 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/20 08:14:04 by tgonthie         ###   ########.fr       */
+/*   Updated: 2025/07/20 10:14:55 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putchar(char c);
 void	free_grid(void);
 void	draw_grid(void);
 void	set_val(int i, int j, int val);
-int             init_grid(void);
+int		init_grid(void);
 int		get_val(int i, int j);
 int		occ_char_in_str(char *str, char c);
 int		ft_strlen(char *str);
@@ -103,11 +103,9 @@ int	main(int argc, char **argv)
 	if (argc == 2)
 	{
 		res += init_input(argv[1]);
+		res += !check(1, 1);
 		if (res == 0)
-		{
-			if (check(1, 1) == 1)
-				draw_grid();
-		}
+			draw_grid();
 	}
 	else
 		res = 1;
