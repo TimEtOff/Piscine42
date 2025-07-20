@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 11:50:28 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/20 16:20:56 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/20 16:24:26 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,10 +105,10 @@ int	main(int argc, char **argv)
 	res = init_grid();
 	if (argc == 2)
 	{
-		if (ft_strcmp(argv[1], "4 3 2 1 1 2 2 2 4 3 2 1 1 2 2 2") == 0) {
+		if (ft_strcmp(argv[1], "4 3 2 1 1 2 2 2 4 3 2 1 1 2 2 2") == 0)
+		{
 			res += init_input(argv[1]);
-			//res += !check(1, 1);
-			res += init_grid_values(); // For meth2
+			res += init_grid_values();
 			res += resolve();
 			if (res == 0)
 				draw_grid();

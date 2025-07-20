@@ -16,3 +16,4 @@ a2d61ef3ffff535d5516e5862ede6cb323acb676 6c2181fd446886312ba012773b748408331214e
 3208c632f5bc6302debe7a6725767c55eeebf424 6e739ce1b9daf1cb12490f29903e76428eada6e3 tgodefro <tgodefro@student.42lyon.fr> 1753015348 +0200	pull: Fast-forward
 6e739ce1b9daf1cb12490f29903e76428eada6e3 cef53cb7450de3680337dbad67fa0fc50bbdf7a3 tgodefro <tgodefro@student.42lyon.fr> 1753019623 +0200	commit: Test meth2 + changed valid checks
 cef53cb7450de3680337dbad67fa0fc50bbdf7a3 0b7c3909e11a458db118b6362d903eeef635d8f6 tgodefro <tgodefro@student.42lyon.fr> 1753021383 +0200	commit: FF
+0b7c3909e11a458db118b6362d903eeef635d8f6 e58338ffef961a7b3a4bc9ae538ef0df63cefedc tgodefro <tgodefro@student.42lyon.fr> 1753021598 +0200	commit: Fixed Norm (except test.c)

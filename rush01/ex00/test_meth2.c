@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/20 10:51:36 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/20 16:21:37 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/20 16:25:58 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,14 +77,6 @@ int	move_vertical(int j)
 
 int	switch_row(int i)
 {
-	/*int	j;
-
-	j = 1;
-	while (j <= get_size())
-	{
-		set_val(i, j, get_size() + 1 - j);
-		j++;
-	}*/
 	int	temp;
 
 	temp = get_val(i, 1);
@@ -106,36 +98,15 @@ int	resolve(void)
 	{
 		while (!(row_valid_from_left(i) && row_valid_from_right(i)))
 		{
-			while (times <= 5 && !(row_valid_from_left(i) && row_valid_from_right(i)))
+			while (times <= 5
+				&& !(row_valid_from_left(i) && row_valid_from_right(i)))
 			{
 				move_horizontal(i);
-				/*ft_putnbr(i);
-				ft_putchar(',');
-				ft_putnbr(j);
-				ft_putchar('\n');
-				draw_grid();
-				ft_putchar('\n');*/
 				times++;
 			}
 			switch_row(i);
 			times = 0;
 		}
-		/*ft_putnbr(i);
-		ft_putchar(',');
-		ft_putnbr(j);
-		ft_putchar('\n');
-		draw_grid();
-		ft_putchar('\n');*/
-		/*while (!(row_valid_from_right(i)))
-		{
-			move_vertical(get_size());
-			ft_putnbr(i);
-			ft_putchar(',');
-			ft_putnbr(j);
-			ft_putchar('\n');
-			draw_grid();
-			ft_putchar('\n');
-		}*/
 		i++;
 		times = 0;
 	}
