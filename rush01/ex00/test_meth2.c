@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/20 10:51:36 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/20 15:48:55 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/20 16:21:37 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,48 +16,12 @@ int		get_size(void);
 void	draw_grid(void);
 void	ft_putchar(char c);
 void	ft_putnbr(char c);
-
-int	row_legal(int row)
-{
-	int	j;
-	int	j_check;
-
-	j = 1;
-	j_check = 2;
-	while (j < get_size())
-	{
-		while (j_check < get_size())
-		{
-			if (j != j_check && get_val(row, j) == get_val(row, j_check))
-				return (0);
-			j_check++;
-		}
-		j_check = 1;
-		j++;
-	}
-	return (1);
-}
-
-int	col_legal(int col)
-{
-	int	i;
-	int	i_check;
-
-	i = 1;
-	i_check = 2;
-	while (i < get_size())
-	{
-		while (i_check < get_size())
-		{
-			if (i != i_check && get_val(i, col) == get_val(i_check, col))
-				return (0);
-			i_check++;
-		}
-		i_check = 1;
-		i++;
-	}
-	return (1);
-}
+int		row_legal(int row);
+int		col_legal(int col);
+int		row_valid_from_left(int i);
+int		row_valid_from_right(int i);
+int		col_valid_from_top(int j);
+int		col_valid_from_bot(int j);
 
 int	init_grid_values(void)
 {
@@ -156,12 +120,12 @@ int	resolve(void)
 			switch_row(i);
 			times = 0;
 		}
-		ft_putnbr(i);
+		/*ft_putnbr(i);
 		ft_putchar(',');
 		ft_putnbr(j);
 		ft_putchar('\n');
 		draw_grid();
-		ft_putchar('\n');
+		ft_putchar('\n');*/
 		/*while (!(row_valid_from_right(i)))
 		{
 			move_vertical(get_size());
