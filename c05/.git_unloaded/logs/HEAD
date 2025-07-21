@@ -2,3 +2,4 @@
 e886b2ea06db35a008a4c95b9ea9a684cc3a7fba 30835b96c020d60e283cdd1e08610beed3e6d34c tgodefro <tgodefro@student.42lyon.fr> 1753113681 +0200	commit: Ex00 (recursive factorial)
 30835b96c020d60e283cdd1e08610beed3e6d34c 538a30ecf6096268066087b5d7f32415eadb915f tgodefro <tgodefro@student.42lyon.fr> 1753113715 +0200	commit: gitignore
 538a30ecf6096268066087b5d7f32415eadb915f cdb82987b6f9f6355384796bc541b035241c4583 tgodefro <tgodefro@student.42lyon.fr> 1753114544 +0200	commit: Ex02 (iterative power)
+cdb82987b6f9f6355384796bc541b035241c4583 615003bc22a59362b7a205920e842ae74389c82d tgodefro <tgodefro@student.42lyon.fr> 1753114892 +0200	commit: Ex03 (recursive power)
