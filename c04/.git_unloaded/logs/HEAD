@@ -1,3 +1,4 @@
 0000000000000000000000000000000000000000 75e45383ae0a7264ac3157c1842f825d27395486 tgodefro <tgodefro@student.42lyon.fr> 1752833416 +0200	commit (initial): Init + atoi (ex00-03)
 75e45383ae0a7264ac3157c1842f825d27395486 0b50cf134b021737c1eafa6a9359a21443c2f69f tgodefro <tgodefro@student.42lyon.fr> 1752833473 +0200	commit: .gitignore
 0b50cf134b021737c1eafa6a9359a21443c2f69f 0565b31b75239e7f1d8fed6f3d8d1a8e71e25f17 tgodefro <tgodefro@student.42lyon.fr> 1753110173 +0200	commit: ex04 (putnbr_base)
+0565b31b75239e7f1d8fed6f3d8d1a8e71e25f17 340c5e4e39c9366d6142cb966cdddd6653885fa2 tgodefro <tgodefro@student.42lyon.fr> 1753112760 +0200	commit: Ex05 (atoi_base)
