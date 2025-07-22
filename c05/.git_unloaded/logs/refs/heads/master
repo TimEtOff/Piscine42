@@ -8,3 +8,4 @@ cdb82987b6f9f6355384796bc541b035241c4583 615003bc22a59362b7a205920e842ae74389c82
 134d9abd1bd4697efa4df28b09cd80451e8e2486 b4e222da4c4a6f5102277cbdca0ce7ab501c43cc tgodefro <tgodefro@student.42lyon.fr> 1753186167 +0200	commit: Ex05? (sqrt)
 b4e222da4c4a6f5102277cbdca0ce7ab501c43cc 120fe00c3d11ee2d58aebb867e1acb5959866e1f tgodefro <tgodefro@student.42lyon.fr> 1753187316 +0200	commit: Ex06 (is_prime)
 120fe00c3d11ee2d58aebb867e1acb5959866e1f cf9743e4b34232f8504b77e1d84bcc2d5a48e518 tgodefro <tgodefro@student.42lyon.fr> 1753187851 +0200	commit: Ex07 (find_next_prime)
+cf9743e4b34232f8504b77e1d84bcc2d5a48e518 775af1750c33fede974bfb01813d07927dd9ee19 tgodefro <tgodefro@student.42lyon.fr> 1753192399 +0200	commit: Tried ex08 (ten queens) but too complicated
