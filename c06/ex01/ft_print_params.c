@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_program_name.c                            :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/22 17:28:59 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/22 17:34:10 by tgodefro         ###   ########lyon.fr   */
+/*   Created: 2025/07/22 17:33:37 by tgodefro          #+#    #+#             */
+/*   Updated: 2025/07/22 17:37:13 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,14 @@ void	ft_putstr(char *str)
 
 int	main(int argc, char **argv)
 {
-	if (argc > 0)
+	int	i;
+
+	i = 1;
+	while (i < argc)
 	{
-		ft_putstr(argv[0]);
+		ft_putstr(argv[i]);
 		ft_putstr("\n");
+		i++;
 	}
 	return (0);
 }
