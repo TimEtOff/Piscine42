@@ -6,11 +6,9 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 13:51:38 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/17 14:21:29 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/22 17:14:35 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <string.h>
 
 /*
 	Imported from `c01/ex06/ft_strlen.c`
@@ -52,11 +50,12 @@ char	*ft_strstr(char *str, char *to_find)
 		str++;
 	}
 	if (find_index == 0)
-		res = NULL;
+		res = 0;
 	return (res);
 }
 
 /*#include <stdio.h>
+#include <string.h>
 
 int	main(void)
 {

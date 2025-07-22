@@ -6,11 +6,9 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 15:25:58 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/17 15:22:48 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/22 17:21:18 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-
-
 
 /*
 	Imported from `c01/ex06`
@@ -20,38 +18,37 @@ int	ft_strlen(char *str)
 	int	nbr;
 
 	nbr = 0;
-	while (*str != '\0')
-	{
+	while (str[nbr] != '\0')
 		nbr++;
-		str++;
-	}
 	return (nbr);
 }
 
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
+	unsigned int	i;
 	unsigned int	dest_len;
 	unsigned int	src_len;
-	unsigned int	i;
+	unsigned int	nb;
 
+	i = 0;
 	dest_len = ft_strlen(dest);
 	src_len = ft_strlen(src);
-	if (size == 0)
-		return (src_len);
-	i = 0;
-	if (dest_len < (size - 1))
+	if (dest_len < size)
+		nb = src_len + dest_len;
+	else
+		nb = size + src_len;
+	if (dest_len >= size)
+		return (nb);
+	if (size > 0)
 	{
-		while (i < (size - dest_len - 1) && src[i] != '\0')
+		while (src[i] != '\0' && i < size - dest_len - 1)
 		{
 			dest[dest_len + i] = src[i];
 			i++;
 		}
 		dest[dest_len + i] = '\0';
-		return (dest_len + src_len);
 	}
-	else
-		return (dest_len + size + 1);
-
+	return (nb);
 }
 
 /*#include <stdio.h>
