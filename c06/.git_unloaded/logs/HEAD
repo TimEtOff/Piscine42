@@ -1,2 +1,3 @@
 0000000000000000000000000000000000000000 ca2fba16625e86544f20b159c7daffa7bab00368 tgodefro <tgodefro@student.42lyon.fr> 1753198343 +0200	commit (initial): Ex00 (print_program_name)
 ca2fba16625e86544f20b159c7daffa7bab00368 3c4d9d715cdfeb071e3acc9d92a99fd552c6d4c5 tgodefro <tgodefro@student.42lyon.fr> 1753198708 +0200	commit: Ex01 (print_params)
+3c4d9d715cdfeb071e3acc9d92a99fd552c6d4c5 8ac5173c534ce7f40ef1ff46d35c9dec3e5f6dbb tgodefro <tgodefro@student.42lyon.fr> 1753198852 +0200	commit: Ex02 (rev_params)
