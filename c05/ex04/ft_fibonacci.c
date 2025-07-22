@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 10:37:29 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/22 10:49:45 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/22 13:24:47 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@ int	ft_fibonacci(int index)
 {
 	int	res;
 
-	if (index <= 0)
+	if (index < 0)
+		res = -1;
+	else if (index == 0)
 		res = 0;
 	else if (index == 1)
 		res = 1;
