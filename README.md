@@ -177,3 +177,26 @@ There will be only one correction, not by other pisciners but by members of the 
 </details>
 
 ---
+
+<details open><summary>
+
+### Rush 01
+
+</summary>
+
+| Grade | Notes | Submit commit |
+| ---------------- | ------------------ | ----------- |
+| [<img src="./pngs/0.png" alt="fail: 0/100" width="150">](./pngs/0.png) | We didn't finish the project and a lot of things were wrongly done, we didn't expect more. | [&lt;2cb6ec8&gt;](https://github.com/TimEtOff/Piscine42/tree/2cb6ec8/rush01) |
+
+**Evaluation**
+> "Début de projets : plein d’idées, une bonne logique de backtrak et de récursivité, les explications sont bien faites, à part ça rien à redire. <br> <br>Problèmes : malloc mal sécurisé/inutile, la remontée d’erreur  peut etre meilleur , utilisation de variables globales inutiles, lire la norme, les commits  en français, le programme alloue avant de checker le parsing, pas mal de bouts de scotch (chiffres « magique »), mais une bonne résilience, vous avez  essayé jusqu’au bout. Bon courage pour la piscine !" - [pnaessen](https://profile.intra.42.fr/users/pnaessen)
+
+*With [tgonthie](https://profile.intra.42.fr/users/tgonthie) and [cobussie](https://profile.intra.42.fr/users/cobussie)*
+
+[See subject](https://github.com/TimEtOff/Piscine42/blob/main/rush00/en.subject.pdf)
+
+[Project description here]
+
+</details>
+
+---
