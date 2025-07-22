@@ -6,25 +6,9 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/13 15:07:55 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/18 14:01:24 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/22 16:48:28 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-	Edited version from `c01/ex06/ft_strlen.c`
-*/
-unsigned int	ft_strlen(char *str)
-{
-	unsigned int	nbr;
-
-	nbr = 0;
-	while (*str != '\0')
-	{
-		nbr++;
-		str++;
-	}
-	return (nbr);
-}
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {

@@ -24,3 +24,4 @@ cc01613a39dc24202dc4c69ad9d31c1523aa7253 60004561d610ecc0ab5072515eb21c8120436c1
 60004561d610ecc0ab5072515eb21c8120436c1e 7a6b80a2f6a2e92782fd815b81f9397ec458bc86 tgodefro <tgodefro@student.42lyon.fr> 1752760807 +0200	commit: Fixed ex12 print_memory (didn't display address with string as parameter)
 7a6b80a2f6a2e92782fd815b81f9397ec458bc86 b51b35b030cee9991588e5d955b76737529f51b4 tgodefro <tgodefro@student.42lyon.fr> 1752840109 +0200	commit: Ex01 (strncpy) should work
 b51b35b030cee9991588e5d955b76737529f51b4 86802a25c6560fddf6867de1eb97a42cd522ce54 tgodefro <tgodefro@student.42lyon.fr> 1752842519 +0200	commit: Changed things in ex12 but idk what's wrong
+86802a25c6560fddf6867de1eb97a42cd522ce54 22e1a6d5d86652f943fa60643a2274a644606f83 tgodefro <tgodefro@student.42lyon.fr> 1753195876 +0200	commit: Fixed for retry 2?
