@@ -85,6 +85,7 @@ The first time we use pointers and learn about them.
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
 | ***First try*** | [<img src="./pngs/5.png" alt="fail: 5/100" width="150">](./pngs/5.png) | <pre><code>ex00: OK &#8739; ex01: KO &#8739; &#13;ex02: KO &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: OK &#8739; ex07: OK &#8739; &#13;ex08: OK &#8739; ex09: KO &#8739; &#13;ex10: KO &#8739; ex11: KO &#8739; &#13;ex12: KO</code></pre> | <ul><li>**ex01:** Should fill empty characters with null-terminators `\0`</li><li>**ex02:** Read the subject as "alphanumeric" but was actually only alpha</li><li>**ex09:** Misread the subject, other letters should all be lowercase</li><li>**ex10:** Idk</li><li>**ex11:** Should be able to handle `unsigned char`s (extended ASCII table)</li><li>**ex12:** Same as *ex11*</li></ul>*Notes: Should be fixed in [&lt;main&gt;](https://github.com/TimEtOff/Piscine42/tree/main/c02), not tested.* | [&lt;7b869bb&gt;](https://github.com/TimEtOff/Piscine42/tree/7b869bb/c02) |
 | ***Retry 1*** | [<img src="./pngs/5.png" alt="fail: 5/100" width="150">](./pngs/5.png) | <pre><code>ex00: OK &#8739; ex01: KO &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: OK &#8739; ex07: OK &#8739; &#13;ex08: OK &#8739; ex09: OK &#8739; &#13;ex10: OK &#8739; ex11: OK &#8739; &#13;ex12: KO</code></pre> | <ul><li>**ex01:** No idea</li><li>**ex12:** No idea</li></ul> | [&lt;885529a&gt;](https://github.com/TimEtOff/Piscine42/tree/885529a/c02) |
+| ***Retry 2*** | [<img src="./pngs/100.png" alt="success: 100/100" width="150">](./pngs/100.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: OK &#8739; ex07: OK &#8739; &#13;ex08: OK &#8739; ex09: OK &#8739; &#13;ex10: OK &#8739; ex11: OK &#8739; &#13;ex12: KO</code></pre> | <ul><li>**ex12:** No idea but was passed because of 100% on both peer-to-peer evaluations</li></ul> | [&lt;7f059f4&gt;](https://github.com/TimEtOff/Piscine42/tree/7f059f4/c02) |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c02/en.subject.pdf)
 
@@ -103,10 +104,83 @@ Basic string manipulation with copy or detection of certain types of characters.
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
 | ***First try*** | [<img src="./pngs/10.png" alt="fail: 10/100" width="150">](./pngs/10.png) | <pre><code>ex00: OK &#8739; ex01: KO &#8739; &#13;ex02: OK &#8739; ex03: KO &#8739; &#13;ex04: KO &#8739; ex05: KO</code></pre> | <ul><li>**ex01:** [SegFault] Probably pointers</li><li>**ex03:** Null-terminators *(see c02 first try)* or pointers</li><li>**ex04:** Idk, probably pointers</li><li>**ex05:** Didn't really understand `strlcat`</li></ul> | [&lt;20565f8&gt;](https://github.com/TimEtOff/Piscine42/tree/20565f8/c03) |
+| ***Retry 1*** | [<img src="./pngs/50.png" alt="success: 50/100" width="150">](./pngs/50.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: KO &#8739; ex05: OK</code></pre> | <ul><li>**ex04:** No idea</li></ul> | [&lt;6ce8546&gt;](https://github.com/TimEtOff/Piscine42/tree/6ce8546/c03) |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c03/en.subject.pdf)
 
 More advanced string manipulation but many times the same function with only some slight variations.
+
+</details>
+
+---
+
+<details open><summary>
+
+### C 04
+
+</summary>
+
+| | Grade | Moulinette | Notes | Submit commit |
+| ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
+| ***First try*** | Not submitted yet | <pre><code></code></pre> |  | [&lt;......&gt;](https://github.com/TimEtOff/Piscine42/tree/...../c04) |
+
+[See subject](https://github.com/TimEtOff/Piscine42/blob/main/c04/en.subject.pdf)
+
+String to int, int to string and base manipulation.
+
+</details>
+
+---
+
+<details open><summary>
+
+### C 05
+
+</summary>
+
+| | Grade | Moulinette | Notes | Submit commit |
+| ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
+| ***First try*** | Not submitted yet | <pre><code></code></pre> |  | [&lt;......&gt;](https://github.com/TimEtOff/Piscine42/tree/...../c05) |
+
+[See subject](https://github.com/TimEtOff/Piscine42/blob/main/c05/en.subject.pdf)
+
+Learn the difference between iterative and recursive functions, and use them.
+
+</details>
+
+---
+
+<details open><summary>
+
+### C 06
+
+</summary>
+
+| | Grade | Moulinette | Notes | Submit commit |
+| ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
+| ***First try*** | Not submitted yet | <pre><code></code></pre> |  | [&lt;......&gt;](https://github.com/TimEtOff/Piscine42/tree/...../c06) |
+
+[See subject](https://github.com/TimEtOff/Piscine42/blob/main/c06/en.subject.pdf)
+
+Start to make programs instead of functions, and use arguments on main function.
+
+</details>
+
+---
+
+<details open><summary>
+
+### C 07
+
+</summary>
+
+| | Grade | Moulinette | Notes | Submit commit |
+| ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
+| ***First try*** | Not submitted yet | <pre><code></code></pre> |  | [&lt;......&gt;](https://github.com/TimEtOff/Piscine42/tree/...../c07) |
+
+[See subject](https://github.com/TimEtOff/Piscine42/blob/main/c07/en.subject.pdf)
+
+Learn how to use tha `malloc` and `free` functions to allocate memory.
 
 </details>
 
