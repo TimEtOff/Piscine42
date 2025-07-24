@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 14:11:59 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/23 17:10:29 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/24 15:11:42 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 	return (size);
 }
 
-void	print_tab(int *tab, int size)
+/*void	print_tab(int *tab, int size)
 {
 	int	i;
 
@@ -62,4 +62,4 @@ int	main(void)
 	free(*range);
 	free(range);
 	return (0);
-}
+}*/

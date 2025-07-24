@@ -6,7 +6,7 @@ if [ $1 ]
 then
     echo "------ Pushing in sub repo $1 -----"
     cd $1
-    git push
+    git push --set-upstream origin master
 else
     echo "------ No sub repo specified -----"
 fi

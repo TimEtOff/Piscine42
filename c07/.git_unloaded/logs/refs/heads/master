@@ -1,3 +1,4 @@
 0000000000000000000000000000000000000000 4e2d43fe3f46cbf2f10167f71201ee75ea6b7bc5 tgodefro <tgodefro@student.42lyon.fr> 1753201061 +0200	commit (initial): Ex00 (ft_strdup)
 4e2d43fe3f46cbf2f10167f71201ee75ea6b7bc5 69c107f97c60b91fad532e720d847a49ee0b783e tgodefro <tgodefro@student.42lyon.fr> 1753272087 +0200	commit: Ex01 (ft_range)
 69c107f97c60b91fad532e720d847a49ee0b783e 80817b18053f319a00bd05db6db026addba5606c tgodefro <tgodefro@student.42lyon.fr> 1753287812 +0200	commit: Started ex03 (join), added ex02 (ultimate range) and fixed things on ex00 & 01
+80817b18053f319a00bd05db6db026addba5606c 12d6900b8fd8b09bd3cfcbb54bfc012c980f42bf tgodefro <tgodefro@student.42lyon.fr> 1753375764 +0200	commit: Started ex03 (strjoin) but malloc errors

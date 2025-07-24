@@ -6,16 +6,18 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 17:04:45 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/23 18:00:17 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/24 18:13:21 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdlib.h>
 
 int	ft_strlen(char *str)
 {
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (str[i] != '\0')
 		i++;
 	return (i);
 }
@@ -34,53 +36,61 @@ int	get_size(int size, char **strs, char *sep)
 	}
 	res += ft_strlen(sep) * (size - 1);
 	if (size <= 0)
-		res = 0;
+		res = 1;
+	res++;
 	return (res);
 }
 
-void	add_in_str(char *src, char *append)
+void	str_append(char *str, char *append)
 {
 	int	i;
-	int	src_len;
+	int	str_len;
+	int	app_len;
 
-	src_len = ft_strlen(src);
+	str_len = ft_strlen(str);
+	app_len = ft_strlen(append);
 	i = 0;
-	while (i < src_len + ft_strlen(append))
+	//__builtin_printf("%i\n", app_len);
+	while (i < str_len + app_len)
 	{
-		src[src_len + i] = append[i];
+		str[str_len + i] = append[i];
 		i++;
 	}
+	str[str_len + i] = '\0';
 }
 
 char	*ft_strjoin(int size, char **strs, char *sep)
 {
 	char	*res;
 	int		i;
+	int		size_m;
 
-	res = malloc(sizeof(char) * get_size(size, strs, sep));
+	size_m = get_size(size, strs, sep);
+	res = malloc(sizeof(char) * size_m);
+	if (res == NULL)
+		return (0);
 	i = 0;
-	if (size <= 0)
+	if (size > 0)
 	{
 		while (i < size)
 		{
-			add_in_str(res, strs[i]);
+			str_append(res, strs[i]);
 			if (i < size - 1)
-				add_in_str(res, sep);
+				str_append(res, sep);
 			i++;
 		}
+		res[size_m - 1] = '\0';
 	}
 	return (res);
 }
 
 int	main(void)
 {
-	char	strs[5][100];
+	char	**strs = (char *[]){"Hello", "World", "!", "Test", "One"};
+	char	*res;
 
-	strs[0] = "Hello";
-	strs[1] = "World";
-	strs[2] = "!";
-	strs[3] = "Test";
-	strs[4] = "One";
-	__builtin_printf("%s", ft_strjoin(5)",", );
+	res = ft_strjoin(5, strs, ";");
+	__builtin_printf("%s\n", res);
+	free(res);
 	return (0);
 }
