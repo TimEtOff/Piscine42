@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/18 10:56:22 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/24 09:59:06 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/24 10:36:54 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int	ft_atoi(char *str)
 {
 	int		index;
 	int		negative;
-	int		res;
+	long	res;
 
 	index = 0;
 	while (str[index] == ' ' || str[index] == '\f' || str[index] == '\n'
@@ -62,25 +62,11 @@ int	ft_atoi(char *str)
 	return (res);
 }
 
-/*
-// From `c00/ex07`
-void	ft_putnbr(int nb)
+/*int	main(void)
 {
-	char	c;
-
-	if (nb < 0)
-	{
-		write(1, "-", 1);
-		nb = -nb;
-	}
-	c = (char)(nb % 10 + 48);
-	if (nb >= 10)
-		ft_putnbr(nb / 10);
-	write(1, &c, 1);
-}
-
-int	main(void)
-{
-	ft_putnbr(ft_atoi("   ---+--+1234ab567"));
+	__builtin_printf("%d\n", ft_atoi("   ---+--+1234ab567"));
+	__builtin_printf("%d\n", ft_atoi(" \t  ---+- -+1234ab567"));
+	__builtin_printf("%d\n", ft_atoi("  \v ++--+-+-+2147483647"));
+	__builtin_printf("%d\n", ft_atoi("   ---+--+-+-2147483648"));
 	return (0);
 }*/

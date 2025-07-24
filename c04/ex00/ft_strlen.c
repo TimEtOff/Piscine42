@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 09:29:34 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/18 10:53:00 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/24 10:43:57 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,10 @@
 */
 int	ft_strlen(char *str)
 {
-	int	nbr;
+	int	i;
 
-	nbr = 0;
-	while (*str != '\0')
-	{
-		nbr++;
-		str++;
-	}
-	return (nbr);
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
 }

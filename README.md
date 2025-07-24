@@ -122,7 +122,7 @@ More advanced string manipulation but many times the same function with only som
 
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
-| ***First try*** | Not submitted yet | <pre><code></code></pre> |  | [&lt;......&gt;](https://github.com/TimEtOff/Piscine42/tree/...../c04) |
+| ***First try*** | [<img src="./pngs/40.png" alt="fail: 40/100" width="150">](./pngs/40.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: KO &#8739; ex03: KO &#8739; &#13;ex04: KO &#8739; ex05: KO</code></pre> | <ul><li>**ex02:** Didn't cast number into `long` so INT_MIN overflowed</li><li>**ex03:** Should consider any whitespace instead of only classic space</li><li>**ex04:** Shouldn't add a new line at the end of the number</li><li>**ex05:** Same as _ex03 (atoi)_</li></ul>_Notes: Fixed in main, waiting for retry_ | [&lt;4ab1050&gt;](https://github.com/TimEtOff/Piscine42/tree/4ab1050/c04) |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c04/en.subject.pdf)
 

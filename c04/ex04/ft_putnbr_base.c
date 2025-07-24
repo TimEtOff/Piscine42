@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 16:10:55 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/21 17:37:06 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/24 10:39:10 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,6 @@ void	ft_putnbr_base(int nbr, char *base)
 			nbr_l = -nbr_l;
 		}
 		recursive_write(nbr_l, base, base_size);
-		write(1, "\n", 1);
 	}
 }
 
@@ -85,7 +84,9 @@ void	ft_putnbr_base(int nbr, char *base)
 int	main(void)
 {
 	ft_putnbr_base(184516, "poneyvif");
+	write(1, "\n", 1);
 	ft_putnbr_base(INT_MAX, "0123456789ABCDEF");
+	write(1, "\n", 1);
 	ft_putnbr_base(INT_MIN, "01");
 	return (0);
 }*/

@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 11:58:44 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/24 10:07:06 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/24 10:33:16 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,11 @@ void	ft_putnbr(int nb)
 		ft_putnbr(nbl / 10);
 	write(1, &c, 1);
 }
+
+/*#include <limits.h>
+
+int	main(void)
+{
+	ft_putnbr(INT_MAX);
+	ft_putnbr(INT_MIN);
+}*/

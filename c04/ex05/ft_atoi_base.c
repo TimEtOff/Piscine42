@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 17:09:35 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/24 10:05:01 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/24 10:43:00 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,14 +79,14 @@ int	ft_atoi_base(char *str, char *base)
 {
 	int		index;
 	int		negative;
-	int		res;
+	long	res;
 
 	res = 0;
 	if (check_base(base))
 	{
 		index = 0;
 		while (str[index] == ' ' || str[index] == '\f' || str[index] == '\n'
-			|| str[index] == '\r' || str[index] == '\t'|| str[index] == '\v')
+			|| str[index] == '\r' || str[index] == '\t' || str[index] == '\v')
 			index++;
 		negative = ft_is_negative(str, &index);
 		while (index_in_base(str[index], base) >= 0)
@@ -101,13 +101,16 @@ int	ft_atoi_base(char *str, char *base)
 	return (res);
 }
 
-/*#include <stdio.h>
-
-int	main(void)
+/*int	main(void)
 {
-	printf("%i\n", ft_atoi_base("  -+ca1f", "0123456789abcdef"));
-	printf("%i\n", ft_atoi_base("vvpepy", "poneyvif"));
-	printf("%i\n", ft_atoi_base("   +-+-7FFFFFFF", "0123456789ABCDEF"));
-	printf("%i\n", ft_atoi_base("   -10000000000000000000000000000000", "01"));
+	int	res;
+
+	__builtin_printf("%i\n", ft_atoi_base("  -+ca1f", "0123456789abcdef"));
+	__builtin_printf("%i\n", ft_atoi_base("  -+ cha1f", "0123456789abcdef"));
+	__builtin_printf("%i\n", ft_atoi_base("vvpepy", "poneyvif"));
+	res = ft_atoi_base(" \f  +-+-7FFFFFFF", "0123456789ABCDEF");
+	__builtin_printf("%i\n", res);
+	res = ft_atoi_base("   -10000000000000000000000000000000", "01");
+	__builtin_printf("%i\n", res);
 	return (0);
 }*/
