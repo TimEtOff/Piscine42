@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 17:42:49 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/24 14:51:18 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/24 16:24:18 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,16 +41,22 @@ int	ft_strcmp(char *s1, char *s2)
 void	ft_sort_char_tab(char **tab, int size)
 {
 	int		i;
+	int		j;
 	char	*temp;
 
-	i = 2;
-	while (i < size)
+	i = 0;
+	while (i < size - 1)
 	{
-		if (ft_strcmp(tab[i - 1], tab[i]) > 0)
+		j = i;
+		while (j < size)
 		{
-			temp = tab[i - 1];
-			tab[i - 1] = tab[i];
-			tab[i] = temp;
+			if (ft_strcmp(tab[i], tab[j]) > 0)
+			{
+				temp = tab[i];
+				tab[i] = tab[j];
+				tab[j] = temp;
+			}
+			j++;
 		}
 		i++;
 	}
@@ -61,7 +67,7 @@ int	main(int argc, char **argv)
 	int	i;
 
 	i = 1;
-	ft_sort_char_tab(argv, argc);
+	ft_sort_char_tab(&argv[1], argc - 1);
 	while (i < argc)
 	{
 		ft_putstr(argv[i]);

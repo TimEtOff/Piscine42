@@ -146,6 +146,7 @@ String to int, int to string and base manipulation.
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c05/en.subject.pdf)
 
 Learn the difference between iterative and recursive functions, and use them.
+Ex08: See [The Ten Queens Puzzle](https://www.brainbashers.com/queens.asp?size=10)
 
 </details>
 
@@ -159,7 +160,7 @@ Learn the difference between iterative and recursive functions, and use them.
 
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
-| ***First try*** | Not submitted yet | <pre><code></code></pre> |  | [&lt;......&gt;](https://github.com/TimEtOff/Piscine42/tree/...../c06) |
+| ***First try*** | [<img src="./pngs/85.png" alt="success: 85/100" width="150">](./pngs/85.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK &#8739; ex03: KO</code></pre> | <ul><li>**ex03:** My sort algorithm wasn't good, fixed in [&lt;main&gt;](https://github.com/TimEtOff/Piscine42/tree/main/c06)</li></ul> | [&lt;73ee320&gt;](https://github.com/TimEtOff/Piscine42/tree/73ee320/c06) |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c06/en.subject.pdf)
 
