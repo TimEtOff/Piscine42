@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 17:09:35 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/24 10:43:00 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/24 13:42:11 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,8 @@ int	check_base(char *base)
 		res = 0;
 	while (base[i] != '\0')
 	{
-		if (base[i] == '+' || base[i] == '-')
+		if (base[i] == '+' || base[i] == '-' || base[i] == ' ' || base[i] == '\f'
+			|| base[i] == '\n' || base[i] == '\r' || base[i] == '\t' || base[i] == '\v')
 			res = 0;
 		while (base[i_check] != '\0')
 		{

@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 16:10:55 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/24 10:39:10 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/24 13:40:36 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,9 +54,10 @@ int	check_base(char *base)
 
 void	recursive_write(long nbr, char *base, int base_size)
 {
-	if (nbr > 0)
+	if (nbr >= 0)
 	{
-		recursive_write(nbr / base_size, base, base_size);
+		if (nbr > 0)
+			recursive_write(nbr / base_size, base, base_size);
 		write(1, &base[nbr % base_size], 1);
 	}
 }
@@ -88,5 +89,7 @@ int	main(void)
 	ft_putnbr_base(INT_MAX, "0123456789ABCDEF");
 	write(1, "\n", 1);
 	ft_putnbr_base(INT_MIN, "01");
+	write(1, "\n", 1);
+	ft_putnbr_base(0, "vbojn");
 	return (0);
 }*/
