@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/18 10:56:22 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/18 12:10:12 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/24 09:59:06 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,8 @@ int	ft_atoi(char *str)
 	int		res;
 
 	index = 0;
-	while (str[index] == ' ')
+	while (str[index] == ' ' || str[index] == '\f' || str[index] == '\n'
+		|| str[index] == '\r' || str[index] == '\t' || str[index] == '\v')
 		index++;
 	negative = ft_is_negative(str, &index);
 	res = 0;

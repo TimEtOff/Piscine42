@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 17:09:35 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/21 17:45:36 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/24 10:05:01 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,7 +85,8 @@ int	ft_atoi_base(char *str, char *base)
 	if (check_base(base))
 	{
 		index = 0;
-		while (str[index] == ' ')
+		while (str[index] == ' ' || str[index] == '\f' || str[index] == '\n'
+			|| str[index] == '\r' || str[index] == '\t'|| str[index] == '\v')
 			index++;
 		negative = ft_is_negative(str, &index);
 		while (index_in_base(str[index], base) >= 0)

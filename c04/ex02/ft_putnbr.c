@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 11:58:44 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/18 10:55:55 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/24 10:07:06 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,16 @@
 void	ft_putnbr(int nb)
 {
 	char	c;
+	long	nbl;
 
-	if (nb < 0)
+	nbl = (long) nb;
+	if (nbl < 0)
 	{
 		write(1, "-", 1);
-		nb = -nb;
+		nbl = -nbl;
 	}
-	c = (char)(nb % 10 + 48);
-	if (nb >= 10)
-		ft_putnbr(nb / 10);
+	c = (char)(nbl % 10 + 48);
+	if (nbl >= 10)
+		ft_putnbr(nbl / 10);
 	write(1, &c, 1);
 }
