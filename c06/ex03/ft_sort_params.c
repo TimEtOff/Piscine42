@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 17:42:49 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/22 17:57:58 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/24 14:51:18 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,40 +21,37 @@ void	ft_putstr(char *str)
 	}
 }
 
-int	ft_min_i_char_tab(char **tab, int start, int size)
+int	ft_strcmp(char *s1, char *s2)
 {
-	int	i;
-	int	min_i;
-	int	min_val;
+	int	res;
 
-	i = start + 1;
-	min_i = start;
-	min_val = tab[min_i][0];
-	while (i < size)
+	res = 0;
+	while (res == 0 || (*s1 == '\0' && *s2 == '\0'))
 	{
-		if (tab[i][0] < min_val)
-		{
-			min_i = i;
-			min_val = tab[min_i][0];
-		}
-		i++;
+		if (*s1 != *s2)
+			res = (int) *s1 - (int) *s2;
+		else if (*s1 == '\0' || *s2 == '\0')
+			break ;
+		s1++;
+		s2++;
 	}
-	return (min_i);
+	return (res);
 }
 
 void	ft_sort_char_tab(char **tab, int size)
 {
 	int		i;
 	char	*temp;
-	int		min;
 
-	i = 1;
+	i = 2;
 	while (i < size)
 	{
-		min = ft_min_i_char_tab(tab, i, size);
-		temp = tab[min];
-		tab[min] = tab[i];
-		tab[i] = temp;
+		if (ft_strcmp(tab[i - 1], tab[i]) > 0)
+		{
+			temp = tab[i - 1];
+			tab[i - 1] = tab[i];
+			tab[i] = temp;
+		}
 		i++;
 	}
 }
