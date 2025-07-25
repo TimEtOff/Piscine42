@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 11:59:04 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/25 14:18:23 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/25 14:40:26 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,10 +62,11 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 	}
 	else
 		return (NULL);
+	//free(res);
 	return (res);
 }
 
-/*int	main(void)
+int	main(void)
 {
 	char	*res;
 
@@ -75,4 +76,4 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 	__builtin_printf("%s\n", res);
 	free(res);
 	return (0);
-}*/
+}

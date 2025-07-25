@@ -5,3 +5,4 @@
 12d6900b8fd8b09bd3cfcbb54bfc012c980f42bf c08e6354385c94f23cb9e907cdcf8ccd4d9b9908 tgodefro <tgodefro@student.42lyon.fr> 1753432916 +0200	commit: Finished ex03 (strjoin)
 c08e6354385c94f23cb9e907cdcf8ccd4d9b9908 e3a37452ca7631601928dcf7cb2729b16361df10 tgodefro <tgodefro@student.42lyon.fr> 1753445731 +0200	commit: Ex04 (convert_base)
 e3a37452ca7631601928dcf7cb2729b16361df10 78062aa48a72f12d8b1d55df8f5ee9d1d34fc162 tgodefro <tgodefro@student.42lyon.fr> 1753445930 +0200	commit: Fixed norm on ex04
+78062aa48a72f12d8b1d55df8f5ee9d1d34fc162 e7d404544e722f9ddc5c9f2141b0c490ae71133e tgodefro <tgodefro@student.42lyon.fr> 1753447245 +0200	commit: Ex04 not finished
