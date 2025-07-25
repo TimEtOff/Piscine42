@@ -141,7 +141,8 @@ String to int, int to string and base manipulation.
 
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
-| ***First try*** | [<img src="./pngs/0.png" alt="fail: 0/100" width="150">](./pngs/0.png) | <pre><code>ex00: KO &#8739; ex01: KO &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: OK &#8739; ex07: OK &#8739; &#13;ex08: OK</code></pre> | <ul><li>Idk</li></ul> | [&lt;55199b0&gt;](https://github.com/TimEtOff/Piscine42/tree/55199b0/c05) |
+| ***First try*** | [<img src="./pngs/0.png" alt="fail: 0/100" width="150">](./pngs/0.png) | <pre><code>ex00: KO &#8739; ex01: KO &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: OK &#8739; ex07: OK &#8739; &#13;ex08: OK</code></pre> | <ul><li>**ex00 and ex01:** Didn't check for `nb <= 0`</li></ul> | [&lt;55199b0&gt;](https://github.com/TimEtOff/Piscine42/tree/55199b0/c05) |
+| ***Retry 1*** | [<img src="./pngs/100.png" alt="success: 100/100" width="150">](./pngs/100.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: OK &#8739; ex07: OK &#8739; &#13;ex08: OK</code></pre> | Perfect| [&lt;298c26b&gt;](https://github.com/TimEtOff/Piscine42/tree/298c26b/c05) |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c05/en.subject.pdf)
 
