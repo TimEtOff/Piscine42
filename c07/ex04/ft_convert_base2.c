@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 17:09:35 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/25 14:08:58 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/25 14:18:29 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,6 @@ long	ft_atoi_base(char *str, char *base)
 			|| str[index] == '\r' || str[index] == '\t' || str[index] == '\v')
 			index++;
 		negative = ft_is_negative(str, &index);
-
 		while (index_in_base(str[index], base) >= 0)
 		{
 			res *= ft_strlen(base);

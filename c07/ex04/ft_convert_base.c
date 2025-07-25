@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 11:59:04 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/25 14:15:06 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/25 14:18:23 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,6 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 	int		base_size;
 	char	*res;
 
-
 	if (!check_base(base_to))
 		return (NULL);
 	atoied_nbr = ft_atoi_base(nbr, base_from);
@@ -72,7 +71,7 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 
 	res = ft_convert_base(" -+--80000000hy", "0123456789ABCDEF", "01");
 	__builtin_printf("%s\n", res);
-	res = ft_convert_base("lX", "XavNiel", "0123456789");
+	res = ft_convert_base("   +---++-lX", "XavNiel", "0123456789");
 	__builtin_printf("%s\n", res);
 	free(res);
 	return (0);
