@@ -10,3 +10,4 @@ b4e222da4c4a6f5102277cbdca0ce7ab501c43cc 120fe00c3d11ee2d58aebb867e1acb5959866e1
 120fe00c3d11ee2d58aebb867e1acb5959866e1f cf9743e4b34232f8504b77e1d84bcc2d5a48e518 tgodefro <tgodefro@student.42lyon.fr> 1753187851 +0200	commit: Ex07 (find_next_prime)
 cf9743e4b34232f8504b77e1d84bcc2d5a48e518 775af1750c33fede974bfb01813d07927dd9ee19 tgodefro <tgodefro@student.42lyon.fr> 1753192399 +0200	commit: Tried ex08 (ten queens) but too complicated
 775af1750c33fede974bfb01813d07927dd9ee19 2c2e0822834ecb5677cb7402dfede3949b4e5070 tgodefro <tgodefro@student.42lyon.fr> 1753269316 +0200	commit: Made ex08 work (The Ten Queens)
+2c2e0822834ecb5677cb7402dfede3949b4e5070 6620479c981cfcefa853b3575ff8ae4ac2a02620 tgodefro <tgodefro@student.42lyon.fr> 1753430714 +0200	commit: Fixed factorial after moulinette
