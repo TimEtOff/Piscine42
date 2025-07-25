@@ -3,3 +3,4 @@
 69c107f97c60b91fad532e720d847a49ee0b783e 80817b18053f319a00bd05db6db026addba5606c tgodefro <tgodefro@student.42lyon.fr> 1753287812 +0200	commit: Started ex03 (join), added ex02 (ultimate range) and fixed things on ex00 & 01
 80817b18053f319a00bd05db6db026addba5606c 12d6900b8fd8b09bd3cfcbb54bfc012c980f42bf tgodefro <tgodefro@student.42lyon.fr> 1753375764 +0200	commit: Started ex03 (strjoin) but malloc errors
 12d6900b8fd8b09bd3cfcbb54bfc012c980f42bf c08e6354385c94f23cb9e907cdcf8ccd4d9b9908 tgodefro <tgodefro@student.42lyon.fr> 1753432916 +0200	commit: Finished ex03 (strjoin)
+c08e6354385c94f23cb9e907cdcf8ccd4d9b9908 e3a37452ca7631601928dcf7cb2729b16361df10 tgodefro <tgodefro@student.42lyon.fr> 1753445731 +0200	commit: Ex04 (convert_base)
