@@ -5,3 +5,4 @@
 340c5e4e39c9366d6142cb966cdddd6653885fa2 dc34d6de4ff2c2dfad8010628688c8a952aa976a tgodefro <tgodefro@student.42lyon.fr> 1753344483 +0200	commit: Fixed putnbr and atoi(s) space check
 dc34d6de4ff2c2dfad8010628688c8a952aa976a 8dc9f40e90563c13fb5bac16be9d96f647b26542 tgodefro <tgodefro@student.42lyon.fr> 1753347878 +0200	commit: Fixed everything after first submit
 8dc9f40e90563c13fb5bac16be9d96f647b26542 223b4838b74bb1871733738bdf6c87a5b5d41a7f tgodefro <tgodefro@student.42lyon.fr> 1753357648 +0200	commit: Fixed after retry 1
+223b4838b74bb1871733738bdf6c87a5b5d41a7f aa50085bcc0cff44227bb6a3aad1c6ad217c5e33 tgodefro <tgodefro@student.42lyon.fr> 1753433076 +0200	commit: atoi_base had norm problem
