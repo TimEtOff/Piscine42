@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 17:04:45 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/24 18:13:21 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/25 10:41:38 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,8 +50,7 @@ void	str_append(char *str, char *append)
 	str_len = ft_strlen(str);
 	app_len = ft_strlen(append);
 	i = 0;
-	//__builtin_printf("%i\n", app_len);
-	while (i < str_len + app_len)
+	while (i < app_len)
 	{
 		str[str_len + i] = append[i];
 		i++;
@@ -69,6 +68,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	res = malloc(sizeof(char) * size_m);
 	if (res == NULL)
 		return (0);
+	res[0] = '\0';
 	i = 0;
 	if (size > 0)
 	{
@@ -84,7 +84,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	return (res);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	**strs = (char *[]){"Hello", "World", "!", "Test", "One"};
 	char	*res;
@@ -93,4 +93,4 @@ int	main(void)
 	__builtin_printf("%s\n", res);
 	free(res);
 	return (0);
-}
+}*/
