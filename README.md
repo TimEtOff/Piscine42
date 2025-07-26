@@ -227,6 +227,22 @@ Was pretty easy even tough not everyone went to c06 at the time, so plenty of pe
 
 ---
 
+<details open><summary>
+
+### Exam 02
+
+</summary>
+
+Same as exam01 but with `malloc` too.<br>
+Took more time on some exercises and didn't have time to finish the last one. My code worked great except in one particular case but I couldn't fix it in time.
+***Projects notions:*** *exam01, c07* <br>
+| [<img src="./pngs/90.png" alt="success: 90/100" width="150">](./pngs/90.png) |
+| --- |
+
+</details>
+
+---
+
 ## Rushs
 
 Rushs are projects in randomly generated groups, where you need to work in cooperation to complete your subject. <br><br>
@@ -270,9 +286,32 @@ There will be only one correction, not by other pisciners but by members of the 
 
 *With [tgonthie](https://profile.intra.42.fr/users/tgonthie) and [cobussie](https://profile.intra.42.fr/users/cobussie)*
 
-[See subject](https://github.com/TimEtOff/Piscine42/blob/main/rush00/en.subject.pdf)
+[See subject](https://github.com/TimEtOff/Piscine42/blob/main/rush01/en.subject.pdf)
 
 https://www.puzzle-skyscrapers.com/
+[Project description here]
+
+</details>
+
+---
+
+<details open><summary>
+
+### Rush 02
+
+</summary>
+
+| Grade | Notes | Submit commit |
+| ---------------- | ------------------ | ----------- |
+| Not submitted yet |  | [&lt;______&gt;](https://github.com/TimEtOff/Piscine42/tree/______/rush02) |
+
+**Evaluation**
+> ""
+
+*With [mboutte](https://profile.intra.42.fr/users/mboutte) and [nlaponte](https://profile.intra.42.fr/users/nlaponte)*
+
+[See subject](https://github.com/TimEtOff/Piscine42/blob/main/rush02/en.subject.pdf)
+
 [Project description here]
 
 </details>
