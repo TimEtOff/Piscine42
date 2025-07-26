@@ -1,0 +1,9 @@
+# General
+en.subject.pdf
+
+# Exercises
+/*
+!ex00
+ex00/.*
+ex00/*.out
+!.gitignore
