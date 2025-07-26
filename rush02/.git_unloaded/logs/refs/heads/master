@@ -2,3 +2,4 @@
 5595f37af9e304a94b48bb9da3085763b6b66d50 438e2d550ea2739ba5a566ba1b8c22cf3246378c tgodefro <tgodefro@student.42lyon.fr> 1753531211 +0200	pull: Fast-forward
 438e2d550ea2739ba5a566ba1b8c22cf3246378c 37efdba3e012624caa70d0c2ea245653e0eecf9b tgodefro <tgodefro@student.42lyon.fr> 1753531983 +0200	commit: Added utils functions with a header
 37efdba3e012624caa70d0c2ea245653e0eecf9b a0e2d68fc08cdd8d9495d8fb8c6d70acaa6273ea tgodefro <tgodefro@student.42lyon.fr> 1753535178 +0200	commit: Added working ft_hundred
+a0e2d68fc08cdd8d9495d8fb8c6d70acaa6273ea 4903207851950068b3c88254906022dd30b1151d tgodefro <tgodefro@student.42lyon.fr> 1753540053 +0200	commit: Added working ft_tens

@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 14:03:17 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/26 15:05:03 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/26 16:26:53 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,43 +47,3 @@ char	*ft_hundred(char *str)
 		make_hundred_res(res, unit_str, hundred_str, nbr);
 	return (res);
 }
-
-// Temp function to test values
-/*char	*ft_find(char *str)
-{
-	if (ft_strcmp(str, "1") == 0)
-		return ("one");
-	else if (ft_strcmp(str, "2") == 0)
-		return ("two");
-	else if (ft_strcmp(str, "3") == 0)
-		return ("three");
-	else if (ft_strcmp(str, "4") == 0)
-		return ("four");
-	else if (ft_strcmp(str, "5") == 0)
-		return ("five");
-	else if (ft_strcmp(str, "6") == 0)
-		return ("six");
-	else if (ft_strcmp(str, "7") == 0)
-		return ("seven");
-	else if (ft_strcmp(str, "8") == 0)
-		return ("eight");
-	else if (ft_strcmp(str, "9") == 0)
-		return ("nine");
-	else if (ft_strcmp(str, "100") == 0)
-		return ("hundred");
-	else
-		return ("");
-}
-
-int	main(int argc, char **argv)
-{
-	char	*res;
-
-	if (argc >= 2)
-	{
-		res = ft_hundred(argv[1]);
-		ft_putstr(res);
-		ft_putstr("\n");
-		free(res);
-	}
-}*/
