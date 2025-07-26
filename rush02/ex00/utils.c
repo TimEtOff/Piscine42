@@ -6,9 +6,11 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 14:07:33 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/26 14:08:54 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/26 14:41:58 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 int	ft_strlen(char *str)
 {
@@ -44,4 +46,21 @@ void	str_append(char *str, char *append)
 		i++;
 	}
 	str[str_len + i] = '\0';
+}
+
+int	ft_strcmp(char *s1, char *s2)
+{
+	int	res;
+
+	res = 0;
+	while (res == 0 || (*s1 == '\0' && *s2 == '\0'))
+	{
+		if (*s1 != *s2)
+			res = (int) *s1 - (int) *s2;
+		else if (*s1 == '\0' || *s2 == '\0')
+			break ;
+		s1++;
+		s2++;
+	}
+	return (res);
 }

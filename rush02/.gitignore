@@ -6,4 +6,5 @@ en.subject.pdf
 !ex00
 ex00/.*
 ex00/*.out
+ex00/*.h.gch
 !.gitignore
