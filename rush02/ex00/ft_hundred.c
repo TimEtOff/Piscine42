@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 14:03:17 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/26 16:26:53 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/26 16:29:41 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ char	*ft_hundred(char *str)
 	nbr = str[0] - '0';
 	unit_str = ft_find(str);
 	hundred_str = ft_find("100");
+	if (unit_str == 0 || hundred_str == 0)
+		return (0);
 	size = ft_strlen(unit_str) + ft_strlen(hundred_str) + 2;
 	if (nbr > 1)
 		size += 1;

@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 14:03:17 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/26 16:26:35 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/26 16:34:52 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,13 @@ char	*make_tens_res(char *ten, char *unit)
 	int		ten_len;
 	int		unit_len;
 
+	if (ten == 0 || unit == 0)
+		return (0);
 	ten_len = ft_strlen(ten);
 	unit_len = ft_strlen(unit);
 	res = malloc(sizeof(char) * (ten_len + unit_len + 2));
+	if (res == NULL)
+		return (0);
 	res[0] = '\0';
 	if (ten_len != 0)
 	{
