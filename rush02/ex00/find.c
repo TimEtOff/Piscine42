@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   find.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mboutte <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 12:54:43 by mboutte           #+#    #+#             */
-/*   Updated: 2025/07/26 16:49:18 by mboutte          ###   ########.fr       */
+/*   Updated: 2025/07/26 20:40:09 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,8 @@ char	*ft_select(char *str)
 	return (word);
 }
 
+int	all_zero(char *str);
+
 char	*ft_find(char *nb, char *path)
 {
 	char	*file;
@@ -116,7 +118,14 @@ char	*ft_find(char *nb, char *path)
 	}
 	if (motif_found == 0)
 		return ("");
-	return (ft_select(&file[i]));
+	char	*res = ft_select(&file[i]);
+	if (all_zero(nb))
+	{
+		free(res);
+		res = malloc(sizeof(char));
+		res[0] = '\0';
+	}
+	return (res);
 }
 
 /*int	main(void)
