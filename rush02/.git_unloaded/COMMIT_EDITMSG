@@ -1,1 +1,1 @@
-Freeing output of ft_find when no longer used (ft_hundred & ft_tens)
+Added test_tim.c (tests for another method)

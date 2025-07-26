@@ -1,0 +1,22 @@
+Input:       1 234 567
+On check à partir de ^
+Si:
+		->   1 234 567 find
+		->     234 567 find
+		->      34 567 find
+		->   	 4 567 find
+		->   	   567 find
+		->   		67 find
+		->   		 7 find
+Input:       1 234 567 -> 1 234 560
+
+Input:       1 234 560
+					^
+		->   1 234 560 find
+		->     234 560 find
+		->      34 560 find
+		->       4 560 find
+		->         560 find
+		->          60 find
+
+Des qu'un est trouvé: print et remplacer par des 0
