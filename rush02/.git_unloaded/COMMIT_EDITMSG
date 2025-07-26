@@ -1,1 +1,1 @@
-Added error handling on ft_hundred and ft_tens (not tested yet)
+Freeing output of ft_find when no longer used (ft_hundred & ft_tens)

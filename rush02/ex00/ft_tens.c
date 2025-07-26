@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 14:03:17 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/26 16:34:52 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/26 16:45:42 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,14 @@ char	*make_tens_res(char *ten, char *unit)
 	if (ten_len != 0)
 	{
 		str_append(res, ten);
+		free(ten);
 		str_append(res, " ");
 	}
-	str_append(res, unit);
+	if (unit_len != 0)
+	{
+		str_append(res, unit);
+		free(unit);
+	}
 	return (res);
 }
 

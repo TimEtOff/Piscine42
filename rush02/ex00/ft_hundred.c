@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 14:03:17 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/26 16:29:41 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/26 16:43:15 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,10 @@ char	*ft_find(char *str);
 void	make_hundred_res(char *res, char *unit, char *hundred, int nbr)
 {
 	str_append(res, unit);
+	free(unit);
 	str_append(res, " ");
 	str_append(res, hundred);
+	free(hundred);
 	if (nbr > 1)
 		str_append(res, "s");
 }
