@@ -189,6 +189,24 @@ Learn how to use tha `malloc` and `free` functions to allocate memory.
 
 ---
 
+<details open><summary>
+
+### C 08
+
+</summary>
+
+| | Grade | Moulinette | Notes | Submit commit |
+| ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
+| ***First try*** | Not submitted yet | <pre><code></code></pre> |  | [&lt;......&gt;](https://github.com/TimEtOff/Piscine42/tree/...../c08) |
+
+[See subject](https://github.com/TimEtOff/Piscine42/blob/main/c08/en.subject.pdf)
+
+Use header files (`.h`) and structures `struct` + `typedef`.
+
+</details>
+
+---
+
 ## Exams
 
 Exams are, as you can guess, exams. They take place for 4 hours, the Fridays from 4PM to 8PM. You are free to finish whenever you want. <br><br>
