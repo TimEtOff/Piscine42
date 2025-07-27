@@ -6,11 +6,11 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/27 13:54:11 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/27 15:29:18 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/27 18:05:33 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "utils.h"
+#include "ft_utils.h"
 #include <unistd.h>
 
 /*

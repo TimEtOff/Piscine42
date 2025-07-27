@@ -6,7 +6,7 @@
 /*   By: mboutte <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 12:54:43 by mboutte           #+#    #+#             */
-/*   Updated: 2025/07/26 16:49:18 by mboutte          ###   ########.fr       */
+/*   Updated: 2025/07/27 14:15:11 by mboutte          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,7 @@ char	*ft_find(char *nb, char *path)
 		j = 0;
 		while (file[i + j] == nb[j] && file[i + j] && nb[j])
 			j++;
-		if (nb[j] == '\0' && (file[i + j] == ' ' || file[i + j] == ':'))
+		if (nb[j] == '\0' && (file[i + j] == ' ' || file[i + j] == ':') && (i == 0 || file[i - 1] == '\n'))
 		{
 			motif_found = 1;
 			i += j - 1;
@@ -115,7 +115,7 @@ char	*ft_find(char *nb, char *path)
 		i++;
 	}
 	if (motif_found == 0)
-		return ("");
+		return (NULL);
 	return (ft_select(&file[i]));
 }
 
@@ -133,5 +133,5 @@ char	*ft_find(char *nb, char *path)
 	__builtin_printf("15=%s\n", ft_find("15", path));
 	__builtin_printf("50=%s\n", ft_find("50", path));
 	__builtin_printf("90=%s\n", ft_find("90", path));
-	__builtin_printf("1000000=%s\n", ft_find("1000000", path));
+	__builtin_printf("1000=%s\n", ft_find("1000", path));
 }*/
