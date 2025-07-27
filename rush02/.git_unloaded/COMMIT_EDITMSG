@@ -1,1 +1,1 @@
-Added test_tim.c (tests for another method)
+Added main.c for argument handling + Removed 2nd method tests

@@ -7,3 +7,4 @@ a0e2d68fc08cdd8d9495d8fb8c6d70acaa6273ea 4903207851950068b3c88254906022dd30b1151
 adc4844bb644119a706a3ad1b0f92b93a8d5c08e 50de57a75f195b767788fad88fb0bf4015d5199c tgodefro <tgodefro@student.42lyon.fr> 1753541192 +0200	commit: Freeing output of ft_find when no longer used (ft_hundred & ft_tens)
 50de57a75f195b767788fad88fb0bf4015d5199c bf1227bc3b8095979739b8fa11e10ed46e6516cc tgodefro <tgodefro@student.42lyon.fr> 1753542933 +0200	pull: Fast-forward
 bf1227bc3b8095979739b8fa11e10ed46e6516cc a5192dbea96688407ab35cce084fa54bb3a4d596 tgodefro <tgodefro@student.42lyon.fr> 1753547698 +0200	commit: Added test_tim.c (tests for another method)
+a5192dbea96688407ab35cce084fa54bb3a4d596 9d9015aa2f4e70b4f484ad15dd17f872acd5422f tgodefro <tgodefro@student.42lyon.fr> 1753623114 +0200	commit: Added main.c for argument handling + Removed 2nd method tests
