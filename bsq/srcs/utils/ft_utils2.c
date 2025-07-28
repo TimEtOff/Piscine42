@@ -17,9 +17,8 @@ int	ft_min(int first_int, int second_int, int third_int)
 
 	if (first_int < second_int)
 		res = first_int;
-	else 
+	else
 		res = second_int;
-		
 	if (res > third_int)
 		res = third_int;
 	return (res);

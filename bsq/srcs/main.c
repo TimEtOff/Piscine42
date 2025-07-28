@@ -13,28 +13,53 @@
 #include "ft_map.h"
 #include "utils/ft_utils.h"
 
-char	*ft_map_to_str(const char *filename);
-t_map	*ft_parse_map(t_map *res, char *str_map);
-void	map_convert_to_int(t_map *map);
-void	map_cheching(t_map *map);
+void	free_tmap(t_map *map)
+{
+	unsigned long	i;
 
-int	main(int argc, char *argv[])
+	i = 0;
+	while (i < map->nb_row)
+	{
+		free(map->map[i]);
+		free(map->values_map[i]);
+		i++;
+	}
+	free(map->map);
+	free(map->values_map);
+}
+
+void	map_exec(char *path)
 {
 	t_map	map;
+	int		i;
+	char	*str_map;
+
+	str_map = ft_map_to_str(path);
+	ft_parse_map(&map, str_map);
+	free(str_map);
+	map_convert_to_int(&map);
+	map_cheching(&map);
+	i = 0;
+	while (i < ft_str_arraylen(map.map))
+	{
+		__builtin_printf("%s\n",map.map[i]);
+		i++;
+	}
+	free_tmap(&map);
+}
+
+int	main(int argc, char **argv)
+{
 	int		i;
 
 	if (argc >= 2)
 	{
-		ft_parse_map(&map, ft_map_to_str(argv[1]));
-		map_convert_to_int(&map);
-		map_cheching(&map);
-		i = 0;
-		while (i < ft_str_arraylen(map.map))
+		i = 2;
+		while (i <= argc)
 		{
-			__builtin_printf("%d\n",*map.values_map[i]);
+			map_exec(argv[i]);
 			i++;
 		}
 	}
-
 	return (0);
 }

@@ -13,6 +13,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <fcntl.h>
+#include "utils/ft_utils.h"
 
 int	ft_file_size(int fd)
 {
@@ -38,7 +39,9 @@ char	*ft_map_to_str(const char *filename)
 
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
-		return ("error");
+	{
+		return (ft_strdup("error\n"));
+	}
 	file_len = ft_file_size(fd);
 	close(fd);
 	fd = open(filename, O_RDONLY);

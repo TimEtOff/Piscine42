@@ -102,25 +102,3 @@ char	**ft_split(char *str, char *charset)
 	}
 	return (res);
 }
-
-/*int	main(int argc, char **argv)
-{
-	char	**res;
-	int		i;
-
-	if (argc >= 3)
-	{
-		i = 0;
-		res = ft_split(argv[1], argv[2]);
-		__builtin_printf("{");
-		while (i < count_words(argv[1], argv[2]) + 1)
-		{
-			__builtin_printf("%s, ", res[i]);
-			free(res[i]);
-			i++;
-		}
-		free(res);
-		__builtin_printf("}");
-	}
-	return (0);
-}*/

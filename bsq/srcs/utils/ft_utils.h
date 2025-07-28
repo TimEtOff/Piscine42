@@ -35,6 +35,9 @@ char	**ft_split(char *str, char *charset);
 // ft_atoi.c
 int		ft_atoi(char *str);
 
+// ft_strdup.c
+char	*ft_strdup(char *src);
+
 // map_file_reading.c
 char	*ft_map_to_str(const char *filename);
 
