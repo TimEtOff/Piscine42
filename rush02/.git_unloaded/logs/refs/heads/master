@@ -10,3 +10,4 @@ bf1227bc3b8095979739b8fa11e10ed46e6516cc a5192dbea96688407ab35cce084fa54bb3a4d59
 a5192dbea96688407ab35cce084fa54bb3a4d596 9d9015aa2f4e70b4f484ad15dd17f872acd5422f tgodefro <tgodefro@student.42lyon.fr> 1753623114 +0200	commit: Added main.c for argument handling + Removed 2nd method tests
 9d9015aa2f4e70b4f484ad15dd17f872acd5422f 550e693bc9a73a70b92e23617ad00738688bbfd8 tgodefro <tgodefro@student.42lyon.fr> 1753631118 +0200	pull: Fast-forward
 550e693bc9a73a70b92e23617ad00738688bbfd8 9159c25bf172ffa0a72e454c37d0f58aeba7ce46 tgodefro <tgodefro@student.42lyon.fr> 1753632354 +0200	commit: Changed utils header file
+9159c25bf172ffa0a72e454c37d0f58aeba7ce46 bc896fdb45dbdc55e506053b1485d7faa10c5c00 tgodefro <tgodefro@student.42lyon.fr> 1753688586 +0200	pull: Fast-forward

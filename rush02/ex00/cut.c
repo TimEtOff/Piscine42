@@ -6,14 +6,13 @@
 /*   By: mboutte <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 17:50:07 by mboutte           #+#    #+#             */
-/*   Updated: 2025/07/27 16:48:38 by mboutte          ###   ########.fr       */
+/*   Updated: 2025/07/27 23:14:28 by mboutte          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdlib.h>
-#define d_path "numbers.dict"
 
 char	*get_file(char *path);
 
@@ -23,9 +22,9 @@ char	*ft_find(char *nb, char *path);
 
 char	*ft_select(char *str);
 
-int	ft_len_file(char *path);
+int		ft_len_file(char *path);
 
-int	ft_strlen(char *str);
+int		ft_strlen(char *str);
 
 char	*ft_strjoin(int size, char **strs, char *sep);
 
@@ -33,69 +32,18 @@ char	*ft_strdup(char *src);
 
 char	*cut_z(char	*str);
 
-char *ft_rm_first_n(char *str, int char_rm)
-{
-	char *res;
-	int	i;
+char	*join_2(char *str1, char *str2);
 
-	i = 1;
-	res = malloc(sizeof(char) * (char_rm + 2));
-	while (i < char_rm)
-	{
-		res[i] = str[char_rm - i];
-		i++;
-	}
-	res[i] = '\0';
-	free(str);
-	return (res);
-}
+char	*ft_mod(char *str, char *path);
 
-char	*ft_mod(char *str)
-{
-	int	i;
-	char lettre[3];
-	char	**words;
-
-	__builtin_printf("\nft_mod input : str =%s", str);	
-	words = malloc(sizeof(char *) * 15);
-	if (ft_find(str, d_path) != NULL)
-	{
-		return (ft_find(str, d_path));
-	}
-
-	lettre[1] = '\0';
-	i = 0;
-	if (ft_strlen(str) == 3)
-	{
-		lettre[0] = str[0];
-		words[i++] = ft_find(lettre, d_path);
-		words[i++] = ft_find("100", d_path);
-		str = ft_strdup(&str[1]);
-		str = cut_z(str);
-		if (str == NULL)
-			return (ft_strjoin(i, words, " "));
-	}
-	if (ft_strlen(str) == 2)
-	{
-		if (ft_find(str, d_path) != NULL)
-		{
-			words[i++] = ft_find(str, d_path);
-			return (ft_strjoin(i, words, " "));
-		}
-		lettre[0] = str[0];
-		lettre[1] = '0';
-		lettre[2] = '\0';
-		words[i++] = ft_find(lettre, d_path);
-		str = ft_strdup(&str[1]);
-	}
-	words[i++] = ft_find(str, d_path);
-	return ft_strjoin(i, words, " ");
-}
+char	*cut_z(char	*str);
 
 char	*ft_rev(char *str, int size)
 {
-	int	i = 0;
 	char	c;
+	int	i;
+
+	i = 0;
 	while (i < size / 2)
 	{
 		c = str[i];
@@ -106,52 +54,24 @@ char	*ft_rev(char *str, int size)
 	return (str);
 }
 
-char	*ft_pow(int len)
+char	*ft_pow(int len, char *path)
 {	
 	char	*str;
 	char	*res;
 	int	i;
 	
-	len = len - ((len - 1) % 3);
 	str = malloc(sizeof(char) * len);
 	str[0] = '1';
 	i = 1;
 	while (i < len)
 		str[i++] = '0';
 	str[i] = '\0';
-	res = ft_find(str, d_path);
+	res = ft_find(str, path);
 	free(str);
 	return (res);
 }
 
-char	*cut_z(char	*str)
-{
-	char	*res;
-	int		nb_z;
-	int		i;
 
-	i = 0;
-	nb_z = 0;
-	while (str[i] && str[i] == '0')
-	{
-		nb_z++;
-		i++;
-	}
-	if (nb_z == 0)
-		return (str);
-	if (nb_z == ft_strlen(str))
-		return (NULL);
-	res = malloc(sizeof(char) * (ft_strlen(str) - nb_z + 1));
-	i = 0;
-	while(i + nb_z < ft_strlen(str))
-	{
-		res[i] = str[nb_z + i];
-		i++;
-	}
-	res[i] = '\0';
-	//free(str);
-	return (res);
-}
 char	*get_didgit(char *str)
 {
 	char	*res;
@@ -170,7 +90,6 @@ char	*get_didgit(char *str)
 	}
 	res[i] = '\0';
 	res = cut_z(res);
-	__builtin_printf("\noutput didgit|str=%s|output=%s", str, res);
 	return (res);
 }
 
@@ -192,80 +111,35 @@ char	*get_last(char *str)
 	}
 	res[i] = '\0';
 	res = cut_z(res);
-	__builtin_printf("\noutput last|str=%s|output=%s", str, res);
 	free(str);
 	return (res);	
 }
 
-char	**cut(char **words, char *str, int index)
+char	*cut(char *words, char *str, int j, char *path)
 {
-	char	*res;
-	int		len;
 	char	*last;
 	int	i;
-	char	*didgit;
 	
-	len = ft_strlen(str);
-	__builtin_printf("\n-----------------\nstart cut : index = %d| str =%s| len = %d", index, str, len);
 	i = 0;
-	malloc(sizeof(char) * 10);
-	res = ft_find(str, d_path);
-	if (res != NULL)
-	{
-		words[index] = res;
-		return (words);
-	}
-	if (len <= 3)
-	{
-		words[index] = ft_mod(str);
-		return (words);
-	}
+	if (ft_find(str, path) != NULL)
+		return (join_2(words, ft_find(str, path)));
+	if (ft_strlen(str) <= 3)
+		return (join_2(words, ft_mod(str, path)));
 	last = malloc(sizeof(char) * ft_strlen(str));
 	while (i < ft_strlen(str))
 	{
-		last[i] = str[len - i - 1];
-		str[len - 1 - i] = '0';
-		if (ft_find(str, d_path) != NULL)
+		last[i] = str[ft_strlen(str) - i - 1];
+		str[ft_strlen(str) - 1 - i++] = '0';
+		if (ft_find(str, path) != NULL)
 		{
-			words[index++] = ft_find(str, d_path);
-			last[i + 1] = '\0';
-			return (cut(words, ft_rm_first_n(last, i), index));
+			last[i] = '\0';
+			return (cut(join_2((join_2(words, ft_find(str, path))), ft_find(str, path)), ft_rev(last, i), j, path));
 		}
-		i++;
 	}
 	last[i] = '\0';
-	__builtin_printf("\nlast befoor cutting ==%s", last);
-	didgit = get_didgit(last);
 	last = get_last(last);
-	__builtin_printf("\nafter cutting didgit =%s, last =%s", didgit, last);
-	words[index++] = ft_mod(didgit);
-	words[index++] = ft_pow(len);
-	int	y = -1;
-	__builtin_printf("\n");
-	while (++y < index)
-		__builtin_printf("words[%d]=%s||", y,  words[y]);
-	__builtin_printf("just bef recu last = %s|", str);
+	words = (join_2((join_2(words, ft_mod(get_didgit(last), path))), ft_pow(ft_strlen(str), path)));
 	if (last == NULL)
 		return (words);
-	return cut(words, last, index);
-}
-
-int	main(int ac, char **av)
-{
-	char	**words;
-
-	(void)ac;
-	words = malloc(sizeof(char *) * 100);
-	if (ac > 1)
-		words = cut(words, av[1], 0);
-	else
-		__builtin_printf("plz put arg in a.out");
-	__builtin_printf("\n--------------------------");
-	__builtin_printf("\n%s", words[0]);
-	__builtin_printf("\n%s", words[1]);
-	__builtin_printf("\n%s", words[2]);
-	__builtin_printf("\n%s", words[3]);
-	__builtin_printf("\n%s", words[4]);
-	__builtin_printf("\n%s", words[5]);
-	return (0);
+	return cut(words, last, j, path);
 }

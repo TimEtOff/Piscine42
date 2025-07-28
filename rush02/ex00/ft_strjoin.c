@@ -6,7 +6,7 @@
 /*   By: mboutte <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/20 22:55:33 by mboutte           #+#    #+#             */
-/*   Updated: 2025/07/26 20:08:46 by mboutte          ###   ########.fr       */
+/*   Updated: 2025/07/27 18:39:55 by mboutte          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,18 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	return (join);
 }
 
+char	*join_2(char *str1, char *str2)
+{
+	char	**join;
+	
+	join = malloc(sizeof(char *) * 2);
+	if (str1 == NULL)
+		return (str2);
+	join[0] = str1;
+	join[1] = str2;
+	return ft_strjoin(2, join, " ");
+}
+
 /*int	main(void)
 {
 	char s1[] = "mot1";
@@ -68,7 +80,8 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	s_global[0] = s1;
 	s_global[1] = s2;
 	s_global[2] = s3;
-	__builtin_printf("test =%d\n", ft_calc_size(size, s_global, sep));
-	__builtin_printf("%s", ft_strjoin(size, s_global, sep));
+	__builtin_printf("%s", ft_strjoin_v2("mot1","mot2"));
+	//__builtin_printf("test =%d\n", ft_calc_size(size, s_global, sep));
+	//__builtin_printf("%s", ft_strjoin(size, s_global, sep));
 	return (0);
 }*/

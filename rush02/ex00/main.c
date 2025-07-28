@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/27 13:54:11 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/27 18:05:33 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/27 23:06:13 by nlaponte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,13 @@
 /*
 	Modified from `c02/ex03/ft_str_is_numeric.c`
 */
+
+char	*cut(char *words, char *str, int j, char *path);
+
+int	ft_dictverif(char *file);
+
+char	*get_file(char *path);
+
 int	ft_char_is_numeric(char chr)
 {
 	int	res;
@@ -44,12 +51,16 @@ int	check_input(char *input)
 
 int	write_num(char *input, char *path)
 {
-	int		res;
+	int			res;
+	char	*text;
 
+	text = (NULL);
 	res = check_input(input);
 	if (res == 0)
-		// TODO Changer la fonction par le bon cut
-		ft_rush02(input, path);
+	{
+		text = cut(NULL, input, 0, path);
+		ft_putstr(text);
+	}
 	else
 		write(1, "Error\n", 6);
 	return (res);
@@ -85,9 +96,9 @@ int	main(int argc, char **argv)
 	char	*path;
 
 	res = 0;
+	path = ("numbers.dict");
 	if (argc == 2 || argc == 3)
 	{
-		path = "numbers.dict";
 		if (argc == 2)
 			input = argv[1];
 		else
@@ -95,6 +106,7 @@ int	main(int argc, char **argv)
 			input = argv[2];
 			path = argv[1];
 		}
+		ft_dictverif(get_file(path));
 		if (ft_strcmp(input, "-") == 0)
 			read_user_input(path);
 		else
