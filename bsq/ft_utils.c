@@ -6,11 +6,12 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 14:07:33 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/28 12:36:09 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/28 13:08:38 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdlib.h>
 
 int	ft_strlen(char *str)
 {
