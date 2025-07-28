@@ -1,0 +1,8 @@
+# General
+*.subject.pdf
+
+# Exercise
+/.*
+/*.out
+/*.h.gch
+/*.o
