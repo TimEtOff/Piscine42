@@ -42,7 +42,7 @@ void	map_exec(char *path)
 	i = 0;
 	while (i < ft_str_arraylen(map.map))
 	{
-		__builtin_printf("%s\n",map.map[i]);
+		__builtin_printf("%s\n", map.map[i]);
 		i++;
 	}
 	free_tmap(&map);

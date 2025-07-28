@@ -18,7 +18,7 @@ CFLAGS = -Wall -Wextra -Werror -I srcs/
 
 MY_SOURCES = srcs/main.c srcs/ft_parse_map.c srcs/map_checking.c srcs/map_file_reading.c \
 			srcs/utils/ft_utils.c srcs/utils/ft_utils2.c srcs/utils/ft_array_utils.c \
-			srcs/utils/ft_split.c srcs/utils/ft_atoi.c srcs/utils/ft_strdup.c
+			srcs/utils/ft_split.c srcs/utils/ft_atoi.c
 
 OBJECTS = $(MY_SOURCES:.c=.o)
 

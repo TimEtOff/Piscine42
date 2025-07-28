@@ -3,6 +3,7 @@
 
 # Exercise
 *.*
+/bsq
 !Makefile
 !*.c
 !*.h

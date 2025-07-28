@@ -1,1 +1,1 @@
-Improved malloc handling
+Fixed a compilation error on utils/ft_utils2.c (free_array())
