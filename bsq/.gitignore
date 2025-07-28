@@ -2,8 +2,8 @@
 *.subject.pdf
 
 # Exercise
-*
-!/makefile
+*.*
+!Makefile
 !*.c
-!/*.h
-!/*.pl
+!*.h
+!*.pl

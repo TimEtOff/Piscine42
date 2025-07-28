@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_utils.h"
+#include "utils/ft_utils.h"
 #include "ft_map.h"
 
 void	map_convert_to_int(t_map *map)

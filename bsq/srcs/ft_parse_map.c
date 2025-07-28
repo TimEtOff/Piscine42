@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "ft_map.h"
-#include "ft_utils.h"
+#include "utils/ft_utils.h"
 
 int	first_line(t_map *res, char *line)
 {

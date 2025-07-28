@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "ft_map.h"
-#include "ft_utils.h"
+#include "utils/ft_utils.h"
 
 char	*ft_map_to_str(const char *filename);
 t_map	*ft_parse_map(t_map *res, char *str_map);

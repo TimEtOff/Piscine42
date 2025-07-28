@@ -14,18 +14,11 @@ EXE = bsq
 
 CC = cc
 
-CFLAGS = -Wall -Wextra -Werror -I.
+CFLAGS = -Wall -Wextra -Werror -I srcs/
 
-MY_SOURCES = ft_array_utils.c \
-		ft_split.c \
-		ft_utils2.c \
-		ft_utils.c \
-		ft_atoi.c \
-		ft_parse_map.c \
-		main.c \
-		map_checking.c \
-		map_file_reading.c \
-		
+MY_SOURCES = srcs/main.c srcs/ft_parse_map.c srcs/map_checking.c srcs/map_file_reading.c \
+			srcs/utils/ft_utils.c srcs/utils/ft_utils2.c srcs/utils/ft_array_utils.c \
+			srcs/utils/ft_split.c srcs/utils/ft_atoi.c
 
 OBJECTS = $(MY_SOURCES:.c=.o)
 

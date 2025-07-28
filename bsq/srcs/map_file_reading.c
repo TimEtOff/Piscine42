@@ -14,7 +14,6 @@
 #include <stdlib.h>
 #include <fcntl.h>
 
-
 int	ft_file_size(int fd)
 {
 	int		count;
