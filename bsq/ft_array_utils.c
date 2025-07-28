@@ -1,31 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_map.h                                           :+:      :+:    :+:   */
+/*   ft_array_utils.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/28 10:03:21 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/28 12:39:11 by tgodefro         ###   ########lyon.fr   */
+/*   Created: 2025/07/28 12:36:39 by tgodefro          #+#    #+#             */
+/*   Updated: 2025/07/28 12:57:30 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_MAP_H
-# define FT_MAP_H
-
-struct s_map
+int	ft_str_arraylen(char **array)
 {
-	unsigned long	nb_row;
-	unsigned long	nb_col;
+	int	i;
 
-	unsigned char	empty_char;
-	unsigned char	obstacle_char;
-	unsigned char	full_char;
+	i = 0;
+	while (array[i])
+		i++;
+	return (i);
+}
 
-	char			**map;
-	unsigned int	**values_map;
-};
+char	**truncate_str_array(char **str, int start, int end)
+{
+	char	*new_str;
+	int		i;
 
-typedef struct s_map	t_map;
-
-#endif
+	if (end == -1)
+		end = ft_strlen(str);
+	new_str = malloc(sizeof(char *) * (end - start));
+	i = 0;
+	while (i < (end - start))
+	{
+		new_str[i] = str[start + i];
+		i++;
+	}
+	new_str[i] = '\0';
+	return (new_str);
+}

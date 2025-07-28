@@ -2,7 +2,8 @@
 *.subject.pdf
 
 # Exercise
-/.*
-/*.out
-/*.h.gch
-/*.o
+*
+!/makefile
+!*.c
+!/*.h
+!/*.pl
