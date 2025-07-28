@@ -179,7 +179,7 @@ Start to make programs instead of functions, and use arguments on main function.
 
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
-| ***First try*** | Not submitted yet | <pre><code></code></pre> |  | [&lt;......&gt;](https://github.com/TimEtOff/Piscine42/tree/...../c07) |
+| ***First try*** | [<img src="./pngs/15.png" alt="fail: 15/100" width="150">](./pngs15.png) | <pre><code>ex00: OK &#8739; ex01: KO &#8739; &#13;ex02: KO &#8739; ex03: OK &#8739; &#13;ex04: KO &#8739; ex05: KO</code></pre> | Idk | [&lt;aee357b&gt;](https://github.com/TimEtOff/Piscine42/tree/aee357b/c07) |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c07/en.subject.pdf)
 

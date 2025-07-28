@@ -6,7 +6,7 @@
 #    By: yriffard <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/28 09:49:53 by yriffard          #+#    #+#              #
-#    Updated: 2025/07/28 09:52:34 by yriffard         ###   ########.fr        #
+#    Updated: 2025/07/28 15:03:33 by yriffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,16 @@ CC = cc
 
 CFLAGS = -Wall -Wextra -Werror -I.
 
-MY_SOURCES = 
+MY_SOURCES = ft_array_utils.c \
+		ft_split.c \
+		ft_utils2.c \
+		ft_utils.c \
+		ft_atoi.c \
+		ft_parse_map.c \
+		main.c \
+		map_checking.c \
+		map_file_reading.c \
+		
 
 OBJECTS = $(MY_SOURCES:.c=.o)
 
@@ -31,7 +40,7 @@ clean :
 	rm -f $(OBJECTS)
 
 fclean : clean
-	rm -f $(COMPILED)
+	rm -f $(EXE)
 
 re : fclean all
 

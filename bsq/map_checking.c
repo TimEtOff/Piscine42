@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 10:37:43 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/28 13:27:42 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/28 14:44:29 by yriffard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,29 +15,29 @@
 
 void	map_convert_to_int(t_map *map)
 {
-	int	i;
-	int	j;
+	int	row;
+	int	col;
 
-	i = 0;
-	j = 0;
-	while ((unsigned long) i < (*map).nb_row)
+	row = 0;
+	col = 0;
+	while ((unsigned long) row < (*map).nb_row)
 	{
-		while ((unsigned long) j < (*map).nb_col)
+		while ((unsigned long) col < (*map).nb_col)
 		{
-			if ((*map).map[i][j] == (*map).empty_char)
-				(*map).values_map [i][j] = 1;
+			if ((*map).map[row][col] == (*map).empty_char)
+				(*map).values_map [row][col] = 1;
 			else
-				(*map).values_map [i][j] = 0;
-			j++;
+				(*map).values_map [row][col] = 0;
+			col++;
 		}
-		i++;
+		row++;
 	}
 }
 
 void	map_cheching(t_map *map)
 {
-	int	row;
-	int	col;
+	unsigned long int	row;
+	unsigned long int	col;
 
 	row = 0;
 	col = 0;
