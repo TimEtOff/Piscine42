@@ -1,0 +1,25 @@
+
+echo "----------   Clean up  ----------"
+make fclean
+echo ""
+echo "---------- Norminette ----------"
+norminette -R CheckForbiddenSourceHeader
+echo ""
+echo "---------- Compilation ----------"
+make
+echo ""
+echo "----------  Execution  ----------"
+first=$1
+if [ "$first" = "true" ]
+then
+	shift
+fi
+$@
+echo ""
+echo "----------   Clean up  ----------"
+if [ "$first" = "true" ]
+then
+	make clean
+else
+	make fclean
+fi
