@@ -54,5 +54,6 @@ t_map	*ft_parse_map(t_map *res, char *str_map)
 		i++;
 	}
 	(*res).map = truncate_str_array(full_map, 1, ft_str_arraylen(full_map));
+	free_array(full_map);
 	return (res);
 }

@@ -39,3 +39,16 @@ char	**truncate_str_array(char **str, int start, int end)
 	new_array[i] = 0;
 	return (new_array);
 }
+
+void	free_array(void **array)
+{
+	int	i;
+
+	i = 0;
+	while (array[i])
+	{
+		free(array[i]);
+		i++;
+	}
+	free(array);
+}
