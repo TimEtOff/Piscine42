@@ -74,6 +74,8 @@ char	*truncate_str(char *str, int start, int end)
 	if (end == -1)
 		end = ft_strlen(str);
 	new_str = malloc(sizeof(char) * (end - start));
+	if (new_str == NULL)
+		return (NULL);
 	i = 0;
 	while (i < (end - start))
 	{

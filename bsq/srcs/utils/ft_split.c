@@ -29,6 +29,9 @@ int	is_in(char c, char *str)
 	return (res);
 }
 
+/*
+	`ft_strlen` functions but also stops if character is in `charset`.
+*/
 int	strlen_set(char	*str, char	*charset)
 {
 	int	i;
@@ -57,12 +60,23 @@ int	count_words(char *str, char *charset)
 	return (res);
 }
 
-void	split_loop(char **res, char *str, char *charset, int *i_str)
+/*
+	Browse through a string and split it at every character in `charset`.
+
+	Parameters:
+	-	`res (char **)`	: Where to store the created strings (malloc'ed).
+	-	`str (char *)`	: The browsed string.
+	-	`charset (char *)`: The characters that split `str`.
+	-	`i_str (int *)`	: A pointer to the index of the string in `res`
+	Return:
+	-	`0` if no error, `1` if malloc error.
+*/
+int	split_loop(char **res, char *str, char *charset, int *i_str)
 {
 	int	i;
 
 	i = 0;
-	while (*str)
+	while (*str != '\0')
 	{
 		if (is_in(*str, charset))
 		{
@@ -72,6 +86,8 @@ void	split_loop(char **res, char *str, char *charset, int *i_str)
 			while (is_in(*str, charset))
 				str++;
 			res[*i_str] = malloc(sizeof(char) * strlen_set(str, charset) + 1);
+			if (res[*i_str] == NULL)
+				return (1);
 			res[*i_str][0] = '\0';
 		}
 		else
@@ -81,6 +97,7 @@ void	split_loop(char **res, char *str, char *charset, int *i_str)
 			i++;
 		}
 	}
+	return (0);
 }
 
 char	**ft_split(char *str, char *charset)
@@ -91,14 +108,19 @@ char	**ft_split(char *str, char *charset)
 	res = malloc(sizeof(char *) * count_words(str, charset) + 1);
 	if (res == NULL)
 		return (0);
+	res[0] = 0;
 	i_str = 0;
 	if (count_words(str, charset))
 	{
 		while (is_in(*str, charset))
 			str++;
 		res[i_str] = malloc(sizeof(char) * strlen_set(str, charset) + 1);
+		if (res[i_str] == NULL)
+			return (NULL);
 		res[i_str][0] = '\0';
-		split_loop(res, str, charset, &i_str);
+		if (split_loop(res, str, charset, &i_str))
+			return (NULL);
 	}
+	res[i_str] = 0;
 	return (res);
 }

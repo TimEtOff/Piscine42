@@ -12,26 +12,28 @@
 
 #include "utils/ft_utils.h"
 #include "ft_map.h"
+#include <stdio.h>
 
 int	map_values_mallocing(t_map *map)
 {
-	unsigned long int	i;
+	unsigned int	i;
 
 	i = 0;
-	map->values_map = malloc(sizeof(unsigned int *) * map->nb_row);
+	map->values_map = malloc(sizeof(unsigned int *) * map->nb_row + 1);
 	if (!map->values_map)
 		return (1);
 	while (i < map->nb_col)
 	{
-		map->values_map[i] = malloc(sizeof(unsigned int) * map->nb_col);
+		map->values_map[i] = malloc(sizeof(unsigned int) * map->nb_col + 1);
 		if (!map->values_map[i])
 			return (1);
 		i++;
 	}
+	map->values_map[i] = 0;
 	return (0);
 }
 
-void	map_convert_to_int(t_map *map)
+int	map_convert_to_int(t_map *map)
 {
 	int	row;
 	int	col;
@@ -39,7 +41,7 @@ void	map_convert_to_int(t_map *map)
 	row = 0;
 	col = 0;
 	if (map_values_mallocing(map))
-		return ;
+		return (1);
 	while ((unsigned long) row < map->nb_row)
 	{
 		while ((unsigned long) col < map->nb_col)
@@ -50,11 +52,13 @@ void	map_convert_to_int(t_map *map)
 				map->values_map [row][col] = 0;
 			col++;
 		}
+		col = 0;
 		row++;
 	}
+	return (0);
 }
 
-void	map_checking(t_map *map)
+int	map_checking(t_map *map)
 {
 	unsigned long int	row;
 	unsigned long int	col;
@@ -74,11 +78,14 @@ void	map_checking(t_map *map)
 						map->map[row][col - 1],
 						map->map[row - 1][col - 1]);
 			}
+			col++;
 		}
+		row++;
 	}
+	return (0);
 }
 
-/*int	main(void)
+/*int	main(void) // TODO Penser à supp
 
 {
 	__builtin_printf("%s","debut");

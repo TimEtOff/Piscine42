@@ -41,12 +41,13 @@ char	*ft_map_to_str(const char *filename)
 	if (fd < 0)
 		return (NULL);
 	file_len = ft_file_size(fd);
-	if (close(fd) < 0)
-		return (NULL);
+	close(fd);
 	fd = open(filename, O_RDONLY);
 	if (fd < 0)
 		return (NULL);
 	dict_to_str = malloc(sizeof(char) * (file_len + 1));
+	if (dict_to_str == NULL)
+		return (NULL);
 	*dict_to_str = '\0';
 	read(fd, dict_to_str, file_len);
 	close(fd);

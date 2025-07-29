@@ -30,6 +30,8 @@ char	**truncate_str_array(char **str, int start, int end)
 	if (end == -1)
 		end = ft_str_arraylen(str);
 	new_array = malloc(sizeof(char *) * (end - start));
+	if (new_array == NULL)
+		return (NULL);
 	i = 0;
 	while (i < (end - start))
 	{

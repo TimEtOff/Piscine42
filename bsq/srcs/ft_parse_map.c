@@ -23,14 +23,13 @@ int	first_line(t_map *res, char *line)
 	i = size - 1;
 	if (size < 4)
 		return (1);
-	(*res).full_char = line[i];
+	res->full_char = line[i];
 	i--;
-	(*res).obstacle_char = line[i];
+	res->obstacle_char = line[i];
 	i--;
-	(*res).empty_char = line[i];
-	i--;
+	res->empty_char = line[i];
 	truncated = truncate_str(line, 0, i);
-	(*res).nb_row = ft_atoi(truncated);
+	res->nb_row = ft_atoi(truncated);
 	free(truncated);
 	return (0);
 }
@@ -45,15 +44,15 @@ t_map	*ft_parse_map(t_map *res, char *str_map)
 		return (NULL);
 	if (first_line(res, full_map[0]))
 		return (NULL);
-	(*res).nb_row = ft_strlen(full_map[1]);
+	res->nb_col = ft_strlen(full_map[1]);
 	i = 1;
-	while (i < (int)(*res).nb_row)
+	while (i < (int) res->nb_row)
 	{
-		if (ft_strlen(full_map[i]) != (int)(*res).nb_row)
+		if (ft_strlen(full_map[i]) != (int) res->nb_col)
 			return (NULL);
 		i++;
 	}
-	(*res).map = truncate_str_array(full_map, 1, ft_str_arraylen(full_map));
+	res->map = truncate_str_array(full_map, 1, ft_str_arraylen(full_map));
 	free_array((void **) full_map);
 	return (res);
 }

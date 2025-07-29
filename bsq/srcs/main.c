@@ -38,11 +38,13 @@ int	map_exec(char *path)
 	str_map = ft_map_to_str(path);
 	if (str_map == NULL)
 		return (1);
-	if (ft_parse_map(&map, str_map) == NULL)
+	if (ft_parse_map(&map, str_map) == NULL) // FIXME A lot of valgrind errors because of ft_split and others + parsing is wrong i guess
 		return (2);
 	free(str_map);
-	map_convert_to_int(&map);
-	map_checking(&map);
+	if (map_convert_to_int(&map))
+		return (3);
+	if (map_checking(&map))
+		return (4);
 	i = 0;
 	while (i < ft_str_arraylen(map.map))
 	{
@@ -68,6 +70,10 @@ int	main(int argc, char **argv)
 				ft_putstr("Error (File reading)\n");
 			else if (exec_res == 2)
 				ft_putstr("Error (Parsing)\n");
+			else if (exec_res == 3)
+				ft_putstr("Error (Int map initialisation)\n");
+			else if (exec_res == 4)
+				ft_putstr("Error (Checking)\n");
 			i++;
 		}
 	}
