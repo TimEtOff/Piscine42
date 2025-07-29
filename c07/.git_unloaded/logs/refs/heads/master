@@ -10,3 +10,4 @@ e7d404544e722f9ddc5c9f2141b0c490ae71133e 16cf8e57cb6421160e4373d698853a43891b232
 16cf8e57cb6421160e4373d698853a43891b2326 1002154dc175fe0f8eba41ec721b82dd97c28b8a tgodefro <tgodefro@student.42lyon.fr> 1753547725 +0200	commit: Started split
 1002154dc175fe0f8eba41ec721b82dd97c28b8a a5d6c66db4f47a878a5fb9bc3d17ccb70cc9075e tgodefro <tgodefro@student.42lyon.fr> 1753631518 +0200	commit: Ex05 (ft_split)
 a5d6c66db4f47a878a5fb9bc3d17ccb70cc9075e 3e0f55f7fff97236da0a4504aa141e353660dc3e tgodefro <tgodefro@student.42lyon.fr> 1753803648 +0200	commit: Fixed ranges (ex01 & ex02)
+3e0f55f7fff97236da0a4504aa141e353660dc3e d6982183fa7221a60d1221c46c29a712ba449123 tgodefro <tgodefro@student.42lyon.fr> 1753804517 +0200	commit: Fixed convert_base (ex04)

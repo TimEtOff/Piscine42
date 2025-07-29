@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/25 11:59:04 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/26 13:03:21 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/29 17:54:54 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,12 +65,12 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 	int		base_size;
 	char	*res;
 
-	if (!check_base(base_to))
+	if (!check_base(base_to) || !check_base(base_from))
 		return (NULL);
 	atoied_nbr = ft_atoi_base(nbr, base_from);
 	base_size = ft_strlen(base_to);
 	res = "";
-	if (check_base(base_to) && nbr_is_valid_int(atoied_nbr))
+	if (nbr_is_valid_int(atoied_nbr))
 	{
 		res = malloc(sizeof(char) * get_nb_size(atoied_nbr, base_size) + 1);
 		res[0] = '\0';
@@ -98,8 +98,8 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 	res = ft_convert_base("   +---++-lX", "XavNiel", "0123456789");
 	__builtin_printf("%s, %i\n", res, ft_strlen(res));
 	free(res);
-	res = ft_convert_base(" \t  +--++-00000", "0123456789", "abcdef");
-	__builtin_printf("%s, %i\n", res, ft_strlen(res));
+	res = ft_convert_base(" \t  +--++-gfntfg", "argvytfgxc", "hfdgta");
+	__builtin_printf("%s, %i\n", res, 1);
 	free(res);
 	return (0);
 }*/

@@ -6,9 +6,19 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 17:09:35 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/25 14:18:29 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/29 17:54:01 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
+
+int	ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
+}
 
 int	ft_is_negative(char *str, int *index)
 {
@@ -33,24 +43,24 @@ int	check_base(char *base)
 	res = 1;
 	i = 0;
 	i_check = 1;
-	if (base[i] == '\0' || base[i + 1] == '\0')
-		res = 0;
+	if (ft_strlen(base) <= 1)
+		return (0);
 	while (base[i] != '\0')
 	{
 		if (base[i] == '+' || base[i] == '-' || base[i] == ' '
 			|| base[i] == '\f' || base[i] == '\n' || base[i] == '\r'
 			|| base[i] == '\t' || base[i] == '\v')
-			res = 0;
+			return (0);
 		while (base[i_check] != '\0')
 		{
 			if (i != i_check && base[i] == base[i_check])
-				res = 0;
+				return (0);
 			i_check++;
 		}
 		i_check = 0;
 		i++;
 	}
-	return (res);
+	return (1);
 }
 
 int	index_in_base(char chr, char *base)
@@ -65,16 +75,6 @@ int	index_in_base(char chr, char *base)
 		ind++;
 	}
 	return (-1);
-}
-
-int	ft_strlen(char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
 }
 
 long	ft_atoi_base(char *str, char *base)
