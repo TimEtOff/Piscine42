@@ -321,10 +321,10 @@ https://www.puzzle-skyscrapers.com/
 
 | Grade | Notes | Submit commit |
 | ---------------- | ------------------ | ----------- |
-| Not submitted yet |  | [&lt;______&gt;](https://github.com/TimEtOff/Piscine42/tree/______/rush02) |
+| [<img src="./pngs/0.png" alt="fail: 0/100" width="150">](./pngs/0.png) | Almost everything worked great but we didn't have time to fuse our work and norm it correclty. | [&lt;d2ecdbc&gt;](https://github.com/TimEtOff/Piscine42/tree/d2ecdbc/rush02) |
 
 **Evaluation**
-> ""
+> "Très bon groupe, un bon début de projet qui fonctionne avec 3 chiffres. Les nouvelles notions sont comprises : makefile, open, close, fd. Malheureusement, quelques petits soucis : malloc pas forcément sécurisé, open aussi, des soucis de norm. Mais sinon, l'idée de l'algo était très bonne, tout le monde a bien travaillé dessus. Avec une journée de plus, cela aurait pu être validé. Oubliez le PHONY + relink. Bonne chance pour la fin de piscine !" - [pnaessen](https://profile.intra.42.fr/users/pnaessen)
 
 *With [mboutte](https://profile.intra.42.fr/users/mboutte) and [nlaponte](https://profile.intra.42.fr/users/nlaponte)*
 

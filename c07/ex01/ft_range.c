@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 13:16:27 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/23 14:36:40 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/29 17:40:27 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 int	*ft_range(int min, int max)
 {
-	int	*range;
-	int	i;
-	int	size;
+	int				*range;
+	unsigned long	i;
+	unsigned long	size;
 
-	if (min > max)
-		return (0);
-	size = max - min;
+	if (min >= max)
+		return (NULL);
+	size = (long) max - (long) min;
 	range = malloc(sizeof(int) * size);
 	if (range == NULL)
-		return (0);
+		return (NULL);
 	i = 0;
 	while (i < size)
 	{
@@ -40,6 +40,11 @@ void	print_tab(int *tab, int size)
 	int	i;
 
 	i = 0;
+	if (tab == NULL)
+	{
+		printf("(null)\n");
+		return ;
+	}
 	printf("%c", '{');
 	while (i < size - 1)
 	{
@@ -52,6 +57,6 @@ void	print_tab(int *tab, int size)
 int	main(void)
 {
 	print_tab(ft_range(5, 10), 5);
-	print_tab(ft_range(0, 451), 451);
+	print_tab(ft_range(2, 200), 198);
 	return (0);
 }*/
