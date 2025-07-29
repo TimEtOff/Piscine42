@@ -6,13 +6,14 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 14:11:07 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/28 15:05:30 by yriffard         ###   ########.fr       */
+/*   Updated: 2025/07/29 16:38:46 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_UTILS_H
 # define FT_UTILS_H
 # include <stdlib.h>
+# include <unistd.h>
 # include "ft_map.h"
 
 // ft_utils.c
@@ -26,6 +27,7 @@ char	*truncate_str(char *str, int start, int end);
 int		ft_min(int first_int, int second_int, int third_int);
 char	*ft_strdup(char *src);
 int		ft_str_is_printable(char *str);
+void	ft_putnbr(int nb);
 
 // ft_array_utils.c
 int		ft_arraylen(void **array);

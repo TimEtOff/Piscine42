@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_utils2.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yriffard <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 13:18:24 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/28 13:18:33 by yriffard         ###   ########.fr       */
+/*   Updated: 2025/07/29 16:34:07 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,4 +60,19 @@ int	ft_str_is_printable(char *str)
 		str++;
 	}
 	return (res);
+}
+
+void	ft_putnbr(int nb)
+{
+	char	c;
+
+	if (nb < 0)
+	{
+		write(1, "-", 1);
+		nb = -nb;
+	}
+	c = (char)(nb % 10 + 48);
+	if (nb >= 10)
+		ft_putnbr(nb / 10);
+	write(1, &c, 1);
 }

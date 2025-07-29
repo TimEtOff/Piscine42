@@ -6,13 +6,12 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 10:37:43 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/28 20:57:08 by yriffard         ###   ########.fr       */
+/*   Updated: 2025/07/29 16:27:22 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "utils/ft_utils.h"
 #include "ft_map.h"
-#include <stdio.h>
 
 int	map_values_mallocing(t_map *map)
 {
@@ -80,42 +79,8 @@ int	map_checking(t_map *map)
 			}
 			col++;
 		}
+		col = 0;
 		row++;
 	}
 	return (0);
 }
-
-/*int	main(void) // TODO Penser à supp
-
-{
-	__builtin_printf("%s","debut");
-	t_map map ;
-	int	i;
-	int	j;
-	 __builtin_printf("%s","debut");
-	char *map_[4] = { "....","....","....","...o"};
-	map.nb_row = 4;
-	map.nb_col = 4;
-	map.empty_char = '.';
-	map.obstacle_char = 'o';
-	map.full_char = 'x';
-	map.nb_row = 4;
-	map.map =map_;
-	
-	i = 0;
-	j = 0;
-	map_convert_to_int(&map);
-	__builtin_printf("%s","apres convert");
-	map_checking(&map);
-	__builtin_printf("%s","apres ccheck");
-	while (i < 4)
-	{
-		while (j < 4)
-		{
-			__builtin_printf("%d",map.values_map[i][j]);
-			j++;
-		}
-		i++;
-	}
-	return (0);
-}*/

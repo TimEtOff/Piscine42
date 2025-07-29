@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 10:35:49 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/28 13:14:26 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/29 16:53:46 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,18 @@ int	is_valid_char(char c, t_map *map)
 	res = 0;
 	if (c == map->empty_char || c == map->obstacle_char)
 		res = 1;
+	return (res);
+}
+
+int	map_chars_are_unique(t_map *map)
+{
+	int	res;
+
+	res = 1;
+	if (map->empty_char == map->obstacle_char
+		|| map->empty_char == map->full_char
+		|| map->obstacle_char == map->full_char)
+		res = 0;
 	return (res);
 }
 
@@ -38,6 +50,8 @@ int	first_line(t_map *res, char *line)
 	res->obstacle_char = line[i];
 	i--;
 	res->empty_char = line[i];
+	if (!map_chars_are_unique(res))
+		return (1);
 	truncated = truncate_str(line, 0, i);
 	res->nb_row = ft_atoi(truncated);
 	free(truncated);
@@ -81,5 +95,6 @@ t_map	*ft_parse_map(t_map *res, char *str_map)
 		return (NULL);
 	res->map = truncate_str_array(full_map, 1, ft_arraylen((void *) full_map));
 	free(full_map[0]);
+	free(full_map);
 	return (res);
 }

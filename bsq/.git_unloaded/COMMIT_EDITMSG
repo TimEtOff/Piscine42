@@ -1,1 +1,1 @@
-Fixed parsing (it was right but lines were freed altought we needed them later)
+Fixed bugs and print values_map for debug

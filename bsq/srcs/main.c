@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 09:54:11 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/28 18:52:59 by yriffard         ###   ########.fr       */
+/*   Updated: 2025/07/29 16:54:12 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,30 @@ void	free_tmap(t_map *map)
 	free(map->values_map);
 }
 
+void	DBG_print_values_map(t_map *res)
+{
+	int	i;
+	int	j;
+
+	i = 0;
+	j = 0;
+	while (i < 10)
+	{
+		while (j < 10)
+		{
+			ft_putnbr(res->values_map[i][j]);
+			ft_putstr("	");
+			j++;
+		}
+		ft_putstr("\n");
+		j = 0;
+		i++;
+	}
+}
+
 int	map_exec(char *path)
 {
 	t_map	map;
-	int		i;
 	char	*str_map;
 
 	str_map = ft_map_to_str(path);
@@ -45,8 +65,7 @@ int	map_exec(char *path)
 		return (3);
 	if (map_checking(&map))
 		return (4);
-	i = 0;
-	ft_putstr_array(map.map, "\n");
+	DBG_print_values_map(&map);
 	free_tmap(&map);
 	return (0);
 }
