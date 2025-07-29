@@ -1,0 +1,16 @@
+# General
+en.subject.pdf
+.git_unloaded/
+
+# Exercises
+*/*
+
+!ex00/libft_creator.sh
+!ex00/ft_putchar.c
+!ex00/ft_swap.c
+!ex00/ft_putstr.c
+!ex00/ft_strlen.c
+!ex00/ft_strcmp.c
+
+!ex01/Makefile
+!ex02/ft_split.c
