@@ -6,12 +6,13 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 09:54:11 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/28 15:04:36 by yriffard         ###   ########.fr       */
+/*   Updated: 2025/07/28 18:52:59 by yriffard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_map.h"
 #include "utils/ft_utils.h"
+#include <unistd.h>
 
 void	free_tmap(t_map *map)
 {
@@ -28,17 +29,20 @@ void	free_tmap(t_map *map)
 	free(map->values_map);
 }
 
-void	map_exec(char *path)
+int	map_exec(char *path)
 {
 	t_map	map;
 	int		i;
 	char	*str_map;
 
 	str_map = ft_map_to_str(path);
-	ft_parse_map(&map, str_map);
+	if (str_map == NULL)
+		return (1);
+	if (ft_parse_map(&map, str_map) == NULL)
+		return (2);
 	free(str_map);
 	map_convert_to_int(&map);
-	map_cheching(&map);
+	map_checking(&map);
 	i = 0;
 	while (i < ft_str_arraylen(map.map))
 	{
@@ -46,18 +50,24 @@ void	map_exec(char *path)
 		i++;
 	}
 	free_tmap(&map);
+	return (0);
 }
 
 int	main(int argc, char **argv)
 {
-	int		i;
+	int	i;
+	int	exec_res;
 
 	if (argc >= 2)
 	{
-		i = 2;
-		while (i <= argc)
+		i = 1;
+		while (i < argc)
 		{
-			map_exec(argv[i]);
+			exec_res = map_exec(argv[i]);
+			if (exec_res == 1)
+				ft_putstr("Error (File reading)\n");
+			else if (exec_res == 2)
+				ft_putstr("Error (Parsing)\n");
 			i++;
 		}
 	}

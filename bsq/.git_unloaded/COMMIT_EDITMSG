@@ -1,1 +1,1 @@
-Fixed a compilation error on utils/ft_utils2.c (free_array())
+Changed some things, fixed bugs and made objects build in objs/

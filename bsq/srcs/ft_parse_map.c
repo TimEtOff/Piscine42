@@ -42,15 +42,15 @@ t_map	*ft_parse_map(t_map *res, char *str_map)
 
 	full_map = ft_split(str_map, "\n");
 	if (ft_str_arraylen(full_map) < 2)
-		return (res);
+		return (NULL);
 	if (first_line(res, full_map[0]))
-		return (res);
+		return (NULL);
 	(*res).nb_row = ft_strlen(full_map[1]);
 	i = 1;
 	while (i < (int)(*res).nb_row)
 	{
 		if (ft_strlen(full_map[i]) != (int)(*res).nb_row)
-			return (res);
+			return (NULL);
 		i++;
 	}
 	(*res).map = truncate_str_array(full_map, 1, ft_str_arraylen(full_map));

@@ -42,7 +42,7 @@ char	*ft_map_to_str(const char *filename);
 
 // map_checking.c
 void	map_convert_to_int(t_map *map);
-void	map_cheching(t_map *map);
+void	map_checking(t_map *map);
 
 // ft_parse_map.c
 t_map	*ft_parse_map(t_map *res, char *str_map);

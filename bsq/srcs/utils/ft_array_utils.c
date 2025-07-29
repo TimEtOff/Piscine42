@@ -36,7 +36,7 @@ char	**truncate_str_array(char **str, int start, int end)
 		new_array[i] = str[start + i];
 		i++;
 	}
-	new_array[i] = 0;
+	new_array[i] = NULL;
 	return (new_array);
 }
 

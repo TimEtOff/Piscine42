@@ -38,13 +38,14 @@ char	*ft_map_to_str(const char *filename)
 	char	*dict_to_str;
 
 	fd = open(filename, O_RDONLY);
-	if (fd == -1)
-	{
-		return (ft_strdup("error\n"));
-	}
+	if (fd < 0)
+		return (NULL);
 	file_len = ft_file_size(fd);
-	close(fd);
+	if (close(fd) < 0)
+		return (NULL);
 	fd = open(filename, O_RDONLY);
+	if (fd < 0)
+		return (NULL);
 	dict_to_str = malloc(sizeof(char) * (file_len + 1));
 	*dict_to_str = '\0';
 	read(fd, dict_to_str, file_len);

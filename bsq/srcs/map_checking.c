@@ -6,12 +6,30 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 10:37:43 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/28 14:44:29 by yriffard         ###   ########.fr       */
+/*   Updated: 2025/07/28 20:57:08 by yriffard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "utils/ft_utils.h"
 #include "ft_map.h"
+
+int	map_values_mallocing(t_map *map)
+{
+	unsigned long int	i;
+
+	i = 0;
+	map->values_map = malloc(sizeof(unsigned int *) * map->nb_row);
+	if (!map->values_map)
+		return (1);
+	while (i < map->nb_col)
+	{
+		map->values_map[i] = malloc(sizeof(unsigned int) * map->nb_col);
+		if (!map->values_map[i])
+			return (1);
+		i++;
+	}
+	return (0);
+}
 
 void	map_convert_to_int(t_map *map)
 {
@@ -20,6 +38,8 @@ void	map_convert_to_int(t_map *map)
 
 	row = 0;
 	col = 0;
+	if (map_values_mallocing(map))
+		return ;
 	while ((unsigned long) row < map->nb_row)
 	{
 		while ((unsigned long) col < map->nb_col)
@@ -34,7 +54,7 @@ void	map_convert_to_int(t_map *map)
 	}
 }
 
-void	map_cheching(t_map *map)
+void	map_checking(t_map *map)
 {
 	unsigned long int	row;
 	unsigned long int	col;
@@ -57,3 +77,38 @@ void	map_cheching(t_map *map)
 		}
 	}
 }
+
+/*int	main(void)
+
+{
+	__builtin_printf("%s","debut");
+	t_map map ;
+	int	i;
+	int	j;
+	 __builtin_printf("%s","debut");
+	char *map_[4] = { "....","....","....","...o"};
+	map.nb_row = 4;
+	map.nb_col = 4;
+	map.empty_char = '.';
+	map.obstacle_char = 'o';
+	map.full_char = 'x';
+	map.nb_row = 4;
+	map.map =map_;
+	
+	i = 0;
+	j = 0;
+	map_convert_to_int(&map);
+	__builtin_printf("%s","apres convert");
+	map_checking(&map);
+	__builtin_printf("%s","apres ccheck");
+	while (i < 4)
+	{
+		while (j < 4)
+		{
+			__builtin_printf("%d",map.values_map[i][j]);
+			j++;
+		}
+		i++;
+	}
+	return (0);
+}*/
