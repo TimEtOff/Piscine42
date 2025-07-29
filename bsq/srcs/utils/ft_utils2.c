@@ -43,3 +43,21 @@ char	*ft_strdup(char *src)
 	dest[i] = '\0';
 	return (dest);
 }
+
+/*
+	In ASCII table, printable characters are all
+	charactes between 32 and 126 (Alphanumeric and punctuation chars)
+*/
+int	ft_str_is_printable(char *str)
+{
+	int	res;
+
+	res = 1;
+	while (*str != '\0')
+	{
+		if (!((32 <= (int) *str) && ((int) *str <= 126)))
+			res = 0;
+		str++;
+	}
+	return (res);
+}

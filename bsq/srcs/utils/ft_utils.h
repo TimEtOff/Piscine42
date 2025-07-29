@@ -25,11 +25,13 @@ char	*truncate_str(char *str, int start, int end);
 // ft_utlis2.c
 int		ft_min(int first_int, int second_int, int third_int);
 char	*ft_strdup(char *src);
+int		ft_str_is_printable(char *str);
 
 // ft_array_utils.c
-int		ft_str_arraylen(char **array);
+int		ft_arraylen(void **array);
 char	**truncate_str_array(char **str, int start, int end);
 void	free_array(void **array);
+void	ft_putstr_array(char **array, char *sep);
 
 // ft_split.c
 char	**ft_split(char *str, char *charset);

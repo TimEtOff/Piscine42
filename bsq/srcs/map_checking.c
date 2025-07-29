@@ -35,16 +35,16 @@ int	map_values_mallocing(t_map *map)
 
 int	map_convert_to_int(t_map *map)
 {
-	int	row;
-	int	col;
+	unsigned int	row;
+	unsigned int	col;
 
 	row = 0;
 	col = 0;
 	if (map_values_mallocing(map))
 		return (1);
-	while ((unsigned long) row < map->nb_row)
+	while (row < map->nb_row)
 	{
-		while ((unsigned long) col < map->nb_col)
+		while (col < map->nb_col)
 		{
 			if (map->map[row][col] == map->empty_char)
 				map->values_map [row][col] = 1;

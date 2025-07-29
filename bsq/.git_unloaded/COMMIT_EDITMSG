@@ -1,1 +1,1 @@
-Fixed a lot of bugs, parsing doesn't work for some reasons
+Fixed parsing (it was right but lines were freed altought we needed them later)

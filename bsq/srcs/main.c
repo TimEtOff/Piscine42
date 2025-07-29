@@ -38,7 +38,7 @@ int	map_exec(char *path)
 	str_map = ft_map_to_str(path);
 	if (str_map == NULL)
 		return (1);
-	if (ft_parse_map(&map, str_map) == NULL) // FIXME A lot of valgrind errors because of ft_split and others + parsing is wrong i guess
+	if (ft_parse_map(&map, str_map) == NULL) // FIXME A lot of valgrind errors because of ft_split and others
 		return (2);
 	free(str_map);
 	if (map_convert_to_int(&map))
@@ -46,11 +46,7 @@ int	map_exec(char *path)
 	if (map_checking(&map))
 		return (4);
 	i = 0;
-	while (i < ft_str_arraylen(map.map))
-	{
-		__builtin_printf("%s\n", map.map[i]);
-		i++;
-	}
+	ft_putstr_array(map.map, "\n");
 	free_tmap(&map);
 	return (0);
 }

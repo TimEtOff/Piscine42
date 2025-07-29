@@ -10,9 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "utils/ft_utils.h"
 #include <stdlib.h>
 
-int	ft_str_arraylen(char **array)
+int	ft_arraylen(void **array)
 {
 	int	i;
 
@@ -28,7 +29,7 @@ char	**truncate_str_array(char **str, int start, int end)
 	int		i;
 
 	if (end == -1)
-		end = ft_str_arraylen(str);
+		end = ft_arraylen((void *) str);
 	new_array = malloc(sizeof(char *) * (end - start));
 	if (new_array == NULL)
 		return (NULL);
@@ -53,4 +54,17 @@ void	free_array(void **array)
 		i++;
 	}
 	free(array);
+}
+
+void	ft_putstr_array(char **array, char *sep)
+{
+	int	i;
+
+	i = 0;
+	while (i < ft_arraylen((void *) array))
+	{
+		ft_putstr(array[i]);
+		ft_putstr(sep);
+		i++;
+	}
 }

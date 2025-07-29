@@ -13,6 +13,16 @@
 #include "ft_map.h"
 #include "utils/ft_utils.h"
 
+int	is_valid_char(char c, t_map *map)
+{
+	int	res;
+
+	res = 0;
+	if (c == map->empty_char || c == map->obstacle_char)
+		res = 1;
+	return (res);
+}
+
 int	first_line(t_map *res, char *line)
 {
 	int		size;
@@ -21,7 +31,7 @@ int	first_line(t_map *res, char *line)
 
 	size = ft_strlen(line);
 	i = size - 1;
-	if (size < 4)
+	if (size < 5 || !ft_str_is_printable(line))
 		return (1);
 	res->full_char = line[i];
 	i--;
@@ -34,25 +44,42 @@ int	first_line(t_map *res, char *line)
 	return (0);
 }
 
+int	map_is_valid(char **full_map, t_map *res)
+{
+	unsigned int	i;
+	unsigned int	j;
+
+	i = 1;
+	j = 0;
+	while (i < res->nb_row)
+	{
+		if ((unsigned int) ft_strlen(full_map[i]) != res->nb_col)
+			return (0);
+		while (j < res->nb_col)
+		{
+			if (!is_valid_char(full_map[i][j], res))
+				return (0);
+			j++;
+		}
+		j = 0;
+		i++;
+	}
+	return (1);
+}
+
 t_map	*ft_parse_map(t_map *res, char *str_map)
 {
-	char	**full_map;
-	int		i;
+	char			**full_map;
 
 	full_map = ft_split(str_map, "\n");
-	if (ft_str_arraylen(full_map) < 2)
+	if (ft_arraylen((void *) full_map) < 2)
 		return (NULL);
 	if (first_line(res, full_map[0]))
 		return (NULL);
 	res->nb_col = ft_strlen(full_map[1]);
-	i = 1;
-	while (i < (int) res->nb_row)
-	{
-		if (ft_strlen(full_map[i]) != (int) res->nb_col)
-			return (NULL);
-		i++;
-	}
-	res->map = truncate_str_array(full_map, 1, ft_str_arraylen(full_map));
-	free_array((void **) full_map);
+	if (!map_is_valid(full_map, res))
+		return (NULL);
+	res->map = truncate_str_array(full_map, 1, ft_arraylen((void *) full_map));
+	free(full_map[0]);
 	return (res);
 }

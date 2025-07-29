@@ -15,8 +15,8 @@
 
 struct s_map
 {
-	unsigned long	nb_row;
-	unsigned long	nb_col;
+	unsigned int	nb_row;
+	unsigned int	nb_col;
 
 	unsigned char	empty_char;
 	unsigned char	obstacle_char;
