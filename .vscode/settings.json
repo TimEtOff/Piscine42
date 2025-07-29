@@ -10,4 +10,5 @@
 	"editor.insertSpaces": false,
 	"editor.detectIndentation": false,
 	"tws.highlightTrailingWhiteSpace": true,
+	"codam-norminette-3.command": "norminette -R CheckForbiddenSourceHeader -R CheckDefine",
 }

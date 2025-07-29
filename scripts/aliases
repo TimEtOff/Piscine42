@@ -1,13 +1,12 @@
 # Might not be up-to-date
 # For sh, add '-s' option for fish
-alias norminettef='norminette -R CheckForbiddenSourceHeader'
-alias ccf='cc -Wall -Wextra -Werror'
+alias norminettef='norminette -R CheckForbiddenSourceHeader -R CheckDefine'
+alias ccf='cc -g -Wall -Wextra -Werror'
 alias cexec='~/Documents/Piscine42/scripts/cexec'
 alias gcommit='~/Documents/Piscine42/scripts/commit'
 alias gload='~/Documents/Piscine42/scripts/load'
 alias gunload='~/Documents/Piscine42/scripts/unload'
 alias gpush='~/Documents/Piscine42/scripts/push'
-alias tchat='cat /sgoinfre/1.chat/chat1'
 alias reload='source ~/.config/fish/config.fish'
 alias reload='source ~/.shrc'
 alias mkexec='~/Documents/Piscine42/scripts/mkexec'
