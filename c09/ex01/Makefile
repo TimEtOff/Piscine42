@@ -6,11 +6,11 @@
 #    By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/28 09:49:53 by tgodefro          #+#    #+#              #
-#    Updated: 2025/07/29 22:29:47 by tgodefro         ###   ########lyon.fr    #
+#    Updated: 2025/07/30 19:34:36 by tgodefro         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
-EXE = libft.a
+NAME = libft.a
 
 CC = cc
 
@@ -24,9 +24,9 @@ MY_SOURCES = srcs/ft_putchar.c srcs/ft_swap.c \
 
 OBJECTS = $(MY_SOURCES:.c=.o)
 
-all : $(EXE)
+all : $(NAME)
 
-$(EXE) : $(OBJECTS)
+$(NAME) : $(OBJECTS)
 	$(AR) -o $@ $^
 
 %.o : %.c $(HEADER)
@@ -35,7 +35,7 @@ clean :
 	rm -f $(OBJECTS)
 
 fclean : clean
-	rm -f $(EXE)
+	rm -f $(NAME)
 
 re : fclean all
 
