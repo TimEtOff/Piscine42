@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 14:11:07 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/30 13:56:03 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 18:32:49 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 // ft_utils.c
 int		ft_strlen(char *str);
 void	ft_putstr(char *str);
-void	str_append(char *str, char *append);
 int		ft_strcmp(char *s1, char *s2);
 char	*truncate_str(char *src, int start, int end);
 
@@ -32,7 +31,6 @@ void	ft_putnbr(int nb);
 // ft_array_utils.c
 int		ft_arraylen(void **array);
 char	**truncate_str_array(char **str, int start, int end);
-void	free_array(void **array);
 void	ft_putstr_array(char **array, char *sep);
 
 // ft_split.c

@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 12:36:39 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/30 17:37:14 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 18:32:59 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,19 +41,6 @@ char	**truncate_str_array(char **str, int start, int end)
 	}
 	new_array[i] = NULL;
 	return (new_array);
-}
-
-void	free_array(void **array)
-{
-	int	i;
-
-	i = 0;
-	while (array[i])
-	{
-		free(array[i]);
-		i++;
-	}
-	free(array);
 }
 
 void	ft_putstr_array(char **array, char *sep)

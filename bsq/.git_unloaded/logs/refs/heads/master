@@ -27,3 +27,4 @@ cd98a881ae19bcc41f4397a2723e969a2eba77e1 da251ac30a49f745e6638f04cdddcb654e9d6dd
 da251ac30a49f745e6638f04cdddcb654e9d6ddd 61acdbd8e5da4e2cbda6b37c0b6335aede144659 tgodefro <tgodefro@student.42lyon.fr> 1753876702 +0200	commit: Fixed ft_split memory errors
 61acdbd8e5da4e2cbda6b37c0b6335aede144659 b744b72b90b65658d916701ec5c38be921348f56 tgodefro <tgodefro@student.42lyon.fr> 1753887425 +0200	commit: Removed wrong files
 b744b72b90b65658d916701ec5c38be921348f56 cc72d2598dff54ac1aa81aa1bd14978683df0b2d tgodefro <tgodefro@student.42lyon.fr> 1753891022 +0200	commit: Fixed memory error
+cc72d2598dff54ac1aa81aa1bd14978683df0b2d 7ecf06c36033c0451c55484b5c62dd841b42f83f tgodefro <tgodefro@student.42lyon.fr> 1753893487 +0200	commit: Cleaned up the repo

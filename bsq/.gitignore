@@ -9,4 +9,3 @@
 !Makefile
 !/srcs/*.c
 !/includes/*.h
-!/*.pl

@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 14:07:33 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/30 13:55:43 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 18:31:44 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,23 +30,6 @@ void	ft_putstr(char *str)
 		write(1, str, 1);
 		str++;
 	}
-}
-
-void	str_append(char *str, char *append)
-{
-	int	i;
-	int	str_len;
-	int	app_len;
-
-	str_len = ft_strlen(str);
-	app_len = ft_strlen(append);
-	i = 0;
-	while (i < app_len)
-	{
-		str[str_len + i] = append[i];
-		i++;
-	}
-	str[str_len + i] = '\0';
 }
 
 int	ft_strcmp(char *s1, char *s2)
