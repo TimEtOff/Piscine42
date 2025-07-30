@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 12:36:39 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/30 11:53:49 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 17:37:14 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	**truncate_str_array(char **str, int start, int end)
 
 	if (end == -1)
 		end = ft_arraylen((void *) str);
-	new_array = malloc(sizeof(char *) * (end - start));
+	new_array = malloc(sizeof(char *) * (end - start + 1));
 	if (new_array == NULL)
 		return (NULL);
 	i = 0;
