@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 13:18:24 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/29 16:34:07 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 10:03:50 by yriffard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int	ft_min(int first_int, int second_int, int third_int)
 {
 	int	res;
 
+	res = 0;
 	if (first_int < second_int)
 		res = first_int;
 	else

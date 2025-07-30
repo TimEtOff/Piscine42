@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 10:37:43 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/29 16:27:22 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 10:45:44 by yriffard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,27 @@ int	map_convert_to_int(t_map *map)
 	return (0);
 }
 
+void	get_square_info(t_map *map, int row, int col)
+
+{
+	if (map->values_map [row][col] > map->biggest_value)
+	{
+		map->biggest_value = map->values_map [row][col];
+		map->biggest_col_index = col;
+		map->biggest_row_index = row;
+	}
+
+}
+
+void	min_define(t_map *map, int col, int row)
+
+{
+	map->values_map [row][col] = 1 + ft_min (
+		map->values_map[row - 1][col],
+		map->values_map[row][col - 1],
+		map->values_map[row - 1][col - 1]);
+}
+
 int	map_checking(t_map *map)
 {
 	unsigned long int	row;
@@ -64,19 +85,19 @@ int	map_checking(t_map *map)
 
 	row = 0;
 	col = 0;
+	map->biggest_value = 0;
 	while (row < map->nb_row)
 	{
 		while (col < map->nb_col)
 		{
 			if (row == 0 || col == 0)
-				map->values_map [row][col] = map->map[row][col];
-			else if (map->map[row][col] > 0)
+				map->values_map [row][col]
+				= map->values_map[row][col];
+			else if (map->values_map[row][col] > 0)
 			{
-				map->values_map [row][col] = 1 + ft_min (
-						map->map[row - 1][col],
-						map->map[row][col - 1],
-						map->map[row - 1][col - 1]);
+				min_define(map, col, row);
 			}
+			get_square_info(map, row, col);	
 			col++;
 		}
 		col = 0;

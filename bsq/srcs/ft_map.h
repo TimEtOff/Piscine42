@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 10:03:21 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/28 14:36:25 by yriffard         ###   ########.fr       */
+/*   Updated: 2025/07/30 11:49:23 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,10 @@ struct s_map
 {
 	unsigned int	nb_row;
 	unsigned int	nb_col;
+
+	unsigned int	biggest_row_index;
+	unsigned int	biggest_col_index;
+	unsigned int	biggest_value;
 
 	unsigned char	empty_char;
 	unsigned char	obstacle_char;

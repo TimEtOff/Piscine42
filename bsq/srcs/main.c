@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 09:54:11 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/29 16:54:12 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 11:11:17 by yriffard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ int	map_exec(char *path)
 	free_tmap(&map);
 	return (0);
 }
-
+/*
 int	main(int argc, char **argv)
 {
 	int	i;
@@ -92,5 +92,7 @@ int	main(int argc, char **argv)
 			i++;
 		}
 	}
+	
 	return (0);
 }
+*/
