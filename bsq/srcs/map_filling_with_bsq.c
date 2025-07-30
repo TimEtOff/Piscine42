@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 10:54:07 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/30 12:41:18 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 12:51:26 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,20 @@
 
 void	map_modifying(t_map *map)
 {
-	int	i;
-	int	j;
+	unsigned int	i;
+	unsigned int	j;
 
-	i = map->biggest_row_index;
-	j = map->biggest_col_index;
-	while (i > (int) map->biggest_row_index - (int) map->biggest_value || i > 0)
+	i = 0;
+	j = 0;
+	while (i < map->biggest_value)
 	{
-		while (j > (int)map->biggest_col_index - (int)map->biggest_value
-			|| j > 0)
+		while (j < map->biggest_value)
 		{
-
-			map->map[i][j] = map->full_char;
-			j--;
+			map->map[map->biggest_row_index - i][map->biggest_col_index - j]
+				= map->full_char;
+			j++;
 		}
-		j = map->biggest_col_index;
-		i--;
+		j = 0;
+		i++;
 	}
 }

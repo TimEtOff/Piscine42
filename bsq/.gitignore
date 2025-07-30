@@ -2,6 +2,7 @@
 *.subject.pdf
 
 # Exercise
+*
 *.*
 /bsq
 !Makefile
