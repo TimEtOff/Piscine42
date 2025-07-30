@@ -6,11 +6,11 @@
 #    By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/28 09:49:53 by yriffard          #+#    #+#              #
-#    Updated: 2025/07/30 12:04:01 by tgodefro         ###   ########lyon.fr    #
+#    Updated: 2025/07/30 19:31:02 by tgodefro         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
-EXE = bsq
+NAME = bsq
 
 CC = cc -g
 
@@ -25,9 +25,9 @@ OBJDIRCREATE := $(shell mkdir -p objs/srcs/utils)
 OBJDIR = objs/
 OBJECTS = $(MY_SOURCES:.c=.o)
 
-all : $(EXE)
+all : $(NAME)
 
-$(EXE) : $(addprefix $(OBJDIR),$(OBJECTS))
+$(NAME) : $(addprefix $(OBJDIR),$(OBJECTS))
 	$(CC) $(CFLAGS) -o $@ $^
 
 $(OBJDIR)%.o : %.c $(HEADER)
@@ -36,7 +36,7 @@ clean :
 	rm -f $(addprefix $(OBJDIR),$(OBJECTS))
 
 fclean : clean
-	rm -f $(EXE)
+	rm -f $(NAME)
 
 re : fclean all
 

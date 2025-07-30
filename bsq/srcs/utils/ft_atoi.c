@@ -6,11 +6,12 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/18 10:56:22 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/24 10:36:54 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 18:57:21 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include "ft_utils.h"
 
 /*
 	Modified from `c02/ex03/ft_str_is_numeric.c`
@@ -59,5 +60,7 @@ int	ft_atoi(char *str)
 	}
 	if (negative)
 		res = -res;
+	if (index != ft_strlen(str))
+		res = -1;
 	return (res);
 }

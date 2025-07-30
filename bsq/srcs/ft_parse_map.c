@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 10:35:49 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/30 13:43:46 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 19:31:39 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,11 @@ int	first_line(t_map *res, char *line)
 	if (!map_chars_are_unique(res))
 		return (1);
 	truncated = truncate_str(line, 0, i);
-	res->nb_row = ft_atoi(truncated);
+	i = ft_atoi(truncated);
 	free(truncated);
+	if (i <= 0)
+		return (1);
+	res->nb_row = i;
 	return (0);
 }
 
@@ -65,6 +68,8 @@ int	map_is_valid(char **full_map, t_map *res)
 
 	i = 1;
 	j = 0;
+	if ((unsigned int) ft_arraylen((void *) full_map) - 1 != res->nb_row)
+		return (0);
 	while (i < res->nb_row)
 	{
 		if ((unsigned int) ft_strlen(full_map[i]) != res->nb_col)
