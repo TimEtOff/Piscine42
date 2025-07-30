@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 14:11:07 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/30 18:32:49 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 19:51:40 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ int		map_convert_to_int(t_map *map);
 int		map_checking(t_map *map);
 
 // ft_parse_map.c
+int		first_line(t_map *res, char *line);
 t_map	*ft_parse_map(t_map *res, char *str_map);
 
 //map_filling_with_bsq.c

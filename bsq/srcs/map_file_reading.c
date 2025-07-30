@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 10:15:13 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/30 18:42:37 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 19:54:29 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,13 +31,45 @@ int	ft_file_size(int fd)
 	return (count);
 }
 
+void	read_user_input(void)
+{
+	char	buf[1024];
+	int		i;
+	char	**input;
+	int		i_input;
+	t_map	res;
+
+	res.nb_row = 0;
+	while (buf > 0 && (i_input != 0 || i_input < res.nb_row))
+	{
+		read(0, buf, sizeof(buf));
+		i = 99;
+		while (buf[i] != '\n')
+			i--;
+		buf[i] = '\0';
+		i = 0;
+		input[i_input] = ft_strdup(buf);
+		if (i_input == 0)
+			first_line(&res, input[0]);
+		while (i < 1024)
+		{
+			buf[i] = '\0';
+			i++;
+		}
+		i = 0;
+	}
+}
+
 char	*ft_map_to_str(const char *filename)
 {
 	int		fd;
 	int		file_len;
 	char	*dict_to_str;
 
-	fd = open(filename, O_RDONLY);
+	if (filename == NULL)
+		fd = 0;
+	else
+		fd = open(filename, O_RDONLY);
 	if (fd < 0)
 		return (NULL);
 	file_len = ft_file_size(fd);
