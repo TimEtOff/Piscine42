@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 14:07:33 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/29 16:07:42 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 13:55:43 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,22 +66,18 @@ int	ft_strcmp(char *s1, char *s2)
 	return (res);
 }
 
-char	*truncate_str(char *str, int start, int end)
+char	*truncate_str(char *src, int start, int end)
 {
-	char	*new_str;
+	char	*res;
 	int		i;
 
-	if (end == -1)
-		end = ft_strlen(str);
-	new_str = malloc(sizeof(char) * (end - start));
-	if (new_str == NULL)
-		return (NULL);
+	res = malloc(sizeof(char) * (end - start + 1));
 	i = 0;
-	while (i < (end - start))
+	while (i < end - start)
 	{
-		new_str[i] = str[start + i];
+		res[i] = src[start + i];
 		i++;
 	}
-	new_str[i] = '\0';
-	return (new_str);
+	res[i] = '\0';
+	return (res);
 }

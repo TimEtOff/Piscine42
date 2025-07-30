@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 14:11:07 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/30 12:01:29 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 13:56:03 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int		ft_strlen(char *str);
 void	ft_putstr(char *str);
 void	str_append(char *str, char *append);
 int		ft_strcmp(char *s1, char *s2);
-char	*truncate_str(char *str, int start, int end);
+char	*truncate_str(char *src, int start, int end);
 
 // ft_utlis2.c
 int		ft_min(int first_int, int second_int, int third_int);
