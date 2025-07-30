@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   map_filling_with_bsq.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yriffard <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 10:54:07 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/30 11:26:52 by yriffard         ###   ########.fr       */
+/*   Updated: 2025/07/30 11:53:49 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "utils/ft_utils.h"
+#include "ft_utils.h"
 #include "ft_map.h"
 
 void	map_modifying(t_map *map)
@@ -26,7 +26,7 @@ void	map_modifying(t_map *map)
 		map->map[row][col] = map->full_char;
 		row--;
 		col--;
-		i--;	
+		i--;
 	}
 	__builtin_printf("%s",map->map);
 }

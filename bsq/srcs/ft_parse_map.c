@@ -6,12 +6,12 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 10:35:49 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/29 16:53:46 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 11:53:49 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_map.h"
-#include "utils/ft_utils.h"
+#include "ft_utils.h"
 
 int	is_valid_char(char c, t_map *map)
 {

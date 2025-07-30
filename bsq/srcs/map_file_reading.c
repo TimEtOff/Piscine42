@@ -6,14 +6,14 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 10:15:13 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/29 16:07:35 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 11:53:49 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdlib.h>
 #include <fcntl.h>
-#include "utils/ft_utils.h"
+#include "ft_utils.h"
 
 int	ft_file_size(int fd)
 {

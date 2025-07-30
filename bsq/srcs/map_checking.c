@@ -6,11 +6,11 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 10:37:43 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/30 10:45:44 by yriffard         ###   ########.fr       */
+/*   Updated: 2025/07/30 11:53:49 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "utils/ft_utils.h"
+#include "ft_utils.h"
 #include "ft_map.h"
 
 int	map_values_mallocing(t_map *map)
@@ -97,7 +97,7 @@ int	map_checking(t_map *map)
 			{
 				min_define(map, col, row);
 			}
-			get_square_info(map, row, col);	
+			get_square_info(map, row, col);
 			col++;
 		}
 		col = 0;

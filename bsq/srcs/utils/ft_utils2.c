@@ -6,11 +6,11 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 13:18:24 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/30 10:03:50 by yriffard         ###   ########.fr       */
+/*   Updated: 2025/07/30 11:53:49 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "utils/ft_utils.h"
+#include "ft_utils.h"
 
 int	ft_min(int first_int, int second_int, int third_int)
 

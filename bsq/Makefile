@@ -6,7 +6,7 @@
 #    By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/28 09:49:53 by yriffard          #+#    #+#              #
-#    Updated: 2025/07/29 16:34:28 by tgodefro         ###   ########lyon.fr    #
+#    Updated: 2025/07/30 11:52:49 by tgodefro         ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ EXE = bsq
 
 CC = cc -g
 
-CFLAGS = -Wall -Wextra -Werror -I srcs/
+CFLAGS = -Wall -Wextra -Werror -I includes/
 
 
 MY_SOURCES = srcs/main.c srcs/ft_parse_map.c srcs/map_checking.c srcs/map_file_reading.c \

@@ -6,11 +6,11 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 12:36:39 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/29 16:53:38 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 11:53:49 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "utils/ft_utils.h"
+#include "ft_utils.h"
 #include <stdlib.h>
 
 int	ft_arraylen(void **array)
