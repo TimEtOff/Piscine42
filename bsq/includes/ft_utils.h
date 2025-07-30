@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 14:11:07 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/30 11:10:40 by yriffard         ###   ########.fr       */
+/*   Updated: 2025/07/30 12:01:29 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,5 @@ int		map_checking(t_map *map);
 t_map	*ft_parse_map(t_map *res, char *str_map);
 
 //map_filling_with_bsq.c
-void    map_modifying(t_map *map);
+void	map_modifying(t_map *map);
 #endif

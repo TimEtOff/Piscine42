@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 10:37:43 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/30 11:53:49 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 12:35:13 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,12 @@ int	map_values_mallocing(t_map *map)
 	unsigned int	i;
 
 	i = 0;
-	map->values_map = malloc(sizeof(unsigned int *) * map->nb_row + 1);
+	map->values_map = malloc(sizeof(unsigned int *) * (map->nb_row + 1));
 	if (!map->values_map)
 		return (1);
-	while (i < map->nb_col)
+	while (i < map->nb_row)
 	{
-		map->values_map[i] = malloc(sizeof(unsigned int) * map->nb_col + 1);
+		map->values_map[i] = malloc(sizeof(unsigned int) * (map->nb_col + 1));
 		if (!map->values_map[i])
 			return (1);
 		i++;
@@ -58,7 +58,6 @@ int	map_convert_to_int(t_map *map)
 }
 
 void	get_square_info(t_map *map, int row, int col)
-
 {
 	if (map->values_map [row][col] > map->biggest_value)
 	{
@@ -66,16 +65,14 @@ void	get_square_info(t_map *map, int row, int col)
 		map->biggest_col_index = col;
 		map->biggest_row_index = row;
 	}
-
 }
 
 void	min_define(t_map *map, int col, int row)
-
 {
 	map->values_map [row][col] = 1 + ft_min (
-		map->values_map[row - 1][col],
-		map->values_map[row][col - 1],
-		map->values_map[row - 1][col - 1]);
+			map->values_map[row - 1][col],
+			map->values_map[row][col - 1],
+			map->values_map[row - 1][col - 1]);
 }
 
 int	map_checking(t_map *map)
@@ -92,7 +89,7 @@ int	map_checking(t_map *map)
 		{
 			if (row == 0 || col == 0)
 				map->values_map [row][col]
-				= map->values_map[row][col];
+					= map->values_map[row][col];
 			else if (map->values_map[row][col] > 0)
 			{
 				min_define(map, col, row);

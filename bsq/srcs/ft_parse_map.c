@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 10:35:49 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/30 11:53:49 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 12:11:14 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ int	first_line(t_map *res, char *line)
 
 	size = ft_strlen(line);
 	i = size - 1;
-	if (size < 5 || !ft_str_is_printable(line))
+	if (size < 4 || !ft_str_is_printable(line))
 		return (1);
 	res->full_char = line[i];
 	i--;

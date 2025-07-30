@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 09:54:11 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/30 11:54:22 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 12:41:28 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,16 +29,16 @@ void	free_tmap(t_map *map)
 	free(map->values_map);
 }
 
-void	DBG_print_values_map(t_map *res)
+void	print_values_map(t_map *res)
 {
 	int	i;
 	int	j;
 
 	i = 0;
 	j = 0;
-	while (i < 10)
+	while (i < 9)
 	{
-		while (j < 10)
+		while (j < 27)
 		{
 			ft_putnbr(res->values_map[i][j]);
 			ft_putstr(" ");
@@ -58,14 +58,15 @@ int	map_exec(char *path)
 	str_map = ft_map_to_str(path);
 	if (str_map == NULL)
 		return (1);
-	if (ft_parse_map(&map, str_map) == NULL) // FIXME A lot of valgrind errors because of ft_split and others
+	if (ft_parse_map(&map, str_map) == NULL)
 		return (2);
 	free(str_map);
 	if (map_convert_to_int(&map))
 		return (3);
 	if (map_checking(&map))
 		return (4);
-	DBG_print_values_map(&map);
+	map_modifying(&map);
+	ft_putstr_array(map.map, "\n");
 	free_tmap(&map);
 	return (0);
 }
@@ -84,14 +85,14 @@ int	main(int argc, char **argv)
 			if (exec_res == 1)
 				ft_putstr("Error (File reading)\n");
 			else if (exec_res == 2)
-				ft_putstr("Error (Parsing)\n");
+				ft_putstr("map error\n");
 			else if (exec_res == 3)
 				ft_putstr("Error (Int map initialisation)\n");
 			else if (exec_res == 4)
 				ft_putstr("Error (Checking)\n");
+			ft_putstr("\n");
 			i++;
 		}
 	}
-
 	return (0);
 }

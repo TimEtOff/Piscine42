@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 10:54:07 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/30 11:53:49 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 12:41:18 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,40 +14,22 @@
 #include "ft_map.h"
 
 void	map_modifying(t_map *map)
-
-{
-	int	i;
-
-	i = map->biggest_value;
-	row = map->biggest_row_index;
-	col = map->biggest_col_index;
-	while(i > 0)
-	{
-		map->map[row][col] = map->full_char;
-		row--;
-		col--;
-		i--;
-	}
-	__builtin_printf("%s",map->map);
-}
-/*
-int	main(int ac, char **argv)
-
 {
 	int	i;
 	int	j;
 
-	i = 0;
-	j = 0;
-	while (i < 10)
+	i = map->biggest_row_index;
+	j = map->biggest_col_index;
+	while (i > (int) map->biggest_row_index - (int) map->biggest_value || i > 0)
 	{
-		while (j < 10)
+		while (j > (int)map->biggest_col_index - (int)map->biggest_value
+			|| j > 0)
 		{
-			__builtin_printf("%s",map->map[i][j])
-			ft_putstr("	");
-			j++;
+
+			map->map[i][j] = map->full_char;
+			j--;
 		}
-		ft_putstr("\n");
-		j = 0;
-		i++;
-}\*/
+		j = map->biggest_col_index;
+		i--;
+	}
+}
