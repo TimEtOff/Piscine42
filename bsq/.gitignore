@@ -2,10 +2,11 @@
 *.subject.pdf
 
 # Exercise
-*
-*.*
+!.gitignore
+/*.*
 /bsq
+/objs/
 !Makefile
-!*.c
-!*.h
-!*.pl
+!/srcs/*.c
+!/includes/*.h
+!/*.pl
