@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 10:15:13 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/30 12:28:59 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 18:42:37 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,6 @@ char	*ft_map_to_str(const char *filename)
 	*dict_to_str = '\0';
 	read(fd, dict_to_str, file_len);
 	close(fd);
-	dict_to_str[file_len] = '\0';
+	dict_to_str[file_len - 1] = '\0';
 	return (dict_to_str);
 }

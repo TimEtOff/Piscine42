@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 10:37:43 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/30 17:44:35 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 18:47:44 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,9 +83,9 @@ int	map_checking(t_map *map)
 	row = 0;
 	col = 0;
 	map->biggest_value = 0;
-	while (row < map->nb_row - map->biggest_value)
+	while (row < map->nb_row)
 	{
-		while (col < map->nb_col - map->biggest_value)
+		while (col < map->nb_col)
 		{
 			if (row == 0 || col == 0)
 				map->values_map [row][col]
