@@ -12,3 +12,4 @@ e7d404544e722f9ddc5c9f2141b0c490ae71133e 16cf8e57cb6421160e4373d698853a43891b232
 a5d6c66db4f47a878a5fb9bc3d17ccb70cc9075e 3e0f55f7fff97236da0a4504aa141e353660dc3e tgodefro <tgodefro@student.42lyon.fr> 1753803648 +0200	commit: Fixed ranges (ex01 & ex02)
 3e0f55f7fff97236da0a4504aa141e353660dc3e d6982183fa7221a60d1221c46c29a712ba449123 tgodefro <tgodefro@student.42lyon.fr> 1753804517 +0200	commit: Fixed convert_base (ex04)
 d6982183fa7221a60d1221c46c29a712ba449123 1fe770a8edb1b8833df7dc9e595e8649831d677c tgodefro <tgodefro@student.42lyon.fr> 1753876491 +0200	commit: Fixed ft_split memory errors
+1fe770a8edb1b8833df7dc9e595e8649831d677c ea92ab9aab9881182349448db57e8d703a474e2b tgodefro <tgodefro@student.42lyon.fr> 1753895232 +0200	commit: Fixed after retry (ultimate range)

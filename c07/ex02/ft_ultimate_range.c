@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 14:11:59 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/29 17:40:23 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 19:06:51 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 	if (min >= max)
 	{
 		range = 0;
-		return (-1);
+		return (0);
 	}
 	size = max - min;
 	*range = malloc(sizeof(int) * size);
