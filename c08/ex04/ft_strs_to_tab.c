@@ -6,7 +6,7 @@
 /*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 20:42:51 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/29 21:24:32 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 14:46:24 by tgodefro         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,4 +60,3 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 	res[i].str = 0;
 	return (res);
 }
-
