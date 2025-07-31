@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: yriffard <yriffard@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 09:54:11 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/30 19:41:59 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 20:20:10 by yriffard         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,10 @@ int	map_exec(char *path)
 	t_map	map;
 	char	*str_map;
 
-	str_map = ft_map_to_str(path);
+	if (path == NULL)
+		str_map = read_user_input();
+	else
+		str_map = ft_map_to_str(path);
 	if (str_map == NULL)
 		return (1);
 	if (ft_parse_map(&map, str_map) == NULL)
@@ -45,6 +48,8 @@ int	map_exec(char *path)
 	if (map_checking(&map))
 		return (4);
 	map_modifying(&map);
+	if (path == NULL)
+		ft_putstr("\n");
 	ft_putstr_array(map.map, "\n");
 	free_tmap(&map);
 	return (0);
@@ -73,7 +78,7 @@ int	main(int argc, char **argv)
 			i++;
 		}
 	}
-	else if (argc == 1)
+	else
 		map_exec(NULL);
 	return (0);
 }

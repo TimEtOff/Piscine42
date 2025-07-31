@@ -32,3 +32,4 @@ cc72d2598dff54ac1aa81aa1bd14978683df0b2d 7ecf06c36033c0451c55484b5c62dd841b42f83
 b2371a348f600a10d34ecd49cde8ebba7af307a8 b7517945d7c59e47c7d08f77011e406b695d129c tgodefro <tgodefro@student.42lyon.fr> 1753896753 +0200	commit: Fixed makefile norm + fixed parsing
 b7517945d7c59e47c7d08f77011e406b695d129c 6f14891d298e74d1f1e4b16a4d0227aa5982c190 tgodefro <tgodefro@student.42lyon.fr> 1753897283 +0200	pull: Fast-forward
 6f14891d298e74d1f1e4b16a4d0227aa5982c190 4a26c6d8636bdbee58001c04a02376ddd9a91a5f tgodefro <tgodefro@student.42lyon.fr> 1753898355 +0200	commit: Started stdin handling
+4a26c6d8636bdbee58001c04a02376ddd9a91a5f ae7e77766f7e86f12e0a1795486c96df6a6bba6e tgodefro <tgodefro@student.42lyon.fr> 1753951282 +0200	pull: Fast-forward

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   map_file_reading.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: yriffard <yriffard@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 10:15:13 by yriffard          #+#    #+#             */
-/*   Updated: 2025/07/30 19:54:29 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 20:21:18 by yriffard         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,16 +31,17 @@ int	ft_file_size(int fd)
 	return (count);
 }
 
-void	read_user_input(void)
+char	*read_user_input(void)
 {
 	char	buf[1024];
 	int		i;
-	char	**input;
+	char	*(input[1024]);
 	int		i_input;
 	t_map	res;
 
 	res.nb_row = 0;
-	while (buf > 0 && (i_input != 0 || i_input < res.nb_row))
+	i_input = 0;
+	while (buf > 0 && (res.nb_row == 0 || (unsigned int) i_input <= res.nb_row))
 	{
 		read(0, buf, sizeof(buf));
 		i = 99;
@@ -52,12 +53,11 @@ void	read_user_input(void)
 		if (i_input == 0)
 			first_line(&res, input[0]);
 		while (i < 1024)
-		{
-			buf[i] = '\0';
-			i++;
-		}
+			buf[i++] = '\0';
 		i = 0;
+		i_input++;
 	}
+	return (ft_strjoin(ft_arraylen((void *) input), (char **) input, "\n"));
 }
 
 char	*ft_map_to_str(const char *filename)

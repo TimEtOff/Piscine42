@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_utils.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: yriffard <yriffard@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 14:11:07 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/30 19:51:40 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 20:07:08 by yriffard         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 int		ft_strlen(char *str);
 void	ft_putstr(char *str);
 int		ft_strcmp(char *s1, char *s2);
+void	str_append(char *str, char *append);
 char	*truncate_str(char *src, int start, int end);
 
 // ft_utlis2.c
@@ -40,6 +41,7 @@ char	**ft_split(char *str, char *charset);
 int		ft_atoi(char *str);
 
 // map_file_reading.c
+char	*read_user_input(void);
 char	*ft_map_to_str(const char *filename);
 
 // map_checking.c
@@ -50,6 +52,10 @@ int		map_checking(t_map *map);
 int		first_line(t_map *res, char *line);
 t_map	*ft_parse_map(t_map *res, char *str_map);
 
-//map_filling_with_bsq.c
+// map_filling_with_bsq.c
 void	map_modifying(t_map *map);
+
+// ft_strjoin.c
+char	*ft_strjoin(int size, char **strs, char *sep);
+
 #endif

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_utils.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tgodefro <tgodefro@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: yriffard <yriffard@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 14:07:33 by tgodefro          #+#    #+#             */
-/*   Updated: 2025/07/30 18:31:44 by tgodefro         ###   ########lyon.fr   */
+/*   Updated: 2025/07/30 20:05:05 by yriffard         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,23 @@ int	ft_strcmp(char *s1, char *s2)
 		s2++;
 	}
 	return (res);
+}
+
+void	str_append(char *str, char *append)
+{
+	int	i;
+	int	str_len;
+	int	app_len;
+
+	str_len = ft_strlen(str);
+	app_len = ft_strlen(append);
+	i = 0;
+	while (i < app_len)
+	{
+		str[str_len + i] = append[i];
+		i++;
+	}
+	str[str_len + i] = '\0';
 }
 
 char	*truncate_str(char *src, int start, int end)
