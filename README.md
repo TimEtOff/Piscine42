@@ -47,7 +47,7 @@ Harder shell commands and scripts that can be quite complex.
 
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
-| ***First try*** | [<img src="./pngs/67.png" alt="success: 67/100" width="150">](./pngs/67.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: Does not compile &#8739; &#13;ex07: KO &#8739; &#13;ex08: Does not compile</code></pre> | <ul><li>**ex06:** The include for `write` was commented</li><li>**ex07:** Forgot for negative numbers</li><li>**ex08:** Abandonned</ul><br>*Ex06 and 07 fixed in [&lt;main&gt;](https://github.com/TimEtOff/Piscine42/tree/main/c00), not tested* | [&lt;5d84fe9&gt;](https://github.com/TimEtOff/Piscine42/tree/5d84fe9/c00) |
+| ***First try*** | [<img src="./pngs/67.png" alt="success: 67/100" width="150">](./pngs/67.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: Does not compile &#8739; &#13;ex07: KO &#8739; &#13;ex08: Does not compile</code></pre> | <ul><li>**ex06:** The include for `write` was commented</li><li>**ex07:** Forgot about negative numbers</li><li>**ex08:** Abandonned</ul><br>*Ex06 and 07 fixed in [&lt;main&gt;](https://github.com/TimEtOff/Piscine42/tree/main/c00), not tested* | [&lt;5d84fe9&gt;](https://github.com/TimEtOff/Piscine42/tree/5d84fe9/c00) |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c00/en.subject.pdf)
 
@@ -230,18 +230,18 @@ Learn about advanced compiling and Makefiles.
 
 <details><summary>
 
-## BSQ _[/100]_
+## BSQ [<img src="./pngs/16.png" alt="fail: 16/100" width="60" align="center">](./pngs/16.png)
 
 </summary>
 
 | Grade | Submit commit |
 | ----------------- | ----------- |
-| Not evaluated yet | [&lt;d5db5bb&gt;](https://github.com/TimEtOff/Piscine42/tree/d5db5bb/bsq) |
+| [<img src="./pngs/16.png" alt="fail: 16/100" width="150">](./pngs/16.png) | [&lt;d5db5bb&gt;](https://github.com/TimEtOff/Piscine42/tree/d5db5bb/bsq) |
 
 *With [yriffard](https://profile.intra.42.fr/users/yriffard)
 
 [See subject (FR)](https://github.com/TimEtOff/Piscine42/blob/main/bsq/fr.subject.pdf)
-[See subject (EN - old)](https://github.com/TimEtOff/Piscine42/blob/main/bsq/en-old.subject.pdf)
+[(EN - old)](https://github.com/TimEtOff/Piscine42/blob/main/bsq/en-old.subject.pdf)
 
 The BSQ is the last project of the piscine. It consists of using almost everythings we learned during the month. <br>
 You should at least know (not necessarily validated) the notions up to C10. <br>
@@ -250,14 +250,31 @@ You should be able to handle errors on the map if it doesn't follow the rules, h
 there is multiple inputs _(C06)_, make sure there are no memory leak _(C07)_, have a working Makefile _(C09)_ and many others
 notions. <br>
 
-**Mistakes we know about:**
+**Errors we know about:**
 - In case of map error, everything is not freed correctly.
 - With stdin:
+    - Should work with a `./bsq < [map_file]` or `cat [map_file] | ./bsq` command (not stated by the subject)
 	- We use duplicates that we forgot to free
 	- If the map doesn't start at the first input lines, it won't work
 	- Errors are not handled
 	- Parsing works but doesn't return a map error if needed
 	- (Buffer has a size limit of 1024)
+
+Moulinette:
+```
+basic_tests: One parameter KO | functional_tests: Test 1 KO
+```
+Details:
+- `One parameter` KOed because we separate each argument with a new line for lisibility, as it's how we understood the subject.
+- `functional_tests: Test 1` is probably the standard input.
+
+Evaluations:
+> "Tres bien ! Tout est parfait, bonne gestion des erreurs ! Attention le code n'est pas des plus opti mais ca devrait suffir ! Le 10kx10k tourne en 40s c'est bien je pense ! Code facile clair et explications aussi ! Le code est solide aucun de mes tests ne l'a fait flancher ! Bonne chance et bon courage pour l'exam demain !!! ;D
+Canine" (100%) - [hbretagn](https://profile.intra.42.fr/users/hbretagn)
+
+> "Un très bon projet, bien organisé et réparti. Le code est propre et très bien expliqué, et tout semble fonctionnel, aurait pu mériter un 100. Dommage pour la mauvaise compréhension de l'entrée standard qui peut prêter à confusion dans le sujet (prends dans l'entrée si on lui donne le contenu du fichier et non le fichier en lui-même comme dit dans la correction). bravo a vous et bon courage pour la fin de piscine et l'examen." (0%) - [clemmart](https://profile.intra.42.fr/users/clemmart)
+
+> "C est un super projet, vous vous etes tres bien organisé et repartis le travail comme le prouve le git log, vous avez su m expliquer votre code, un code qui est d ailleurs tres clair et modulaire. Votre gestion des erreurs est tres solide, dommage pour l entree standard, le pdf n etait pas clair sur le sujet. Bonne continuation et pour courage pour l exam final !!" (0%) - [mberthai](https://profile.intra.42.fr/users/mberthai)
 
 </details>
 
