@@ -4,7 +4,7 @@
 
 <details><summary>
   
-### Shell 00  [<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">](./pngs/100.png)
+### Shell 00 &nbsp;|<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">|
 
 </summary>
 
@@ -19,11 +19,9 @@ Basic shell commands to understand how the computer and files work, and learning
 
 </details>
 
----
-
 <details><summary>
   
-### Shell 01 [<img src="./pngs/70.png" alt="success: 70/100" width="60" align="center">](./pngs/70.png)
+### Shell 01 &nbsp;|<img src="./pngs/70.png" alt="success: 70/100" width="60" align="center">|
 
 </summary>
 
@@ -41,7 +39,7 @@ Harder shell commands and scripts that can be quite complex.
 
 <details><summary>
   
-### C 00  [<img src="./pngs/67.png" alt="success: 67/100" width="60" align="center">](./pngs/67.png)
+### C 00 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<img src="./pngs/67.png" alt="success: 67/100" width="60" align="center">|
 
 </summary>
 
@@ -55,11 +53,9 @@ To learn the basics of C languague, mainly with the `write` function *(`unistd.h
 
 </details>
 
----
-
 <details><summary>
   
-### C 01  [<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">](./pngs/100.png)
+### C 01 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">|
 
 </summary>
 
@@ -73,11 +69,9 @@ The first time we use pointers and learn about them.
 
 </details>
 
----
-
 <details><summary>
   
-### C 02 [<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">](./pngs/100.png)
+### C 02 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">|
 
 </summary>
 
@@ -93,11 +87,9 @@ Basic string manipulation with copy or detection of certain types of characters.
 
 </details>
 
----
-
 <details><summary>
   
-### C 03  [<img src="./pngs/50.png" alt="success: 50/100" width="60" align="center">](./pngs/50.png)
+### C 03 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<img src="./pngs/50.png" alt="success: 50/100" width="60" align="center">|
 
 </summary>
 
@@ -112,11 +104,9 @@ More advanced string manipulation but many times the same function with only som
 
 </details>
 
----
-
 <details><summary>
 
-###  C 04 [<img src="./pngs/70.png" alt="success: 70/100" width="60" align="center">](./pngs/70.png)
+###  C 04 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<img src="./pngs/70.png" alt="success: 70/100" width="60" align="center">|
 
 </summary>
 
@@ -131,11 +121,9 @@ String to int, int to string and base manipulation.
 
 </details>
 
----
-
 <details><summary>
 
-### C 05  [<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">](./pngs/100.png)
+### C 05 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">|
 
 </summary>
 
@@ -151,11 +139,9 @@ Ex08: See [The Ten Queens Puzzle](https://www.brainbashers.com/queens.asp?size=1
 
 </details>
 
----
-
 <details><summary>
 
-### C 06  [<img src="./pngs/85.png" alt="success: 85/100" width="60" align="center">](./pngs/85.png)
+### C 06 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<img src="./pngs/85.png" alt="success: 85/100" width="60" align="center">|
 
 </summary>
 
@@ -169,11 +155,9 @@ Start to make programs instead of functions, and use arguments on main function.
 
 </details>
 
----
-
 <details><summary>
 
-### C 07 [<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">](./pngs/100.png)
+### C 07 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">|
 
 </summary>
 
@@ -189,11 +173,9 @@ Learn how to use tha `malloc` and `free` functions to allocate memory.
 
 </details>
 
----
-
 <details><summary>
 
-### C 08 [<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">](./pngs/100.png)
+### C 08 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">|
 
 </summary>
 
@@ -207,11 +189,9 @@ Use header files (`.h`) and structures `struct` + `typedef`.
 
 </details>
 
----
-
 <details><summary>
 
-### C 09 [<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">](./pngs/100.png)
+### C 09 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">|
 
 </summary>
 
@@ -230,7 +210,7 @@ Learn about advanced compiling and Makefiles.
 
 <details><summary>
 
-## BSQ [<img src="./pngs/16.png" alt="fail: 16/100" width="60" align="center">](./pngs/16.png)
+## BSQ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<img src="./pngs/16.png" alt="fail: 16/100" width="60" align="center">|
 
 </summary>
 
@@ -300,8 +280,6 @@ As I not enough prepared, I completely froze on the first exercise, it was reall
 
 </details>
 
----
-
 <details open><summary>
 
 ### Exam 01
@@ -316,8 +294,6 @@ Was pretty easy even tough not everyone went to c06 at the time, so plenty of pe
 
 </details>
 
----
-
 <details open><summary>
 
 ### Exam 02
@@ -328,6 +304,20 @@ Same as exam01 but with `malloc` too.<br>
 Took more time on some exercises and didn't have time to finish the last one. My code worked great except in one particular case but I couldn't fix it in time.
 ***Projects notions:*** *exam01, c07* <br>
 | [<img src="./pngs/90.png" alt="success: 90/100" width="150">](./pngs/90.png) |
+| --- |
+
+</details>
+
+<details open><summary>
+
+### Final Exam
+
+</summary>
+
+Last exam during 8 hours.<br>
+___
+***Projects notions:*** *exam02, ??* <br>
+| [<img src="./pngs/__.png" alt="success: __/100" width="150">](./pngs/__.png) |
 | --- |
 
 </details>
@@ -379,7 +369,7 @@ There will be only one correction, not by other pisciners but by members of the 
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/rush01/en.subject.pdf)
 
-https://www.puzzle-skyscrapers.com/
+https://www.puzzle-skyscrapers.com
 [Project description here]
 
 </details>
