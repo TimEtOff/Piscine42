@@ -4,7 +4,7 @@
 	bare = false
 	logallrefupdates = true
 [remote "origin"]
-	url = git@vogsphere.42lyon.fr:vogsphere/intra-uuid-b7848037-70c9-4f6d-aea2-2e37461e2986-6770621-tgodefro
+	url = git@vogsphere.42lyon.fr:vogsphere/intra-uuid-d8276e4e-44a9-435b-9598-dd13f9fe7381-6771706-tgodefro
 	fetch = +refs/heads/*:refs/remotes/origin/*
 [branch "master"]
 	remote = origin

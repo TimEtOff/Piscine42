@@ -3,6 +3,3 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
-[remote "origin"]
-	url = git@vogsphere.42lyon.fr:vogsphere/intra-uuid-0c6f527b-44cd-4501-9234-d217f95488b4-6771228-tgodefro
-	fetch = +refs/heads/*:refs/remotes/origin/*

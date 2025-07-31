@@ -1,10 +1,10 @@
-# Piscine 42 Lyon - July 2025
+# C Piscine 42 Lyon - July 2025
 
 ## Projects
 
-<details open><summary>
+<details><summary>
   
-### Shell 00
+### Shell 00  [<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">](./pngs/100.png)
 
 </summary>
 
@@ -21,9 +21,9 @@ Basic shell commands to understand how the computer and files work, and learning
 
 ---
 
-<details open><summary>
+<details><summary>
   
-### Shell 01
+### Shell 01 [<img src="./pngs/70.png" alt="success: 70/100" width="60" align="center">](./pngs/70.png)
 
 </summary>
 
@@ -39,9 +39,9 @@ Harder shell commands and scripts that can be quite complex.
 
 ---
 
-<details open><summary>
+<details><summary>
   
-### C 00
+### C 00  [<img src="./pngs/67.png" alt="success: 67/100" width="60" align="center">](./pngs/67.png)
 
 </summary>
 
@@ -57,9 +57,9 @@ To learn the basics of C languague, mainly with the `write` function *(`unistd.h
 
 ---
 
-<details open><summary>
+<details><summary>
   
-### C 01
+### C 01  [<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">](./pngs/100.png)
 
 </summary>
 
@@ -75,9 +75,9 @@ The first time we use pointers and learn about them.
 
 ---
 
-<details open><summary>
+<details><summary>
   
-### C 02
+### C 02 [<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">](./pngs/100.png)
 
 </summary>
 
@@ -95,9 +95,9 @@ Basic string manipulation with copy or detection of certain types of characters.
 
 ---
 
-<details open><summary>
+<details><summary>
   
-### C 03
+### C 03  [<img src="./pngs/50.png" alt="success: 50/100" width="60" align="center">](./pngs/50.png)
 
 </summary>
 
@@ -114,9 +114,9 @@ More advanced string manipulation but many times the same function with only som
 
 ---
 
-<details open><summary>
+<details><summary>
 
-### C 04
+###  C 04 [<img src="./pngs/70.png" alt="success: 70/100" width="60" align="center">](./pngs/70.png)
 
 </summary>
 
@@ -133,13 +133,13 @@ String to int, int to string and base manipulation.
 
 ---
 
-<details open><summary>
+<details><summary>
 
-### C 05
+### C 05  [<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">](./pngs/100.png)
 
 </summary>
 
-| | Grade | Moulinette | Notes | Submit commit |
+| Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
 | ***First try*** | [<img src="./pngs/0.png" alt="fail: 0/100" width="150">](./pngs/0.png) | <pre><code>ex00: KO &#8739; ex01: KO &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: OK &#8739; ex07: OK &#8739; &#13;ex08: OK</code></pre> | <ul><li>**ex00 and ex01:** Didn't check for `nb <= 0`</li></ul> | [&lt;55199b0&gt;](https://github.com/TimEtOff/Piscine42/tree/55199b0/c05) |
 | ***Retry 1*** | [<img src="./pngs/100.png" alt="success: 100/100" width="150">](./pngs/100.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK &#8739; &#13;ex06: OK &#8739; ex07: OK &#8739; &#13;ex08: OK</code></pre> | Perfect| [&lt;298c26b&gt;](https://github.com/TimEtOff/Piscine42/tree/298c26b/c05) |
@@ -153,13 +153,13 @@ Ex08: See [The Ten Queens Puzzle](https://www.brainbashers.com/queens.asp?size=1
 
 ---
 
-<details open><summary>
+<details><summary>
 
-### C 06
+### C 06  [<img src="./pngs/85.png" alt="success: 85/100" width="60" align="center">](./pngs/85.png)
 
 </summary>
 
-| | Grade | Moulinette | Notes | Submit commit |
+| Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
 | ***First try*** | [<img src="./pngs/85.png" alt="success: 85/100" width="150">](./pngs/85.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK &#8739; ex03: KO</code></pre> | <ul><li>**ex03:** My sort algorithm wasn't good, fixed in [&lt;main&gt;](https://github.com/TimEtOff/Piscine42/tree/main/c06)</li></ul> | [&lt;73ee320&gt;](https://github.com/TimEtOff/Piscine42/tree/73ee320/c06) |
 
@@ -171,15 +171,17 @@ Start to make programs instead of functions, and use arguments on main function.
 
 ---
 
-<details open><summary>
+<details><summary>
 
-### C 07
+### C 07 [<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">](./pngs/100.png)
 
 </summary>
 
-| | Grade | Moulinette | Notes | Submit commit |
+| Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
-| ***First try*** | [<img src="./pngs/15.png" alt="fail: 15/100" width="150">](./pngs15.png) | <pre><code>ex00: OK &#8739; ex01: KO &#8739; &#13;ex02: KO &#8739; ex03: OK &#8739; &#13;ex04: KO &#8739; ex05: KO</code></pre> | Idk | [&lt;aee357b&gt;](https://github.com/TimEtOff/Piscine42/tree/aee357b/c07) |
+| ***First try*** | [<img src="./pngs/15.png" alt="fail: 15/100" width="150">](./pngs/15.png) | <pre><code>ex00: OK &#8739; ex01: KO &#8739; &#13;ex02: KO &#8739; ex03: OK &#8739; &#13;ex04: KO &#8739; ex05: KO</code></pre> | <ul><li>**ex01 & 02:** Should check if `min >= max` instead of `min > max`</li><li>**ex04:** `base_from` wasn't properly checked</li><li>**ex05:** I don't really know, a lot of valgrind errors, ended up redoing it entirely</li></ul> | [&lt;aee357b&gt;](https://github.com/TimEtOff/Piscine42/tree/aee357b/c07) |
+| ***Retry 1*** | [<img src="./pngs/30.png" alt="fail: 30/100" width="150">](./pngs/30.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: KO &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK</code></pre> | <ul><li>**ex02:** I don't know how to read, if `min >= max`, the program should return `0` instead of `-1` (`-1` in case of error)</li></ul> | [&lt;26e26fd&gt;](https://github.com/TimEtOff/Piscine42/tree/26e26fd/c07) |
+| ***Retry 2*** | [<img src="./pngs/100.png" alt="success: 100/100" width="150">](./pngs/100.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK</code></pre> | Perfect | [&lt;a38ab93&gt;](https://github.com/TimEtOff/Piscine42/tree/a38ab93/c07) |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c07/en.subject.pdf)
 
@@ -189,19 +191,73 @@ Learn how to use tha `malloc` and `free` functions to allocate memory.
 
 ---
 
-<details open><summary>
+<details><summary>
 
-### C 08
+### C 08 [<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">](./pngs/100.png)
 
 </summary>
 
 | | Grade | Moulinette | Notes | Submit commit |
 | ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
-| ***First try*** | Not submitted yet | <pre><code></code></pre> |  | [&lt;......&gt;](https://github.com/TimEtOff/Piscine42/tree/...../c08) |
+| ***First try*** | [<img src="./pngs/100.png" alt="success: 100/100" width="150">](./pngs/100.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK &#8739; ex03: OK &#8739; &#13;ex04: OK &#8739; ex05: OK</code></pre> |  | [&lt;2c2455a&gt;](https://github.com/TimEtOff/Piscine42/tree/2c2455a/c08) |
 
 [See subject](https://github.com/TimEtOff/Piscine42/blob/main/c08/en.subject.pdf)
 
 Use header files (`.h`) and structures `struct` + `typedef`.
+
+</details>
+
+---
+
+<details><summary>
+
+### C 09 [<img src="./pngs/100.png" alt="success: 100/100" width="60" align="center">](./pngs/100.png)
+
+</summary>
+
+| | Grade | Moulinette | Notes | Submit commit |
+| ----------- | ---------------- | ---------------------------- | ------------------ | ----------- |
+| ***First try*** | [<img src="./pngs/0.png" alt="fail: 0/100" width="150">](./pngs/0.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK</code></pre> | Everything worked great but I didn't know about the Norm in Makefiles, the 'output' file variable should be names NAME instead of EXE | [&lt;b057384&gt;](https://github.com/TimEtOff/Piscine42/tree/b057384/c09) |
+| ***Retry 1*** | [<img src="./pngs/100.png" alt="success: 100/100" width="150">](./pngs/100.png) | <pre><code>ex00: OK &#8739; ex01: OK &#8739; &#13;ex02: OK</code></pre> | Perfect | [&lt;1703533&gt;](https://github.com/TimEtOff/Piscine42/tree/1703533/c09) |
+
+[See subject](https://github.com/TimEtOff/Piscine42/blob/main/c09/en.subject.pdf)
+
+Learn about advanced compiling and Makefiles.
+
+</details>
+
+---
+
+<details><summary>
+
+## BSQ _[/100]_
+
+</summary>
+
+| Grade | Submit commit |
+| ----------------- | ----------- |
+| Not evaluated yet | [&lt;d5db5bb&gt;](https://github.com/TimEtOff/Piscine42/tree/d5db5bb/bsq) |
+
+*With [yriffard](https://profile.intra.42.fr/users/yriffard)
+
+[See subject (FR)](https://github.com/TimEtOff/Piscine42/blob/main/bsq/fr.subject.pdf)
+[See subject (EN - old)](https://github.com/TimEtOff/Piscine42/blob/main/bsq/en-old.subject.pdf)
+
+The BSQ is the last project of the piscine. It consists of using almost everythings we learned during the month. <br>
+You should at least know (not necessarily validated) the notions up to C10. <br>
+In this project, you need to find the _Biggest SQuare_ on a map from a file, where this map has empty places and obsacles. <br>
+You should be able to handle errors on the map if it doesn't follow the rules, handle multiple maps on the same run if
+there is multiple inputs _(C06)_, make sure there are no memory leak _(C07)_, have a working Makefile _(C09)_ and many others
+notions. <br>
+
+**Mistakes we know about:**
+- In case of map error, everything is not freed correctly.
+- With stdin:
+	- We use duplicates that we forgot to free
+	- If the map doesn't start at the first input lines, it won't work
+	- Errors are not handled
+	- Parsing works but doesn't return a map error if needed
+	- (Buffer has a size limit of 1024)
 
 </details>
 
