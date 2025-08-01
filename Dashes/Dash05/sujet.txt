@@ -1,0 +1,11 @@
+Pour ce Dash, vous devrez coder un programme qui chiffrera une chaîne de caractères avec l'algorithme de Vigenere.
+Votre programme ne prendra qu'un seul argument, le chemin d'un fichier contenant le texte à chiffrer. La clé de chiffrement utilisée dans votre programme sera votre login sans les caractères non-alphabétiques.
+La chaine de caractères chiffrée sera écrite sur la sortie standard.
+Votre algo ne devra chiffrer que des lettres, les autres caractères seront laissés tels quels. La casse devra être respectée.
+La clé de chiffrement utilisée sera en minuscules.
+Vous avez le droit d'utiliser les fonctions open, close, read, write, malloc et free. Et bien évidement, le binaire ne devra contenir aucune fuite. La moulinette ne testera votre programme qu'avec des fichiers contenants au maximum 4096 caractères. En cas d'erreur, votre programme affichera "Error" suivi d'un retour à la ligne.
+
+Pour le rendu, vous devrez rendre 3 fichiers à la racine de votre repo : un fichier vigenere.c, un binaire compilé nommé vigenere et un fichier texte answers.txt.
+- Le fichier vigenere.c contiendra uniquement la fonction de chiffrement avec le prototype suivant: char *vigenere(const char *text, const char *key);, en cas d'erreur celle-ci devra renvoyer NULL.
+- Le binaire vigenere de votre programme compilé
+- Le fichier answers.txt qui contiendra les réponses, chiffrées par votre programme, des différents exercices dans l'ordre croissant et suivies par des retours à la ligne (chaque réponse consiste en un seul mot anglais en majuscules). S'il vous manque une réponse, laissez une ligne vide.
