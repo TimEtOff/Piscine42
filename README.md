@@ -3,6 +3,10 @@
 As you may know, 42 School resolves around projects instead of classes with professors. It's the same during the Piscine, and the pisciners are insinde the school for a month where they need to complete projects and take exams under the school's pedagogy. At the end of the Piscine, the Bocal (Staff) will send the result of the admission to everybody at the same time within 2 weeks. <br>
 During the Piscine, I pushed almost everything I did in this repository when I pushed in 42's repos at the same time with some custom scripts _(check out [/scripts](/scripts))_. <br>
 <br>
+For your Piscine, I would recommend the [improved intra browser extension](https://github.com/FreekBes/improved_intra) to add features on the intra, like a custom background on your profile. <br>
+I'd recommend also these extensions for VS Code if you use it: <br>
+[<img src="/pngs/vsc_extensions.png" alt="VSCode extensions" width="300">](/pngs/vsc_extensions.png) <br>
+<br>
 Cheating is obviously forbidden, and you shouldn't use this repo to copy-paste any code for your Piscine. _(Note that even if you don't use the code, and only look at this README, it could be taken as cheating and I don't recommend you to use this repo at all during your Piscine)_
 
 ## Results
@@ -13,6 +17,8 @@ On the Holy Graph: <br>
 [<img src="/pngs/holy_graph.png" alt="Holy Graph (before the Final Exam)" width="450">](/pngs/holy_graph.png) <br><br>
 Finished with a level 9 (average around 7-8). <br>
 [<img src="/pngs/level.png" alt="Level 9 - 12%" width="600">](/pngs/level.png) <br><br>
+I spent a total of 183 hours on 42's computers, with an average of 50 hours per week. <br>
+[<img src="/pngs/logtime.png" alt="Logtime" width="250">](/pngs/logtime.png) <br><br>
 
 I was quite happy with my results but unfortunately I was not admitted into the school after this Piscine, despite having good scores on the projects, I was probably not involved enough on the social side.
 
